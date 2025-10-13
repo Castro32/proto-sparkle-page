@@ -9,31 +9,31 @@ const slides = [
   {
     id: 1,
     image: heroTrichology,
-    title: "WHERE SCIENCE",
-    subtitle: "MEETS",
-    scriptText: "Beauty",
+    title: "Trichology",
+    subtitle: " & Scalp",
+    scriptText: "Health",
     description:
-      "Trichology & Scalp Health - Expert diagnosis and treatment for optimal scalp and hair health",
+      "Expert diagnosis and treatment for optimal scalp and hair health",
     alt: "Trichology and scalp health treatment showing healthy hair roots",
   },
   {
     id: 2,
     image: heroHairTreatments,
-    title: "WHERE SCIENCE",
-    subtitle: "MEETS",
-    scriptText: "Beauty",
+    title: "Hair Treatments",
+    subtitle: "Restorative",
+    scriptText: "Rituals",
     description:
-      "Hair Treatments & Restorative Rituals - Luxurious treatments to restore and rejuvenate your hair",
+      " Luxurious treatments to restore and rejuvenate your hair",
     alt: "Luxurious hair treatment ritual in spa setting",
   },
   {
     id: 3,
     image: heroGlam,
-    title: "WHERE SCIENCE",
-    subtitle: "MEETS",
-    scriptText: "Beauty",
+    title: "Premium",
+    subtitle: " Glam",
+    scriptText: "Services",
     description:
-      "Premium Glam Services - Professional styling and makeup for your special moments",
+      "Professional styling and makeup for your special moments",
     alt: "Premium glamorous beauty styling and makeup services",
   },
 ];
@@ -106,7 +106,7 @@ const HeroSlider = () => {
       ))}
 
       {/* Navigation Arrows */}
-      <Button
+      {/* <Button
         variant="ghost"
         size="icon"
         onClick={prevSlide}
@@ -123,7 +123,7 @@ const HeroSlider = () => {
         aria-label="Next slide"
       >
         <ChevronRight className="h-8 w-8" />
-      </Button>
+      </Button> */}
 
       {/* Pagination Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex items-center gap-3">

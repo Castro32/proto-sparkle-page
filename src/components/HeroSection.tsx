@@ -32,12 +32,12 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Pagination Indicator */}
+      {/* Pagination Indicator
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
         <div className="bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full">
           <span className="text-white text-sm font-playfair">1/1</span>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
