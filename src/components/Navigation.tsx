@@ -11,27 +11,22 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Left side - Location */}
           <div className="flex-1">
             <p className="text-sm text-muted-foreground font-playfair">
               Mwanzi Market, Westlands
             </p>
           </div>
-
-          {/* Center - Logo and Text */}
           <div className="flex-1 flex justify-center items-center gap-2">
-            <img 
-              src={Logo}
-              alt="AVYA Logo" 
-              className="h-10 object-contain" 
-            />
-            {/* <h1 className="text-2xl font-playfair font-semibold tracking-wider text-foreground">
-              AVYA
-            </h1> */}
+            <a href="/">
+              <img
+                src={Logo}
+                alt="AVYA Logo"
+                className="h-10 object-contain"
+              />
+            </a>
           </div>
 
 
-          {/* Right side - Menu */}
           <div className="flex-1 flex justify-end items-center gap-8">
             <div className="hidden md:flex items-center gap-8">
               <a
@@ -47,7 +42,6 @@ const Navigation = () => {
                 About us
               </a>
               
-              {/* Services Dropdown */}
               <div className="relative group">
                 <button
                   className="text-sm font-playfair text-foreground hover:text-primary transition-colors flex items-center gap-1"
@@ -94,8 +88,6 @@ const Navigation = () => {
             </Button>
           </div>
         </div>
-
-        {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col gap-4">
@@ -113,8 +105,7 @@ const Navigation = () => {
               >
                 About us
               </a>
-              
-              {/* Mobile Services Dropdown */}
+
               <div>
                 <button
                   className="text-sm font-playfair text-foreground hover:text-primary transition-colors flex items-center gap-1 w-full text-left"
