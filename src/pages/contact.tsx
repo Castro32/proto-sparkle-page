@@ -45,7 +45,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Form and Info Section */}
-      <section className="py-16 px-4 bg-[#E2DBDF]">
+      <section className="py-16 px-4 bg-[#C1B5C6 ]">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Side - Form */}
@@ -61,7 +61,7 @@ const ContactPage = () => {
                     placeholder="Name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-[#B0C2B0] border-0 rounded-lg text-[#262626] placeholder-[#595959] focus:outline-none focus:ring-2 focus:ring-[#C1B5C6] font-open-sans"
+                    className="w-full px-4 py-3 bg-[#FFFFFF] border-0 rounded-lg text-[#262626] placeholder-[#595959] focus:outline-none focus:ring-2 focus:ring-[#C1B5C6] font-open-sans"
                   />
                   <input
                     type="email"
@@ -69,7 +69,7 @@ const ContactPage = () => {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-[#B0C2B0] border-0 rounded-lg text-[#262626] placeholder-[#595959] focus:outline-none focus:ring-2 focus:ring-[#C1B5C6] font-open-sans"
+                    className="w-full px-4 py-3 bg-[#FFFFFF] border-0 rounded-lg text-[#262626] placeholder-[#595959] focus:outline-none focus:ring-2 focus:ring-[#C1B5C6] font-open-sans"
                   />
                 </div>
                 <textarea
@@ -78,11 +78,11 @@ const ContactPage = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={6}
-                  className="w-full px-4 py-3 bg-[#B0C2B0] border-0 rounded-lg text-[#262626] placeholder-[#595959] focus:outline-none focus:ring-2 focus:ring-[#C1B5C6] resize-none font-open-sans"
+                  className="w-full px-4 py-3 bg-[#FFFFFF] border-0 rounded-lg text-[#262626] placeholder-[#595959] focus:outline-none focus:ring-2 focus:ring-[#C1B5C6] resize-none font-open-sans"
                 />
                 <button
                   onClick={handleSubmit}
-                  className="w-full bg-[#C1B5C6] hover:bg-[#B0C2B0] text-[#262626] font-light py-4 rounded-lg transition-colors duration-300 font-montserrat"
+                  className="w-full bg-[#262626] hover:bg-[#B0C2B0] text-[#FFFFFF] font-light py-4 rounded-lg transition-colors duration-300 font-montserrat"
                 >
                   Send Message
                 </button>
@@ -162,7 +162,7 @@ const ContactPage = () => {
       </section>
 
       {/* Map Section */}
-      <section className="h-[500px] w-full">
+      <section className="h-[500px] w-full bg-[#C1B5C6 ]  ">
         <div className="max-w-6xl mx-auto h-full px-4">
           <iframe
             className="w-full h-full border-0"

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#E2DDDF] text-[#262626] py-12 px-4 md:px-12">
+    <footer className="bg-[#C1B5C6] text-[#262626] py-12 px-4 md:px-12">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           {/* Newsletter Section */}
@@ -17,7 +17,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your Email"
-                className="flex-1 px-4 py-3 bg-[#C1B5C6] border-0 rounded-lg text-[#262626] placeholder-[#595959] focus:outline-none focus:ring-2 focus:ring-[#C1B5C6] font-sans"
+                className="flex-1 px-4 py-3 bg-[#E2DBDF] border-0 rounded-lg text-[#262626] placeholder-[#595959] focus:outline-none focus:ring-2 focus:ring-[#C1B5C6] font-sans"
               />
               <button
                 type="submit"

@@ -17,7 +17,7 @@ const ServicesSection = () => {
                 Discover our range of premium services tailored to your beauty and wellness needs.
               </p>
             </div>
-            <Button className="bg-[#262626] hover:bg-[#595959] text-white px-8 py-6 text-sm font-playfair tracking-wider mt-4 md:mt-0">
+            <Button className="bg-[#262626] hover:bg-[#B0C2B0] text-white px-8 py-6 text-sm font-playfair tracking-wider mt-4 md:mt-0">
               Book Your Appointment
             </Button>
           </div>
@@ -27,7 +27,7 @@ const ServicesSection = () => {
             <div className="group cursor-pointer text-center">
               <div className="relative overflow-hidden rounded-lg mb-4 aspect-[3/4]">
                 <img
-                  src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=800&fit=crop"
+                  src="https://plus.unsplash.com/premium_photo-1674841252227-02aff6975847?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740"
                   alt="Hair Treatment & Styling"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -38,7 +38,7 @@ const ServicesSection = () => {
               <p className="text-sm text-[#595959] mb-4 px-2">
                 Diagnostic-led care for hair loss, thinning, dandruff, and more.
               </p>
-              <Button className="bg-[#262626] hover:bg-[#595959] text-white px-6 py-4 text-xs font-playfair tracking-wider">
+              <Button className="bg-[#262626] hover:bg-[#B0C2B0] text-white px-6 py-4 text-xs font-playfair tracking-wider">
                 Book a Scalp Consultation
               </Button>
             </div>
@@ -57,7 +57,7 @@ const ServicesSection = () => {
               <p className="text-sm text-[#595959] mb-4 px-2">
                 Nanoplastia, Hair Botox, Cold Recovery, Olaplex and other rare international therapies.
               </p>
-              <Button className="bg-[#262626] hover:bg-[#595959] text-white px-6 py-4 text-xs font-playfair tracking-wider">
+              <Button className="bg-[#262626] hover:bg-[#B0C2B0] text-white px-6 py-4 text-xs font-playfair tracking-wider">
                 Explore Treatments
               </Button>
             </div>
@@ -65,7 +65,7 @@ const ServicesSection = () => {
             <div className="group cursor-pointer text-center">
               <div className="relative overflow-hidden rounded-lg mb-4 aspect-[3/4]">
                 <img
-                  src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&h=800&fit=crop"
+                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&h=600&fit=crop"
                   alt="Glam Services"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -76,7 +76,7 @@ const ServicesSection = () => {
               <p className="text-sm text-[#595959] mb-4 px-2">
                 Styling, blowouts, lace installs, colour, and luxury extension care.
               </p>
-              <Button className="bg-[#262626] hover:bg-[#595959] text-white px-6 py-4 text-xs font-playfair tracking-wider">
+              <Button className="bg-[#262626] hover:bg-[#B0C2B0] text-white px-6 py-4 text-xs font-playfair tracking-wider">
                 See Glam Menu
               </Button>
             </div>

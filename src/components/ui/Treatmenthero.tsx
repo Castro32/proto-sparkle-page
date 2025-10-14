@@ -36,7 +36,7 @@ const TreatmentsHero = () => {
             {/* Second Image - Three diverse women */}
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&h=600&fit=crop"
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&h=600&fit=crop"
                 alt="Diverse beauty"
                 className="w-full h-full object-cover"
               />
