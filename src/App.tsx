@@ -5,6 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import AvyaHome from "./pages/about";
+import Navigation from "./components/Navigation";
+import ContactPage from "./pages/contact";
+import Footer from "./components/ui/footer";
 
 const queryClient = new QueryClient();
 
@@ -14,11 +18,21 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        {/* ✅ Make Navigation global */}
+        <Navigation />
+
+        {/* ✅ Add padding so content isn’t hidden behind fixed navbar */}
+        <main className="pt-20">
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<AvyaHome />} />
+            <Route path="/contact" element={<ContactPage />} />
+            {/* Catch-all route */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        
+        <Footer />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

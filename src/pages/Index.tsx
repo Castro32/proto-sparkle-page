@@ -3,6 +3,7 @@ import HeroSlider from "@/components/HeroSlider";
 import TreatmentsHero from "@/components/ui/Treatmenthero";
 import ServicesSection from "@/components/ui/others";
 import StayConnected from "@/components/ui/stayconnected";
+import ScrollTeaser from "@/components/ui/scrollteasers";
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
       <Navigation />
       <HeroSlider />
       <TreatmentsHero/>
+      <ScrollTeaser />
       <ServicesSection/>
       <StayConnected/>
     </div>

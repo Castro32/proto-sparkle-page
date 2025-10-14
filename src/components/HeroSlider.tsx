@@ -126,7 +126,7 @@ const HeroSlider = () => {
       </Button> */}
 
       {/* Pagination Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex items-center gap-3">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex items-center gap-3">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -139,7 +139,7 @@ const HeroSlider = () => {
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

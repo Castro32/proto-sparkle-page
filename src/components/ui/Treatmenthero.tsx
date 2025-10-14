@@ -2,23 +2,23 @@ import { Button } from "@/components/ui/button";
 
 const TreatmentsHero = () => {
   return (
-    <section className="bg-[#f5ebe0] py-16 md:py-24">
+    <section className="bg-[#E2DBDF] py-16 md:py-24">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-light text-[#8b6f47] leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-light text-[#595959] leading-tight">
               TAILORED TREATMENTS FOR THE BEST VERSION OF YOU.
             </h2>
             
-            <p className="text-base md:text-lg text-[#8b7355] leading-relaxed font-playfair">
-              In a world filled with endless possibilities, the phrase 'Lorem ipsum dolor sit amet' serves as a reminder of the beauty of language and the intricacies of communication. It highlights the importance of understanding and connecting with one another. As we delve deeper into the realms of creativity, we discover that the art of expression is not just about words, but about the emotions and ideas they convey. This journey through the landscape of thought encourages us to
+            <p className="text-base md:text-lg text-[#262626] leading-relaxed font-playfair">
+               Welcome to Avya, Kenya’s first science-meets-beauty luxury salon. Combining advanced trichology, rare international techniques, and premium glam services, we deliver confidence, transformation, and wellness all under one exquisite roof.
             </p>
 
             <Button 
-              className="bg-[#8b6f47] hover:bg-[#6d5638] text-white px-8 py-6 text-base font-playfair tracking-wider"
+              className="bg-[#262626] hover:bg-[#B0C2B0] text-white px-8 py-6 text-base font-playfair tracking-wider"
             >
-              EXPLORE NOW
+              EXPLORE SERVICES
             </Button>
           </div>
 

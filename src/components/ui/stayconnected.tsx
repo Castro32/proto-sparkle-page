@@ -2,7 +2,7 @@ import React from "react";
 
 const StayConnected: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 bg-[#f5f1ed]">
+    <section className="py-16 md:py-24 bg-[#FFFFFF]">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="flex justify-between items-center mb-12">
@@ -54,7 +54,7 @@ const StayConnected: React.FC = () => {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#8b6f47] hover:bg-[#6d5638] text-white px-10 py-4 text-lg font-playfair tracking-wider"
+            className="bg-[#262626] hover:bg-[#B0C2B0] text-white px-10 py-4 text-lg font-playfair tracking-wider"
           >
             Visit our Instagram
           </a>
