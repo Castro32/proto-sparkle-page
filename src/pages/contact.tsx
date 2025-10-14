@@ -124,7 +124,7 @@ const ContactPage = () => {
                   className="flex items-center text-sm text-[#595959] hover:text-[#C1B5C6] transition-colors font-open-sans"
                 >
                   <span className="mr-2">📞</span>
-                  +254755444433
+                  +254116444433
                 </a>
               </div>
               <div className="flex gap-4">
