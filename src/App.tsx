@@ -22,7 +22,7 @@ const App = () => (
         <Navigation />
 
         {/* ✅ Add padding so content isn’t hidden behind fixed navbar */}
-        <main className="pt-20">
+        <main >
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<AvyaHome />} />
