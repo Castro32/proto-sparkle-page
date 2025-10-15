@@ -138,7 +138,7 @@ export default function SpaAboutSection() {
         {/* Desktop Image Grid - Overlapping Layout */}
         <div className="hidden lg:block relative mb-12 lg:mb-16 h-[500px] xl:h-[580px]">
           {/* Left Image - Spa Products (top left) */}
-          <div className="absolute left-0 top-[-40px] xl:top-[-150px] w-[280px] xl:w-[320px] h-[380px] xl:h-[430px] rounded-3xl overflow-hidden shadow-xl z-10">
+          <div className="absolute left-0 top-[-40px] xl:top-[-100px] w-[280px] xl:w-[320px] h-[380px] xl:h-[430px] rounded-3xl overflow-hidden shadow-xl z-10">
             <img
               src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80"
               alt="Spa products and towels"
@@ -156,7 +156,7 @@ export default function SpaAboutSection() {
           </div>
 
           {/* Right Image - Sauna (starts at center of middle image) */}
-          <div className="absolute right-8 top-[240px] xl:top-[145px] w-[280px] xl:w-[320px] h-[380px] xl:h-[430px] rounded-3xl overflow-hidden shadow-xl z-10">
+          <div className="absolute right-8 top-[240px] xl:top-[205px] w-[280px] xl:w-[320px] h-[380px] xl:h-[430px] rounded-3xl overflow-hidden shadow-xl z-10">
             <img
               src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80"
               alt="Wooden sauna interior"
@@ -165,9 +165,9 @@ export default function SpaAboutSection() {
           </div>
 
           {/* Scroll Indicator - positioned to the right of third image */}
-          <div className="absolute right-[-60px] top-[310px] xl:top-[50px] hidden xl:block">
+          <div className="absolute right-[-1px] top-[180px] xl:top-[1px] hidden xl:block">
             <div className="flex flex-col items-center gap-2">
-              <div className="w-[1px] h-3 bg-[#595959]"></div>
+              <div className="w-[1px] h-36 bg-[#595959]"></div>
               <svg
                 className="w-6 h-6 text-[#595959]"
                 fill="none"
@@ -186,7 +186,7 @@ export default function SpaAboutSection() {
         </div>
 
         {/* Bottom Section with Avatars */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8 lg:mt-[-80px] xl:mt-[-60px]">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8 lg:mt-[-60px] xl:mt-[-60px]">
           {/* Avatar Group */}
           <div className="flex -space-x-3">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-[#C1B5C6] to-[#B0C2B0] border-4 border-white shadow-lg flex items-center justify-center">
