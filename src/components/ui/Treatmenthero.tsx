@@ -60,7 +60,7 @@ const TreatmentsHero = () => {
     <section className="bg-[#262626] py-16 md:py-24 text-white">
       <div className="max-w-[1231px] mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          Left Content
+          {/* Left Content */}
           <div className="space-y-6 md:space-y-8 max-w-[574px]">
             <h2 className="text-3xl md:text-[40px] font-hatton font-light text-white leading-tight">
               TAILORED TREATMENTS FOR THE BEST VERSION OF YOU.
@@ -68,9 +68,9 @@ const TreatmentsHero = () => {
             <p className="text-base md:text-[20px] text-white/90 leading-relaxed font-montserrat">
               Welcome to Avya, Kenya's first science-meets-beauty luxury salon. Combining advanced trichology, rare international techniques, and premium glam services, we deliver confidence, transformation, and wellness all under one exquisite roof.
             </p>
-            {/* <Button className="bg-[#E2DBDF] hover:bg-[#B0C2B0] text-[#262626] text-base font-open-sans tracking-wider w-full sm:w-[198px] h-[56px]">
+            <Button className="bg-[#E2DBDF] hover:bg-[#B0C2B0] text-[#262626] text-base font-open-sans tracking-wider w-full sm:w-[198px] h-[56px]">
               EXPLORE SERVICES
-            </Button> */}
+            </Button>
           </div>
 
           {/* Right Images */}
