@@ -183,10 +183,10 @@ const StayConnected: React.FC = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-playfair font-light text-[#2a2a2a]">
+          <h2 className="text-[40px] font-hatton font-light text-[#262626] mb-2">
             STAY CONNECTED
           </h2>
-          <p className="text-lg font-playfair text-[#2a2a2a] mt-2">
+          <p className="text-[20px] text-[#595959] max-w-md font-montserrat">
             Follow Us On Our Socials
           </p>
         </div>
