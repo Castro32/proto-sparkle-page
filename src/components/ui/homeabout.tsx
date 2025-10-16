@@ -510,7 +510,7 @@
 //     </div>
 //   );
 // }
-import img from "@/assets/a1.jpg";
+import img from "@/assets/h4.png";
 import img1 from "@/assets/h1.png";
 import img2 from "@/assets/h3.png";
 export default function SpaAboutSection() {
