@@ -359,7 +359,7 @@ const Navigation = () => {
               {/* Location (hidden on mobile) */}
               <div className="hidden md:flex flex-1 min-w-[150px]">
                 <p className="text-lg text-muted-foreground font-hatton font-light truncate">
-                  <span className="text-xl">1<sup>st</sup></span> Floor, Mwanzi Market
+                  <span className="text-xl">1<sup>st</sup></span> Floor, Mwanzi Market, Westlands
                 </p>
               </div>
               {/* Logo */}

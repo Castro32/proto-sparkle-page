@@ -1088,9 +1088,9 @@ function App() {
               <div className="inline-flex p-2 rounded-lg bg-gradient-to-br from-[#C1B5C6] to-[#B0C2B0] text-white mb-3 group-hover:scale-105 transition-transform duration-200">
                 <MapPin className="w-5 h-5" />
               </div>
-              <h3 className="text-base font-medium text-[#262626] mb-1">Visit Us</h3>
+              <h3 className="text-base font-montserrat text-[#262626] mb-1">Visit Us</h3>
               <div className="space-y-0.5">
-                <p className="text-xs text-[#595959]">Mwanzi Market, Westlands</p>
+                <p className="text-xs text-[#595959]">1Mwanzi Market, Westlands</p>
                 <p className="text-xs text-[#595959]">Nairobi, Kenya</p>
               </div>
             </div>
