@@ -176,7 +176,7 @@ const Navigation = () => {
               {/* Location (hidden on mobile) */}
               <div className="hidden md:flex flex-1">
                 <p className="text-xs sm:text-sm text-muted-foreground font-playfair truncate">
-                  <span className="text-xl">1<sup>st</sup></span> Floor, Mwanzi Market, Westlands
+                  <span className="text-xs">1<sup>st</sup></span> Floor, Mwanzi Market, Westlands
                 </p>
               </div>
 
