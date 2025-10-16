@@ -536,19 +536,19 @@ const Navigation = () => {
               {/* Location (hidden on mobile) */}
               <div className="hidden md:flex flex-1 min-w-[150px]">
                 <p className="text-base md:text-lg lg:text-xl font-hatton font-light text-foreground hover:text-primary transition-colors px-1">
-                  <span className=" md:text-2xl ">1<sup>st</sup></span> Floor, Mwanzi Market, Westlands
+                  <span className=" md:text-xl ">1<sup>st</sup></span> Floor, Mwanzi Market, Westlands
                 </p>
               </div>
               {/* Logo */}
               <div className="flex-shrink-0 flex justify-center">
-  <a href="/" className="flex items-center">
-    <img
-      src={Logo}
-      alt="AVYA Logo"
-      className="h-20 sm:h-24 md:h-28 object-contain"
-    />
-  </a>
-</div>
+                <a href="/" className="flex items-center">
+                  <img
+                    src={Logo}
+                    alt="AVYA Logo"
+                    className="h-20 sm:h-24 md:h-28 object-contain"
+                  />
+                </a>
+              </div>
               {/* Navigation Links (desktop) */}
               <div className="hidden md:flex flex-1 justify-end items-center gap-1 lg:gap-2">
                 <a

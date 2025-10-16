@@ -481,10 +481,10 @@ const ServicesSection = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <h3 className="text-xl font-hatton text-[#262626] mb-2 group-hover:text-[#B0C2B0] transition-colors">
+              <h3 className="text-2xl font-hatton text-[#262626] mb-2 group-hover:text-[#B0C2B0] transition-colors">
                 Trichology & Scalp Health
               </h3>
-              <p className="text-sm text-[#595959] px-2 font-montserrat">
+              <p className="text-xl text-[#595959] px-2 font-montserrat">
                 Diagnostic-led care for hair loss, thinning, dandruff, and more.
               </p>
             </a>
@@ -496,10 +496,10 @@ const ServicesSection = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <h3 className="text-xl font-hatton text-[#262626] mb-2 group-hover:text-[#B0C2B0] transition-colors">
+              <h3 className="text-2xl font-hatton text-[#262626] mb-2 group-hover:text-[#B0C2B0] transition-colors">
                 Hair Treatments & Restorative Rituals
               </h3>
-              <p className="text-sm text-[#595959] px-2 font-montserrat">
+              <p className="text-xl text-[#595959] px-2 font-montserrat">
                 Nanoplastia, Hair Botox, Cold Recovery, Olaplex and other rare international therapies.
               </p>
             </a>
@@ -511,10 +511,10 @@ const ServicesSection = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <h3 className="text-xl font-hatton text-[#262626] mb-2 group-hover:text-[#B0C2B0] transition-colors">
+              <h3 className="text-2xl font-hatton text-[#262626] mb-2 group-hover:text-[#B0C2B0] transition-colors">
                 Premium Glam Services
               </h3>
-              <p className="text-sm text-[#595959] px-2 font-montserrat">
+              <p className="text-xl text-[#595959] px-2 font-montserrat">
                 Styling, blowouts, lace installs, colour, and luxury extension care.
               </p>
             </a>

@@ -537,8 +537,8 @@ export default function SpaAboutSection() {
 
             {/* Right Side */}
             <div className="flex flex-col items-start lg:items-end">
-              <h1 className="text-left lg:text-right text-[#262626] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light tracking-wide lg:max-w-4xl leading-tight font-montserrat">
-                Nairobi's Premier Longevity Beauty Spa
+              <h1 className="text-left lg:text-right text-[#262626] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light tracking-wide lg:max-w-4xl leading-tight font-hatton">
+                Nairobi's Premier Longevity Beauty Salon
               </h1>
               <button className="mt-6 bg-[#262626] text-white px-8 py-3 rounded-full font-montserrat text-sm tracking-wider hover:bg-[#595959] transition-colors duration-300 lg:mr-4">
                 LEARN MORE ABOUT US

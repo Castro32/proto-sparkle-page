@@ -129,17 +129,33 @@ const PartnersSection = () => {
   return (
     <section className="min-h-[50vh] bg-[#262626] flex items-center justify-center bg-gradient-to-br from-[#262626] via-[#E2DBDF] to-[#262626] px-4 py-12">
       <div className="max-w-5xl w-full">
+        {/* <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-start mb-10"
+        >
+          <h2 className="text-3xl md:text-4xl justify-start   text-[#262626] mb-3 tracking-tight font-hatton font-light">
+            Our Trusted Partners
+          </h2>
+          <div className="h-1 w-20 bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] mx-auto rounded-full" />
+        </motion.div> */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-10"
+          className="text-start mb-10"
         >
-          <h2 className="text-3xl md:text-4xl  text-white mb-3 tracking-tight font-hatton font-light">
+          <h2 className="text-3xl md:text-4xl justify-start text-[#262626] mb-3 tracking-tight font-hatton font-light">
             Our Trusted Partners
           </h2>
-          <div className="h-1 w-20 bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] mx-auto rounded-full" />
+          <div className="h-1 w-20 bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] rounded-full mb-4" />
+
+          <p className="text-[20px] text-[#FFFFFF] max-w-md font-montserrat">
+            Excellence Through Collaboration
+          </p>
         </motion.div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {partners.map((partner, index) => (
