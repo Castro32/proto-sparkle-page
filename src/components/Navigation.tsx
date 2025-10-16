@@ -175,7 +175,7 @@ const Navigation = () => {
             <div className="flex items-center justify-between">
               {/* Location (hidden on mobile) */}
               <div className="hidden md:flex flex-1">
-                <p className="text-xs sm:text-sm text-muted-foreground font-playfair truncate">
+                <p className="text-xs sm:text-sm text-muted-foreground font-montserrat truncate">
                   <span className="text-xs">1<sup>st</sup></span> Floor, Mwanzi Market, Westlands
                 </p>
               </div>
@@ -196,19 +196,19 @@ const Navigation = () => {
               <div className="hidden md:flex flex-1 justify-end items-center gap-4 lg:gap-8">
                 <a
                   href="/"
-                  className="text-xs sm:text-sm font-playfair text-foreground hover:text-primary transition-colors"
+                  className="text-xs sm:text-sm font-montserrat text-foreground hover:text-primary transition-colors"
                 >
                   Home
                 </a>
                 <a
                   href="/about"
-                  className="text-xs sm:text-sm font-playfair text-foreground hover:text-primary transition-colors"
+                  className="text-xs sm:text-sm font-montserrat text-foreground hover:text-primary transition-colors"
                 >
                   About us
                 </a>
                 <div className="relative group">
                   <button
-                    className="text-xs sm:text-sm font-playfair text-foreground hover:text-primary transition-colors flex items-center gap-1"
+                    className="text-xs sm:text-sm font-montserrat text-foreground hover:text-primary transition-colors flex items-center gap-1"
                   >
                     Services
                     <ChevronDown className="h-3 w-3" />
@@ -216,19 +216,19 @@ const Navigation = () => {
                   <div className="absolute top-full left-0 mt-2 w-48 sm:w-64 bg-white border border-border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                     <a
                       href="#trichology"
-                      className="block px-4 py-2 text-xs sm:text-sm font-playfair text-foreground hover:bg-accent hover:text-primary transition-colors"
+                      className="block px-4 py-2 text-xs sm:text-sm font-montserrat text-foreground hover:bg-accent hover:text-primary transition-colors"
                     >
                       Trichology & Scalp Health
                     </a>
                     <a
                       href="#treatments"
-                      className="block px-4 py-2 text-xs sm:text-sm font-playfair text-foreground hover:bg-accent hover:text-primary transition-colors"
+                      className="block px-4 py-2 text-xs sm:text-sm font-montserrat text-foreground hover:bg-accent hover:text-primary transition-colors"
                     >
                       Hair Treatments & Restorative Rituals
                     </a>
                     <a
                       href="#glam"
-                      className="block px-4 py-2 text-xs sm:text-sm font-playfair text-foreground hover:bg-accent hover:text-primary transition-colors"
+                      className="block px-4 py-2 text-xs sm:text-sm font-montserrat text-foreground hover:bg-accent hover:text-primary transition-colors"
                     >
                       Premium Glam Services
                     </a>
@@ -236,13 +236,13 @@ const Navigation = () => {
                 </div>
                 <a
                   href="/contact"
-                  className="text-xs sm:text-sm font-playfair text-foreground hover:text-primary transition-colors"
+                  className="text-xs sm:text-sm font-montserrat text-foreground hover:text-primary transition-colors"
                 >
                   Contact
                 </a>
                 <a
                   href="/team"
-                  className="text-xs sm:text-sm font-playfair text-foreground hover:text-primary transition-colors"
+                  className="text-xs sm:text-sm font-montserrat text-foreground hover:text-primary transition-colors"
                 >
                   Our Team
                 </a>
@@ -270,21 +270,21 @@ const Navigation = () => {
               <div className="flex flex-col gap-1">
                 <a
                   href="/"
-                  className="text-base font-playfair text-foreground hover:text-primary transition-colors py-3 border-b border-gray-100"
+                  className="text-base font-montserrat text-foreground hover:text-primary transition-colors py-3 border-b border-gray-100"
                   onClick={() => setIsOpen(false)}
                 >
                   Home
                 </a>
                 <a
                   href="/about"
-                  className="text-base font-playfair text-foreground hover:text-primary transition-colors py-3 border-b border-gray-100"
+                  className="text-base font-montserrat text-foreground hover:text-primary transition-colors py-3 border-b border-gray-100"
                   onClick={() => setIsOpen(false)}
                 >
                   About us
                 </a>
                 <div className="border-b border-gray-100">
                   <button
-                    className="text-base font-playfair text-foreground hover:text-primary transition-colors flex items-center justify-between w-full text-left py-3"
+                    className="text-base font-montserrat text-foreground hover:text-primary transition-colors flex items-center justify-between w-full text-left py-3"
                     onClick={() => setIsServicesOpen(!isServicesOpen)}
                   >
                     Services
@@ -294,21 +294,21 @@ const Navigation = () => {
                     <div className="pb-3 pl-4 flex flex-col gap-2 animate-in slide-in-from-top-2 duration-200">
                       <a
                         href="#trichology"
-                        className="text-sm font-playfair text-muted-foreground hover:text-primary transition-colors py-2"
+                        className="text-sm font-montserrat text-muted-foreground hover:text-primary transition-colors py-2"
                         onClick={() => setIsOpen(false)}
                       >
                         Trichology & Scalp Health
                       </a>
                       <a
                         href="#treatments"
-                        className="text-sm font-playfair text-muted-foreground hover:text-primary transition-colors py-2"
+                        className="text-sm font-montserrat text-muted-foreground hover:text-primary transition-colors py-2"
                         onClick={() => setIsOpen(false)}
                       >
                         Hair Treatments & Restorative Rituals
                       </a>
                       <a
                         href="#glam"
-                        className="text-sm font-playfair text-muted-foreground hover:text-primary transition-colors py-2"
+                        className="text-sm font-montserrat text-muted-foreground hover:text-primary transition-colors py-2"
                         onClick={() => setIsOpen(false)}
                       >
                         Premium Glam Services
@@ -318,7 +318,7 @@ const Navigation = () => {
                 </div>
                 <a
                   href="/contact"
-                  className="text-base font-playfair text-foreground hover:text-primary transition-colors py-3"
+                  className="text-base font-montserrat text-foreground hover:text-primary transition-colors py-3"
                   onClick={() => setIsOpen(false)}
                 >
                   Contact
@@ -326,7 +326,7 @@ const Navigation = () => {
 
                 <a
                   href="/team"
-                  className="text-base font-playfair text-foreground hover:text-primary transition-colors py-3"
+                  className="text-base font-montserrat text-foreground hover:text-primary transition-colors py-3"
                   onClick={() => setIsOpen(false)}
                 >
                   Our Team
