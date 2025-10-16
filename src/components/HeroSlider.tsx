@@ -536,23 +536,22 @@ const HeroSlider = () => {
                   {slide.title}
                 </span>
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#B0C2B0] font-hatton leading-relaxed max-w-xs sm:max-w-sm md:max-w-md mb-4 sm:mb-6 lg:mb-8">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#C1B5C6] font-hatton leading-relaxed max-w-xs sm:max-w-sm md:max-w-md mb-4 sm:mb-6 lg:mb-8">
                 {slide.description}
               </p>
               <div className="flex flex-nowrap gap-2 sm:gap-4">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="text-[#E2DBDF] border-[#E2DBDF] bg-[#262626] hover:bg-[#595959] hover:text-[#E2DBDF] transition-colors flex-1 sm:flex-none sm:size-lg"
-                >
-                  Book Appointment
-                </Button>
-                <Button
-                  size="sm"
-                  className="bg-[#E2DBDF] text-[#262626] hover:bg-[#E2DBDF]/90 transition-colors flex-1 sm:flex-none sm:size-lg"
-                >
-                  Explore Services
-                </Button>
+                <a
+                  href="#book"
+                  className="bg-[#595959] hover:bg-[#E2DBDF] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
+                > 
+                  BOOK APPOINTMENT
+                </a>
+                <a
+                  href="#book"
+                  className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
+                > 
+                  EXPLORE SERVICES
+                </a>
               </div>
             </div>
           </div>
