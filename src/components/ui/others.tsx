@@ -553,7 +553,7 @@ const ServicesSection = () => {
               <h2 className="text-[32px] md:text-[40px] font-hatton font-light text-[#262626] mb-2">
                 Our Specialties
               </h2>
-              <p className="text-[18px] md:text-[20px] text-[#595959] max-w-md font-montserrat">
+              <p className="text-[18px] md:text-[20px] text-[#595959] max-w-md font-hatton">
                 Discover our range of premium services tailored to your beauty and wellness needs.
               </p>
             </div>
@@ -578,7 +578,7 @@ const ServicesSection = () => {
               <h3 className="text-xl md:text-2xl font-hatton text-[#262626] mb-2 group-hover:text-[#B0C2B0] transition-colors">
                 Trichology & Scalp Health
               </h3>
-              <p className="text-base md:text-xl text-[#595959] px-2 font-montserrat">
+              <p className="text-base md:text-xl text-[#595959] px-2 font-hatton">
                 Diagnostic-led care for hair loss, thinning, dandruff, and more.
               </p>
             </a>
@@ -594,7 +594,7 @@ const ServicesSection = () => {
               <h3 className="text-xl md:text-2xl font-hatton text-[#262626] mb-2 group-hover:text-[#B0C2B0] transition-colors">
                 Hair Treatments & Restorative Rituals
               </h3>
-              <p className="text-base md:text-xl text-[#595959] px-2 font-montserrat">
+              <p className="text-base md:text-xl text-[#595959] px-2 font-hatton">
                 Nanoplastia, Hair Botox, Cold Recovery, Olaplex and other rare international therapies.
               </p>
             </a>
@@ -610,7 +610,7 @@ const ServicesSection = () => {
               <h3 className="text-xl md:text-2xl font-hatton text-[#262626] mb-2 group-hover:text-[#B0C2B0] transition-colors">
                 Premium Glam Services
               </h3>
-              <p className="text-base md:text-xl text-[#595959] px-2 font-montserrat">
+              <p className="text-base md:text-xl text-[#595959] px-2 font-hatton">
                 Styling, blowouts, lace installs, colour, and luxury extension care.
               </p>
             </a>

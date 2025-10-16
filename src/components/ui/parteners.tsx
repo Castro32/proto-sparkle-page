@@ -151,7 +151,7 @@ const PartnersSection = () => {
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] rounded-full mb-4" />
 
-          <p className="text-[20px] text-[#FFFFFF] max-w-md font-montserrat">
+          <p className="text-[20px] text-[#FFFFFF] max-w-md font-hatton">
             Excellence Through Collaboration
           </p>
         </motion.div>
@@ -183,7 +183,7 @@ const PartnersSection = () => {
                 </div>
 
                 {/* Description */}
-                <p className="relative z-10 mt-4 text-center text-xl text-[#595959] font-montserrat leading-relaxed">
+                <p className="relative z-10 mt-4 text-center text-xl text-[#595959] font-hatton leading-relaxed">
                   {partner.description}
                 </p>
 
@@ -201,7 +201,7 @@ const PartnersSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-10 text-[#262626] text-xl font-montserrat"
+          className="text-center mt-10 text-[#262626] text-xl font-hatton font-light"
         >
           We're proud to partner with leading beauty and wellness specialists who share our commitment to quality, innovation, and exceptional client experiences.
         </motion.p>

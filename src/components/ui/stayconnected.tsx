@@ -186,7 +186,7 @@ const StayConnected: React.FC = () => {
           <h2 className="text-[40px] font-hatton font-light text-[#262626] mb-2">
             STAY CONNECTED
           </h2>
-          <p className="text-[20px] text-[#595959] max-w-md font-montserrat">
+          <p className="text-[20px] text-[#595959] max-w-md font-hatton">
             Follow Us On Our Socials
           </p>
         </div>

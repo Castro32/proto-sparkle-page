@@ -530,7 +530,7 @@ export default function SpaAboutSection() {
             <div className="text-[40px] font-hatton font-light text-[#262626] mb-2">
               ABOUT US
               <div className="w-24 h-[1px] bg-[#595959] mt-2 mb-3"></div>
-              <p className="text-[20px] text-[#595959] max-w-md font-montserrat">
+              <p className="text-[20px] text-[#595959] max-w-md font-hatton">
                 Kenya's first salon dedicated to science-meets-beauty treatments.
               </p>
             </div>
@@ -540,7 +540,7 @@ export default function SpaAboutSection() {
               <h1 className="text-left lg:text-right text-[#262626] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light tracking-wide lg:max-w-4xl leading-tight font-hatton">
                 Nairobi's Premier Longevity Beauty Salon
               </h1>
-              <button className="mt-6 bg-[#262626] text-white px-8 py-3 rounded-full font-montserrat text-sm tracking-wider hover:bg-[#595959] transition-colors duration-300 lg:mr-4">
+              <button className="mt-6 bg-[#262626] text-white px-8 py-3 rounded-full font-hatton text-sm tracking-wider hover:bg-[#595959] transition-colors duration-300 lg:mr-4">
                 LEARN MORE ABOUT US
               </button>
             </div>
@@ -653,7 +653,7 @@ export default function SpaAboutSection() {
             </div>
 
             {/* Text */}
-            <div className="text-[#262626] text-base sm:text-lg md:text-xl font-light tracking-wide leading-relaxed font-montserrat">
+            <div className="text-[#262626] text-base sm:text-lg md:text-xl font-light tracking-wide leading-relaxed font-hatton">
               TRUSTED BY HUNDREDS FOR PERSONALIZED, AND
               <br className="hidden sm:block" />
               PROFESSIONAL CARE.

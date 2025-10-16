@@ -536,7 +536,7 @@ const HeroSlider = () => {
                   {slide.title}
                 </span>
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#B0C2B0] font-montserrat leading-relaxed max-w-xs sm:max-w-sm md:max-w-md mb-4 sm:mb-6 lg:mb-8">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#B0C2B0] font-hatton leading-relaxed max-w-xs sm:max-w-sm md:max-w-md mb-4 sm:mb-6 lg:mb-8">
                 {slide.description}
               </p>
               <div className="flex flex-nowrap gap-2 sm:gap-4">
