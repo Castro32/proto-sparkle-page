@@ -135,7 +135,7 @@ const PartnersSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-3 tracking-tight font-hatton">
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-3 tracking-tight font-hatton font-light">
             Our Trusted Partners
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] mx-auto rounded-full" />
@@ -167,7 +167,7 @@ const PartnersSection = () => {
                 </div>
 
                 {/* Description */}
-                <p className="relative z-10 mt-4 text-center text-sm text-[#595959] font-montserrat leading-relaxed">
+                <p className="relative z-10 mt-4 text-center text-xl text-[#595959] font-montserrat leading-relaxed">
                   {partner.description}
                 </p>
 
@@ -185,7 +185,7 @@ const PartnersSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-10 text-[#595959] text-base font-montserrat"
+          className="text-center mt-10 text-[#262626] text-xl font-montserrat"
         >
           We're proud to partner with leading beauty and wellness specialists who share our commitment to quality, innovation, and exceptional client experiences.
         </motion.p>
