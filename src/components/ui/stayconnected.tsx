@@ -206,7 +206,7 @@ const StayConnected: React.FC = () => {
             }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center transition-opacity duration-300 group-hover:opacity-0 px-4">
-              <h3 className="text-2xl font-bold text-pink-500 mb-3">
+              <h3 className="text-2xl font-bold text-white mb-3">
                 Instagram
               </h3>
               <p className="text-base text-white leading-relaxed">
@@ -229,7 +229,7 @@ const StayConnected: React.FC = () => {
               backgroundPosition: "center",
             }}
           >
-            <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center transition-opacity duration-300 group-hover:opacity-0 px-4">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center transition-opacity duration-300 group-hover:opacity-0 px-4">
               <h3 className="text-2xl font-bold text-white mb-3">TikTok</h3>
               <p className="text-base text-white leading-relaxed">
                 Hair & Beauty redefined ✨ <br />
@@ -251,7 +251,7 @@ const StayConnected: React.FC = () => {
               backgroundPosition: "center",
             }}
           >
-            <div className="absolute inset-0 bg-blue-600 bg-opacity-70 flex flex-col justify-center items-center text-center transition-opacity duration-300 group-hover:opacity-0 px-4">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center transition-opacity duration-300 group-hover:opacity-0 px-4">
               <h3 className="text-2xl font-bold text-white mb-3">Facebook</h3>
               <p className="text-base text-white leading-relaxed">
                 Bringing out your best beauty! ✨ <br />
