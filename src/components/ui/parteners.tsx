@@ -135,7 +135,7 @@ const PartnersSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-3 tracking-tight font-hatton font-light">
+          <h2 className="text-3xl md:text-4xl  text-white mb-3 tracking-tight font-hatton font-light">
             Our Trusted Partners
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] mx-auto rounded-full" />
