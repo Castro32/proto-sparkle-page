@@ -2417,195 +2417,108 @@
 
 // // export default Index;
 import { useState, useEffect, useRef } from "react";
-
 import heroTrichology from "@/assets/h3.png";
-
 import heroHairTreatments from "@/assets/h1.png";
-
 import heroGlam from "@/assets/h2.png";
-
 import img2 from "@/assets/h6.png";
-
 import img from "@/assets/h5.png";
-
 import img1 from "@/assets/h7.png";
-
 const Index = () => {
-
   const [imageStates, setImageStates] = useState({
-
     tricology: 0,
-
     glam: 0,
-
     longevity: 0,
-
     exclusive: 0,
-
     expert: 0,
-
     special: 0,
-
   });
 
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
-
   const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
-
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; delay: number }>>([]);
-
   const images = {
-
     tricology: [heroTrichology, heroHairTreatments],
-
     glam: [heroGlam, img],
-
     longevity: [heroTrichology, img1],
-
     exclusive: [heroHairTreatments, img2],
-
     expert: [img, heroGlam],
-
     special: [img1, heroTrichology],
-
   };
 
   useEffect(() => {
-
     const particleArray = Array.from({ length: 20 }, (_, i) => ({
-
       id: i,
-
       x: Math.random() * 100,
-
       y: Math.random() * 100,
-
       delay: Math.random() * 4,
-
     }));
-
     setParticles(particleArray);
-
   }, []);
 
   useEffect(() => {
-
     const observer = new IntersectionObserver(
-
       (entries) => {
-
         entries.forEach((entry) => {
-
           if (entry.isIntersecting) {
-
             setVisibleSections((prev) => new Set(prev).add(entry.target.id));
-
           }
-
         });
-
       },
-
       { threshold: 0.1, rootMargin: "0px 0px -100px 0px" }
-
     );
-
     Object.values(sectionRefs.current).forEach((ref) => {
-
       if (ref) observer.observe(ref);
-
     });
-
     return () => observer.disconnect();
-
   }, []);
 
   const handleMouseEnter = (key: string) => {
-
     setImageStates((prev) => ({
-
       ...prev,
-
       [key]: (prev[key as keyof typeof prev] + 1) % images[key as keyof typeof images].length,
-
     }));
-
   };
 
   const handleMouseLeave = (key: string) => {
-
     setImageStates((prev) => ({
-
       ...prev,
-
       [key]: 0,
-
     }));
-
   };
 
   const isVisible = (id: string) => visibleSections.has(id);
-
   return (
-
     <div className="min-h-screen bg-black font-sans relative overflow-hidden">
-
       {/* Futuristic Grid Background */}
-
       <div className="fixed inset-0 grid-bg opacity-30 pointer-events-none" />
-
       {/* Floating Particles */}
-
       {particles.map((particle) => (
-
         <div
-
           key={particle.id}
-
           className="fixed w-1 h-1 bg-[#B0C2B0] rounded-full particle pointer-events-none"
-
           style={{
-
             left: `${particle.x}%`,
-
             top: `${particle.y}%`,
-
             animationDelay: `${particle.delay}s`,
-
             opacity: 0.6,
-
           }}
-
         />
-
       ))}
 
       <section className="relative h-screen overflow-hidden bg-[#262626]">
-
         {/* Scanline Effect (optional) */}
-
         <div className="absolute inset-0 scanline pointer-events-none z-10" />
-
         {/* Background Image */}
-
         <div
-
           className="absolute inset-0 bg-cover bg-center"
-
           style={{
-
             backgroundImage: "url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1920&h=1080&fit=crop')",
-
             opacity: 0.7,
-
           }}
 
         >
-
           {/* Dark overlay for better text contrast */}
-
           <div className="absolute inset-0 bg-black/50" />
-
         </div>
 
         {/* Content */}
@@ -2613,14 +2526,18 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-end pb-6 sm:pb-8 lg:pb-12 justify-start">
 
           <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 mb-8">
+              <span className="w-2 h-2 rounded-full bg-[#B0C2B0] animate-pulse" />
+              <span className="text-sm tracking-wider text-white font-light">ABOUT US</span>
+            </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-hatton font-light text-white mb-6 leading-[1.1] tracking-tight animate-fade-in-up cyber-text">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-hatton font-light text-[#E2DBDF]  mb-6 leading-[1.1] tracking-tight animate-fade-in-up cyber-text">
 
               Nairobi's Premier Longevity Beauty Salon
 
             </h1>
 
-            <p className="text-lg md:text-xl text-[#B0C2B0] mb-10 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <p className="text-lg md:text-xl text-[#C1B5C6] mb-10 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
 
               Where Science Meets Beauty
 
@@ -3290,12 +3207,13 @@ const Index = () => {
 
           </p>
 
-          <button className="px-10 py-4 bg-gradient-to-r from-[#B0C2B0] to-[#C1B5C6] text-black rounded-full font-montserrat font-semibold text-lg hover:shadow-glow-lg hover:scale-105 transition-all duration-300 glow-accent relative overflow-hidden group">
-
-            <span className="relative z-10">Join Now</span>
-
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-
+          <button className="relative inline-block group">
+                <a
+                  href="#book"
+                  className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
+                > 
+                  BOOK APPOINTMENT
+                </a>
           </button>
 
         </div>
