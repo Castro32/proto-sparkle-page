@@ -1,10 +1,7 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
 
 @layer base {
   :root {
@@ -79,5 +76,132 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Combined Design System - Modern & Futuristic */
+@layer base {
+  :root {
+    /* Avya Color System */
+    --background: 324 14% 86%; /* platinum */
+    --foreground: 0 0% 15%; /* dark charcoal */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+    --primary: 0 0% 15%; /* dark charcoal */
+    --primary-foreground: 324 14% 86%;
+    --secondary: 288 15% 74%; /* thistle */
+    --secondary-foreground: 0 0% 15%;
+    --muted: 120 10% 73%; /* ash gray */
+    --muted-foreground: 0 0% 35%; /* light gray */
+    --accent: 288 15% 74%; /* thistle */
+    --accent-foreground: 0 0% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 324 14% 86%;
+    --border: 288 15% 74%;
+    --input: 0 0% 95%;
+    --ring: 0 0% 15%;
+    --radius: 0.75rem;
+
+    /* Custom Avya Tokens */
+    --platinum: 324 14% 86%;
+    --charcoal: 0 0% 15%;
+    --light-gray: 0 0% 35%;
+    --thistle: 288 15% 74%;
+    --ash-gray: 120 10% 73%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(324 14% 86%), hsl(288 15% 74%));
+    --gradient-secondary: linear-gradient(135deg, hsl(288 15% 74%), hsl(120 10% 73%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 15% / 0.9), hsl(0 0% 15% / 0.7));
+
+    /* Shadows */
+    --shadow-elegant: 0 20px 50px -10px hsl(0 0% 15% / 0.15);
+    --shadow-soft: 0 10px 30px -5px hsl(288 15% 74% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s ease;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 15%;
+    --foreground: 324 14% 86%;
+    --card: 0 0% 18%;
+    --card-foreground: 324 14% 86%;
+    --popover: 0 0% 18%;
+    --popover-foreground: 324 14% 86%;
+    --primary: 324 14% 86%;
+    --primary-foreground: 0 0% 15%;
+    --secondary: 288 15% 74%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 0 0% 25%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 288 15% 74%;
+    --accent-foreground: 0 0% 15%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 324 14% 86%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 324 14% 86%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-light tracking-tight;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-fast {
+    transition: var(--transition-fast);
   }
 }

@@ -517,9 +517,9 @@ export default function SpaAboutSection() {
   return (
     <div>
       {/* Separation Line */}
-      <div className="w-full h-4 bg-gradient-to-r from-transparent via-[#B0C2B0] to-transparent flex justify-center items-center">
+      {/* <div className="w-full h-4 bg-gradient-to-r from-transparent via-[#B0C2B0] to-transparent flex justify-center items-center">
         <div className="w-24 h-[2px] bg-[#B0C2B0] rounded-full"></div>
-      </div>
+      </div> */}
 
       {/* About Section */}
       <section className="min-h-screen bg-[#E2DBDF] flex items-center justify-center py-16 px-4">
@@ -527,23 +527,38 @@ export default function SpaAboutSection() {
           {/* Header */}
           <div className="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-16 gap-8">
             {/* Left Side */}
-            <div className="text-[40px] font-hatton font-light text-[#262626] mb-2">
+            <div className="text-[20px] font-hatton font-light text-[#262626] mb-2">
               ABOUT US
               <div className="w-24 h-[1px] bg-[#595959] mt-2 mb-3"></div>
-              <p className="text-[20px] text-[#595959] max-w-md font-hatton">
+              {/* <p className="text-[20px] text-[#595959] max-w-md font-hatton">
                 Kenya's first salon dedicated to science-meets-beauty treatments.
-              </p>
+              </p> */}
             </div>
 
             {/* Right Side */}
+            {/* <div className="flex flex-col items-start lg:items-end">
+              <h1 className="text-left lg:text-right text-[#262626] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light tracking-wide lg:max-w-4xl leading-tight font-hatton">
+                Nairobi's Premier Longevity Beauty Salon
+              </h1>
+               <a
+                  href="#book"
+                  className=" mt-6 bg-[#262626] hover:bg-[#595959] text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider md:mt-0 rounded transition-colors"
+                > 
+                  LEARN MORE ABOUT US
+                </a>
+            </div> */}
             <div className="flex flex-col items-start lg:items-end">
               <h1 className="text-left lg:text-right text-[#262626] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light tracking-wide lg:max-w-4xl leading-tight font-hatton">
                 Nairobi's Premier Longevity Beauty Salon
               </h1>
-              <button className="mt-6 bg-[#262626] text-white px-8 py-3 rounded-full font-hatton text-sm tracking-wider hover:bg-[#595959] transition-colors duration-300 lg:mr-4">
+              <a
+                href="#book"
+                className="mt-10 bg-[#262626] hover:bg-[#595959] text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider rounded transition-colors"
+              >
                 LEARN MORE ABOUT US
-              </button>
+              </a>
             </div>
+
           </div>
 
           {/* Mobile Image Grid */}
