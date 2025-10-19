@@ -2528,7 +2528,7 @@ const Index = () => {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-md border border-white/30 mb-8">
               <span className="w-2 h-2 rounded-full bg-[#B0C2B0] animate-pulse" />
-              <span className="text-sm tracking-wider text-white font-light">ABOUT US</span>
+              <span className="text-sm tracking-wider text-white font-light font-montserrat">ABOUT US</span>
             </div>
 
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-hatton font-light text-[#E2DBDF]  mb-6 leading-[1.1] tracking-tight animate-fade-in-up cyber-text">
@@ -2537,7 +2537,7 @@ const Index = () => {
 
             </h1>
 
-            <p className="text-lg md:text-xl text-[#C1B5C6] mb-10 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <p className="text-lg md:text-xl text-[#C1B5C6] font-hatton mb-10 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
 
               Where Science Meets Beauty
 
@@ -2663,15 +2663,15 @@ const Index = () => {
 
                 <div className="w-2 h-2 bg-[#B0C2B0] rounded-full glow pulse-ring" />
 
-                <span className="text-sm tracking-[0.2em] uppercase text-[#B0C2B0] font-medium">Our Philosophy</span>
+                <span className="text-sm tracking-[0.2em] uppercase text-[#B0C2B0] font-montserrat">Our Philosophy</span>
 
               </div>
 
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-hatton font-light text-[#262626] leading-tight">
 
-                Beauty is <span className="italic cyber-text">Science</span>,<br />
+                Beauty is Science,<br />
 
-                And Science is <span className="text-gradient glow-accent">Personal</span>
+                And Science is Personal
 
               </h2>
 
@@ -2679,7 +2679,7 @@ const Index = () => {
 
               <div className="space-y-4 text-[#595959]">
 
-                <p className="text-lg leading-relaxed">
+                <p className="text-xl leading-relaxed font-hatton">
 
                   At Avya, beauty is science, and science is personal. We are Kenya's first salon dedicated to science-meets-beauty treatments, combining advanced technology, global techniques, and luxury beauty rituals. Whether you're seeking a transformative experience or simply in search of a high-performance beauty partner, we deliver real results in a space designed for comfort, wellness, and confidence.
 
@@ -2693,7 +2693,7 @@ const Index = () => {
 
             <div
 
-              className={`lg:w-1/2 relative transition-all duration-1000 delay-300 ${
+              className={`lg:w-1/2 relative transition-all duration-1000 delay-300 font-montserrat ${
 
                 isVisible("philosophy")
 
@@ -2791,7 +2791,7 @@ const Index = () => {
 
             </h2>
 
-            <p className="text-lg text-[#595959] max-w-2xl font-montserrat mx-auto">
+            <p className="text-lg text-[#595959] max-w-2xl font-hatton mx-auto">
 
               Innovation, Expertise, and Care in Every Service
 
@@ -2810,6 +2810,7 @@ const Index = () => {
               className="md:col-span-4 md:row-span-2 group relative rounded-3xl overflow-hidden hover-lift cursor-pointer"
 
               onMouseEnter={() => handleMouseEnter("tricology")}
+
 
               onMouseLeave={() => handleMouseLeave("tricology")}
 
@@ -3209,7 +3210,7 @@ const Index = () => {
 
           <button className="relative inline-block group">
                 <a
-                  href="#book"
+                  href="/contact#contact-form"
                   className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
                 > 
                   BOOK APPOINTMENT
