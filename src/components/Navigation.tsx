@@ -1062,10 +1062,10 @@ const Navigation = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-[1400px] px-4 sm:px-6">
+    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-[2000px] px-4 sm:px-6">
       {/* Main Navigation Bar */}
-      <div className="bg-white/80 backdrop-blur-sm rounded-full shadow-sm w-full h-[90px] sm:h-auto">
-        <div className="container mx-auto px-3 sm:px-4 py-1 h-full">
+      <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-sm w-full h-[110px] sm:h-auto">
+        <div className="container mx-auto px-3 sm:px-4 py-4 h-full">
           <div className="flex items-center justify-between h-full">
             {/* Location (hidden on mobile) */}
             <div className="hidden md:flex flex-1 min-w-[150px]">
@@ -1080,7 +1080,7 @@ const Navigation = () => {
                 <img
                   src={Logo}
                   alt="AVYA Logo"
-                  className="h-[34px] w-[92px] sm:h-12 md:h-14 transform scale-150 -my-2 object-contain"
+                  className="h-[94px] w-[92px] sm:h-12 md:h-14 transform scale-150 -my-2 object-contain"
                 />
               </a>
             </div>
