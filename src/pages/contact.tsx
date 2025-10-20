@@ -4694,7 +4694,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F9FAFB] font-sans">
+    <div className="min-h-screen bg-[#E2DBDF] font-sans">
       {/* Hero Section */}
       <section
         className="relative h-screen flex items-end px-4 pb-20"
@@ -4740,7 +4740,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact-form" className="relative py-24 px-4 bg-[#F9FAFB]">
+      <section id="contact-form" className="relative py-24 px-4 bg-[#E2DBDF]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#C1B5C6]/30 mb-6 shadow-sm">
@@ -4895,7 +4895,7 @@ export default function Contact() {
       </section>
 
       {/* Map Section */}
-      <section className="relative py-24 px-4 bg-white">
+      <section className="relative py-24 px-4 bg-[#E2DBDF]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#C1B5C6]/30 mb-6 shadow-sm">
@@ -4927,7 +4927,7 @@ export default function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative py-24 px-4 bg-[#F9FAFB]">
+      <section className="relative py-24 px-4 bg-[#E2DBDF]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#C1B5C6]/30 mb-6 shadow-sm">
