@@ -542,7 +542,7 @@ const HeroSlider = () => {
               <div className="flex flex-nowrap gap-2 sm:gap-4">
                 <a
                   href="#book"
-                  className="bg-[#595959] hover:bg-[#E2DBDF] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
+                  className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
                 > 
                   BOOK APPOINTMENT
                 </a>
