@@ -481,7 +481,7 @@ const slides = [
   {
     id: 3,
     image: heroGlam,
-    title: "Premium Glam Services",
+    title: "Six Hands Rituals",
     description: "Professional styling and makeup for your special moments",
     alt: "Premium glamorous beauty styling and makeup services",
   },
@@ -546,12 +546,12 @@ const HeroSlider = () => {
                 > 
                   BOOK APPOINTMENT
                 </a>
-                <a
+                {/* <a
                   href="#book"
                   className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
                 > 
                   EXPLORE SERVICES
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

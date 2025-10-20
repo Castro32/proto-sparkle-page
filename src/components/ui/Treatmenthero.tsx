@@ -100,8 +100,8 @@
 
 // export default TreatmentsHero;
 import { Button } from "@/components/ui/button";
-import img1 from "@/assets/h4.png";
-import img2 from "@/assets/h5.png";
+import img1 from "@/assets/h6.png";
+import img2 from "@/assets/ig.jpg";
 
 const TreatmentsHero = () => {
   return (

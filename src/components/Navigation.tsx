@@ -1123,7 +1123,7 @@ const Navigation = () => {
                     href="/glam"
                     className="block px-4 py-2 text-base md:text-lg lg:text-xl font-hatton font-light text-foreground hover:bg-accent hover:text-primary transition-colors"
                   >
-                    Premium Glam Services
+                    Six Hands Rituals
                   </a>
                 </div>
               </div>
@@ -1204,7 +1204,7 @@ const Navigation = () => {
                       className="text-base font-hatton font-light text-muted-foreground hover:text-primary transition-colors py-[10px]"
                       onClick={() => setIsOpen(false)}
                     >
-                      Premium Glam Services
+                      Six Hands Rituals
                     </a>
                   </div>
                 )}

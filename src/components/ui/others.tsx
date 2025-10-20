@@ -636,9 +636,9 @@
 
 // export default ServicesSection;
 import { ChevronDown } from "lucide-react";
-import img2 from "@/assets/h6.png";
-import img from "@/assets/h5.png";
-import img1 from "@/assets/h7.png";
+import img2 from "@/assets/fc.jpg";
+import img from "@/assets/ig.jpg";
+import img1 from "@/assets/tricology.jpeg";
 
 const ServicesSection = () => {
   return (
@@ -671,7 +671,7 @@ const ServicesSection = () => {
 
           {/* Service Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-10">
-            <a href="#scalp-consultation" className="group cursor-pointer text-center block">
+            <a href="/trichology" className="group cursor-pointer text-center block">
               <div className="relative overflow-hidden mb-4 aspect-[3/4] max-w-[400px] mx-auto shadow-lg
                lg:w-[438px] lg:h-[534px] lg:max-w-none lg:aspect-auto 
                rounded-2xl lg:rounded-none">
@@ -689,7 +689,7 @@ const ServicesSection = () => {
               </p>
             </a>
 
-            <a href="#treatments" className="group cursor-pointer text-center block">
+            <a href="/hair-treatments" className="group cursor-pointer text-center block">
               <div className="relative overflow-hidden mb-4 aspect-[3/4] max-w-[400px] mx-auto shadow-lg
                lg:w-[438px] lg:h-[534px] lg:max-w-none lg:aspect-auto 
                rounded-2xl lg:rounded-none">
@@ -707,7 +707,7 @@ const ServicesSection = () => {
               </p>
             </a>
 
-            <a href="#glam-menu" className="group cursor-pointer text-center block">
+            <a href="/glam" className="group cursor-pointer text-center block">
               <div className="relative overflow-hidden mb-4 aspect-[3/4] max-w-[400px] mx-auto shadow-lg
                lg:w-[438px] lg:h-[534px] lg:max-w-none lg:aspect-auto 
                rounded-2xl lg:rounded-none">
@@ -718,10 +718,10 @@ const ServicesSection = () => {
                 />
               </div>
               <h3 className="text-xl md:text-2xl font-hatton text-[#262626] mb-2">
-                Premium Glam Services
+                Six Hands Services
               </h3>
               <p className="text-base md:text-xl text-[#595959] px-2 font-hatton">
-                Styling, blowouts, lace installs, colour, and luxury extension care.
+                Experience the ultimate in luxury and efficiency with our Six Hands Service, a signature offering at Avya Beauty Salon. 
               </p>
             </a>
           </div>

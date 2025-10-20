@@ -953,7 +953,7 @@
 import { HeroSection } from "../components/ui/ServiceHero";
 import { Button } from "../components/ui/button";
 import { Microscope, Activity, Droplet, Wind, Zap, Scan } from "lucide-react";
-import trichologyHero from "../assets/trichology-hero.jpg";
+import trichologyHero from "../assets/tricology.jpeg";
 
 const Trichology = () => {
   const conditions = [

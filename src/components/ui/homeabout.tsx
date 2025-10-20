@@ -527,12 +527,12 @@ export default function SpaAboutSection() {
           {/* Header */}
           <div className="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-16 gap-8">
             {/* Left Side */}
-            <div className="text-[20px] font-hatton font-light text-[#262626] mb-2">
-              ABOUT US
+            <div className="text-[32px] md:text-[40px] font-hatton font-light text-[#262626] mb-2">
+              THE AVYA WAY
               <div className="w-24 h-[1px] bg-[#595959] mt-2 mb-3"></div>
-              {/* <p className="text-[20px] text-[#595959] max-w-md font-hatton">
+              <p className="text-[20px] text-[#595959] max-w-md font-hatton">
                 Kenya's first salon dedicated to science-meets-beauty treatments.
-              </p> */}
+              </p>
             </div>
 
             {/* Right Side */}
@@ -555,7 +555,7 @@ export default function SpaAboutSection() {
                 href="#book"
                 className="mt-10 bg-[#262626] hover:bg-[#595959] text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider rounded transition-colors"
               >
-                LEARN MORE ABOUT US
+                LEARN MORE ABOUT AVYA
               </a>
             </div>
 
