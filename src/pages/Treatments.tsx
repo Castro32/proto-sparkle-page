@@ -294,7 +294,7 @@
 // };
 
 // export default Treatments;
-import { HeroSection } from "@/components/ui/ServiceHero";
+import ServiceHero from "@/components/ui/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { Droplets, Shield, Leaf, Zap, Heart, Sparkles, ChevronDown } from "lucide-react";
 import treatmentsHero from "@/assets/fc.jpg";
@@ -342,22 +342,13 @@ const Treatments = () => {
 
   return (
     <div className="min-h-screen">
-      <HeroSection
-        subtitle="Hair Treatments & Restoration"
-        title="Restore. Revive. Transform."
+      <ServiceHero
+        title="Hair Treatments"
+        titleGradient="& Restoration"
         description="Advanced hair restoration treatments using global techniques and premium formulations for lasting results."
-        imageSrc={treatmentsHero}
-      >
-        <div className="flex flex-nowrap gap-2 sm:gap-4">
-          <Button
-            className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors mx-auto"
-            size="lg"
-            onClick={() => window.open("/contact#contact-form", "_self")}
-          >
-            Book Treatment
-          </Button>
-        </div>
-      </HeroSection>
+        image={treatmentsHero}
+        imageAlt="Hair Treatments at Avya Beauty"
+      />
 
       {/* Intro Section */}
       <section className="py-24 px-6">

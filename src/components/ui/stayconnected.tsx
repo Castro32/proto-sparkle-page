@@ -1,12 +1,12 @@
 import React from "react";
-import img1 from "@/assets/h5.png";
+import img1 from "@/assets/op.png";
 import img2 from "@/assets/p.png";
 import img3 from "@/assets/ig.jpg";
 import img4 from "@/assets/tk.jpg";
-import img5 from "@/assets/h7.png";
-import img6 from "@/assets/h3.png";
+import img5 from "@/assets/op5.png";
+import img6 from "@/assets/nail.png";
 import img7 from "@/assets/hair.png";
-import img8 from "@/assets/r.png";
+import img8 from "@/assets/op3.png";
 
 const StayConnected: React.FC = () => {
   return (

@@ -478,7 +478,7 @@
 // };
 
 // export default Glam;
-import { HeroSection } from "@/components/ui/ServiceHero";
+import ServiceHero from "@/components/ui/ServiceHero";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { Button } from "@/components/ui/button";
 import { Users, Heart, Clock, Zap, Leaf, Star } from "lucide-react";
@@ -520,19 +520,13 @@ const Glam = () => {
 
   return (
     <div className="min-h-screen">
-      <HeroSection
-        subtitle="Signature Six Hands Service"
-        title="Indulge in the Power of Three"
+      <ServiceHero
+        title="Signature Six Hands"
+        titleGradient="Service"
         description="Experience luxury and efficiency with three expert technicians delivering manicures, pedicures, and more in perfect harmony."
-        imageSrc={sixHandsHero}
-      >
-        <Button
-          className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 h-14 text-base font-medium tracking-wide rounded-lg transition-all hover:shadow-elegant"
-          onClick={() => window.open("#booking", "_self")}
-        >
-          Book Your Six Hands Session
-        </Button>
-      </HeroSection>
+        image={sixHandsHero}
+        imageAlt="Six Hands Service at Avya Beauty"
+      />
 
       {/* Intro Section */}
       <section className="py-24 px-6">

@@ -459,30 +459,46 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroTrichology from "@/assets/tricology.jpeg";
-import heroHairTreatments from "@/assets/ig.jpg";
-import heroGlam from "@/assets/ig.jpg";
+import heroTrichology from "@/assets/op.png";
+import heroHairTreatments from "@/assets/op1.png";
+import heroGlam from "@/assets/op3.png";
+import about from "@/assets/op5.png";
 
 const slides = [
   {
     id: 1,
-    image: heroTrichology,
-    title: "Trichology & Scalp Health",
-    description: "Expert diagnosis and treatment for optimal scalp and hair health",
-    alt: "Trichology and scalp health treatment showing healthy hair roots",
+    image: about,
+    title: "Welcome to",
+    titleGradient: "Avya Beauty",
+    description: "Kenya's first luxury salon where science meets beauty. We're redefining what a salon experience can be by combining advanced haircare science, precision techniques, and elevated service for those who expect more.",
+    mobileDescription: "Where science meets beauty.\n\nAvya is Kenya's first luxury salon blending advanced haircare, expert techniques, and personalized care.",
+    alt: "Avya Beauty Salon Interior",
   },
   {
     id: 2,
-    image: heroHairTreatments,
-    title: "Hair Treatments & Rituals",
-    description: "Luxurious treatments to restore and rejuvenate your hair",
-    alt: "Luxurious hair treatment ritual in spa setting",
+    image: heroTrichology,
+    title: "Expert Trichology &",
+    titleGradient: "Scalp Health",
+    description: "Every visit is personal. From restorative scalp therapies to transformative styling, each treatment is tailored to your individual needs, goals, and hair profile - because no two clients are the same.",
+    mobileDescription: "Tailored just for you.\n\nFrom scalp therapies to styling, every treatment is crafted to your unique hair and beauty needs.",
+    alt: "Trichology and scalp health treatment showing healthy hair roots",
   },
   {
     id: 3,
+    image: heroHairTreatments,
+    title: "Luxurious Hair",
+    titleGradient: "Treatments",
+    description: "More than a salon, Avya is a beauty destination. Our serene, design-led space offers a blend of innovation and indulgence, creating an experience that's both luxurious and deeply restorative.",
+    mobileDescription: "More than a salon.\n\nStep into a calming, design-led space where indulgence meets innovation.",
+    alt: "Luxurious hair treatment ritual in spa setting",
+  },
+  {
+    id: 4,
     image: heroGlam,
-    title: "Six Hands Rituals",
-    description: "Experience the ultimate in luxury and efficiency with our Six Hands Service, a signature offering at Avya Beauty Salon.",
+    title: "Six Hands",
+    titleGradient: "Rituals",
+    description: "Located in Nairobi, Avya is the city's premier longevity beauty spa. We invite you to step into a world where expert care meets modern elegance and leave feeling radiant, renewed, and undeniably you.",
+    mobileDescription: "Nairobi's luxury beauty destination.\n\nExperience Avya — and leave feeling radiant, restored, and completely you.",
     alt: "Premium glamorous beauty styling and makeup services",
   },
 ];
@@ -531,24 +547,44 @@ const HeroSlider = () => {
           {/* Content pushed to the left */}
           <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-end pb-6 sm:pb-8 lg:pb-12 justify-start">
             <div className="w-full max-w-xs sm:max-w-md lg:max-w-xl xl:max-w-3xl animate-fade-in">
-              <h1 className="mb-2 sm:mb-4">
-                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[120px] font-hatton font-light text-[#E2DBDF] leading-tight tracking-wide">
+                <h1 className="text-5xl md:text-7xl font-extralight text-white mb-6 leading-tight max-w-4xl">
                   {slide.title}
-                </span>
-              </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#C1B5C6] font-hatton leading-relaxed max-w-xs sm:max-w-sm md:max-w-md mb-4 sm:mb-6 lg:mb-8">
-                {slide.description}
-              </p>
+                  <br />
+                  <span className="bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] bg-clip-text text-transparent font-light">
+                    {slide.titleGradient}
+                  </span>
+                </h1>
+              {/* Desktop Description */}
+              <div className="hidden lg:block">
+                <div className="text-lg text-[#E2DBDF] max-w-2xl leading-relaxed font-light mb-12">
+                  {slide.description.split('\n\n').map((paragraph, index) => (
+                    <p key={index} className={index > 0 ? 'mt-4' : ''}>
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Mobile Description */}
+              <div className="lg:hidden">
+                <div className="text-lg text-[#E2DBDF] max-w-2xl leading-relaxed font-light mb-12">
+                  {(slide.mobileDescription || slide.description).split('\n\n').map((paragraph, index) => (
+                    <p key={index} className={index > 0 ? 'mt-4' : ''}>
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </div>
               <div className="flex flex-nowrap gap-2 sm:gap-4">
                 <a
                   href="#book"
-                  className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
+                  className="bg-white hover:bg-[#595959] text-[#262626] hover:text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
                 > 
                   BOOK APPOINTMENT
                 </a>
                 {/* <a
                   href="#book"
-                  className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
+                  className="bg-white/30 hover:bg-white/50 text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded-full border border-white/40 transition-all duration-300 hover:scale-105"
                 > 
                   EXPLORE SERVICES
                 </a> */}

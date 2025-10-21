@@ -9,6 +9,7 @@ import AvyaHome from "./pages/about";
 import Navigation from "./components/Navigation";
 import ContactPage from "./pages/contact";
 import Footer from "./components/ui/footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 import TeamPage from "./pages/OurTeam";
 import Glam from "./pages/glam";
 import Trichology from "./pages/Trichology";
@@ -41,6 +42,7 @@ const App = () => (
         </main>
         
         <Footer />
+        <WhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

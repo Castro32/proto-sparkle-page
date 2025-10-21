@@ -4707,10 +4707,10 @@ export default function Contact() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 max-w-7xl mx-auto w-full">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/30 backdrop-blur-md border border-white/40 mb-8">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/30 backdrop-blur-md border border-white/40 mb-8">
               <span className="w-2 h-2 rounded-full bg-[#B0C2B0] animate-pulse" />
               <span className="text-sm tracking-wider text-white font-medium">CONNECT WITH US</span>
-            </div>
+            </div> */}
             <h1 className="text-5xl md:text-7xl font-extralight text-white mb-6 leading-tight max-w-4xl">
               Let's Create Something
               <br />

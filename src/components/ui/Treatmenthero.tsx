@@ -100,8 +100,8 @@
 
 // export default TreatmentsHero;
 import { Button } from "@/components/ui/button";
-import img1 from "@/assets/p.png";
-import img2 from "@/assets/ig.jpg";
+import img1 from "@/assets/nail.png";
+import img2 from "@/assets/op5.png";
 
 const TreatmentsHero = () => {
   return (
@@ -114,31 +114,58 @@ const TreatmentsHero = () => {
               TAILORED TREATMENTS FOR THE BEST VERSION OF YOU.
             </h2>
             <p className="text-base md:text-[20px] text-[#595959] leading-relaxed font-montserrat">
-              Welcome to Avya, Kenya's first science-meets-beauty luxury salon. Combining advanced trichology, rare international techniques, and premium glam services, we deliver confidence, transformation, and wellness all under one exquisite roof.
+              As Kenya’s first science-meets-beauty luxury hair salon, Avya is redefining the salon experience for a discerning clientele. We blend advanced haircare science, precision techniques, and personalized service within an exclusive, elevated environment.
             </p>
-            <Button className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] text-base font-open-sans tracking-wider w-full sm:w-[198px] h-[56px]">
+            <Button className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors">
               EXPLORE SERVICES
             </Button>
           </div>
           {/* Right Images */}
-          <div className="grid grid-cols-2 gap-4 w-full max-w-[657px] mx-auto lg:mx-0">
-            {/* First Image */}
-            <div className="relative overflow-hidden rounded-lg aspect-[318/534]">
+          {/* <div className="grid grid-cols-2 gap-4 w-full max-w-[657px] mx-auto lg:mx-0">
+            <div className="relative overflow-hidden  aspect-[318/534]">
               <img
                 src={img1}
                 alt="Face treatment diagram"
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Second Image */}
-            <div className="relative overflow-hidden rounded-lg aspect-[318/534]">
+          
+            <div className="relative overflow-hidden aspect-[318/534]">
               <img
                 src={img2}
                 alt="Diverse beauty"
                 className="w-full h-full object-cover"
               />
             </div>
-          </div>
+          </div> */}
+          <div className="grid grid-cols-2 gap-4 w-full max-w-[657px] mx-auto lg:mx-0">
+  {/* First Image */}
+          <a
+            href="/about"
+            className="relative overflow-hidden aspect-[318/534] group block"
+          >
+            <img
+              src={img1}
+              alt="Face treatment diagram"
+              className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500" />
+          </a>
+
+          {/* Second Image */}
+          <a
+            href="/contact"
+            className="relative overflow-hidden aspect-[318/534] group block"
+          >
+            <img
+              src={img2}
+              alt="Diverse beauty"
+              className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500" />
+          </a>
+        </div>
+
         </div>
       </div>
     </section>
