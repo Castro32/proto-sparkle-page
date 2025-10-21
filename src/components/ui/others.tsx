@@ -636,7 +636,7 @@
 
 // export default ServicesSection;
 import { ChevronDown } from "lucide-react";
-import img2 from "@/assets/fc.jpg";
+import img2 from "@/assets/hair.png";
 import img from "@/assets/ig.jpg";
 import img1 from "@/assets/tricology.jpeg";
 

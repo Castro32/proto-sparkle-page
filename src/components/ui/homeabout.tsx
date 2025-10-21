@@ -528,7 +528,7 @@ export default function SpaAboutSection() {
           <div className="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-16 gap-8">
             {/* Left Side */}
             <div className="text-[32px] md:text-[40px] font-hatton font-light text-[#262626] mb-2">
-              THE AVYA WAY
+              The Avya Way
               <div className="w-24 h-[1px] bg-[#595959] mt-2 mb-3"></div>
               <p className="text-[20px] text-[#595959] max-w-md font-hatton">
                 Kenya's first salon dedicated to science-meets-beauty treatments.
