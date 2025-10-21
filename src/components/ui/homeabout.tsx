@@ -510,7 +510,7 @@
 //     </div>
 //   );
 // }
-import img from "@/assets/h4.png";
+import img from "@/assets/r.png";
 import img1 from "@/assets/h1.png";
 import img2 from "@/assets/h3.png";
 export default function SpaAboutSection() {
@@ -552,10 +552,10 @@ export default function SpaAboutSection() {
                 Nairobi's Premier Longevity Beauty Salon
               </h1>
               <a
-                href="#book"
+                href="/about"
                 className="mt-10 bg-[#262626] hover:bg-[#595959] text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider rounded transition-colors"
               >
-                LEARN MORE ABOUT AVYA
+                LEARN MORE
               </a>
             </div>
 

@@ -340,7 +340,7 @@ const partners: Partner[] = [
 const PartnersSection = () => {
   return (
     <section className="min-h-[50vh] bg-[#E2DBDF] flex items-center justify-center px-4 py-12">
-      <div className="max-w-6xl w-full">
+      <div className="max-w-7xl w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

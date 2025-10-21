@@ -459,9 +459,9 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroTrichology from "@/assets/h3.png";
-import heroHairTreatments from "@/assets/h1.png";
-import heroGlam from "@/assets/h2.png";
+import heroTrichology from "@/assets/tricology.jpeg";
+import heroHairTreatments from "@/assets/ig.jpg";
+import heroGlam from "@/assets/ig.jpg";
 
 const slides = [
   {
@@ -482,7 +482,7 @@ const slides = [
     id: 3,
     image: heroGlam,
     title: "Six Hands Rituals",
-    description: "Professional styling and makeup for your special moments",
+    description: "Experience the ultimate in luxury and efficiency with our Six Hands Service, a signature offering at Avya Beauty Salon.",
     alt: "Premium glamorous beauty styling and makeup services",
   },
 ];
