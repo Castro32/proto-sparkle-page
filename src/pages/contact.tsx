@@ -1198,7 +1198,7 @@ export default function Contact() {
     },
     {
       question: "Do you treat specific hair or scalp concerns?",
-      answer: "Yes. Whether you're experiencing hair thinning, breakage, dry scalch, or damage, our experts use targeted solutions and professional products to restore and revitalize."
+      answer: "Yes. Whether you're experiencing hair thinning, breakage, dry scalp, or damage, our experts use targeted solutions and professional products to restore and revitalize."
     },
     {
       question: "Can I combine multiple services in one visit?",
@@ -1275,7 +1275,7 @@ export default function Contact() {
                 href="tel:+254116444433"
                 className="bg-white/20 backdrop-blur-md hover:bg-white text-white hover:text-[#262626] border border-white/40 px-8 py-4 text-sm font-medium tracking-wider rounded-lg transition-all duration-300"
               >
-                Call for Advice
+                Call 
               </a>
             </div>
           </div>

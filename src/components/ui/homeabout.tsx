@@ -793,7 +793,7 @@ export default function SpaAboutSection() {
                 The Avya Way
               </h2>
               <p className="text-[18px] md:text-[20px] text-[#595959] max-w-md font-hatton">
-                Kenya's first salon dedicated to science-meets-beauty treatments.
+                Redefining beauty and wellness in Africa through science-backed innovation, luxury, and personalized care, delivering confidence, transformation, and total well-being.
               </p>
             </div>
             <a
