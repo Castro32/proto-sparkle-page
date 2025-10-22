@@ -894,7 +894,7 @@ import img2 from "@/assets/hair1.png";
 import img from "@/assets/ig.jpg";
 import img1 from "@/assets/tricology.jpeg";
 import img3 from "@/assets/nail.png";
-import img4 from "@/assets/op2.png";
+import img4 from "@/assets/brow.png";
 import img5 from "@/assets/op3.png";
 
 const ServicesSection = () => {

@@ -777,8 +777,8 @@
 //     </div>
 //   );
 // }
-import img from "@/assets/brow.png";
-import img1 from "@/assets/ey.png";
+import img from "@/assets/op2.png";
+import img1 from "@/assets/op3.png";
 import img2 from "@/assets/li.png";
 
 export default function SpaAboutSection() {
