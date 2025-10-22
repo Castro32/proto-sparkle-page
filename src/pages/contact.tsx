@@ -1386,7 +1386,7 @@ export default function Contact() {
                 <h3 className="text-lg font-medium text-[#262626] mb-4">Follow Us</h3>
                 <div className="flex gap-4">
                   <a
-                    href="https://instagram.com/avya"
+                    href="https://www.instagram.com/avyabeautyke?igsh=ZDJocGkwbjM1MWZi"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-xl bg-white/50 border border-white/40 hover:bg-[#B0C2B0]/20 hover:border-[#B0C2B0] transition-all hover:scale-110 group"
@@ -1394,7 +1394,7 @@ export default function Contact() {
                     <Instagram className="w-6 h-6 text-[#B0C2B0] group-hover:text-[#262626]" />
                   </a>
                   <a
-                    href="https://facebook.com/avya"
+                    href="https://www.facebook.com/people/Avya-Beauty-KE/61581716020463/?rdid=4k7KYyHS902QXDtT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1A9N3KMVZ3%2F"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-xl bg-white/50 border border-white/40 hover:bg-[#B0C2B0]/20 hover:border-[#B0C2B0] transition-all hover:scale-110 group"
@@ -1402,7 +1402,7 @@ export default function Contact() {
                     <Facebook className="w-6 h-6 text-[#B0C2B0] group-hover:text-[#262626]" />
                   </a>
                   <a
-                    href="https://tiktok.com/@avya"
+                    href="https://www.tiktok.com/@avya.beauty.ke"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-xl bg-white/50 border border-white/40 hover:bg-[#B0C2B0]/20 hover:border-[#B0C2B0] transition-all hover:scale-110 group"

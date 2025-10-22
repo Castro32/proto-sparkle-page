@@ -892,9 +892,9 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import img2 from "@/assets/hair1.png";
 import img from "@/assets/ig.jpg";
-import img1 from "@/assets/tricology.jpeg";
+import img1 from "@/assets/spl.png";
 import img3 from "@/assets/nail.png";
-import img4 from "@/assets/brow.png";
+import img4 from "@/assets/lash.png";
 import img5 from "@/assets/op3.png";
 
 const ServicesSection = () => {

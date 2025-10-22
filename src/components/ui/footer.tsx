@@ -48,7 +48,7 @@ const Footer = () => {
             </h3>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com/avya"
+                href="https://www.facebook.com/people/Avya-Beauty-KE/61581716020463/?rdid=4k7KYyHS902QXDtT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1A9N3KMVZ3%2F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-white/70 transition-colors"
@@ -68,7 +68,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://tiktok.com/@avya"
+                href="https://www.tiktok.com/@avya.beauty.ke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-white/70 transition-colors"
@@ -84,7 +84,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/avya"
+                href="https://www.instagram.com/avyabeautyke?igsh=ZDJocGkwbjM1MWZi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-white/70 transition-colors"
