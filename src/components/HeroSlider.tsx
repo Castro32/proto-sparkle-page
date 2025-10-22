@@ -469,7 +469,7 @@ const slides = [
     id: 1,
     image: about,
     title: "Welcome to",
-    titleGradient: "Avya Beauty",
+    titleGradient: "Avya",
     description: "Kenya's first luxury salon where science meets beauty. We're redefining what a salon experience can be by combining advanced haircare science, precision techniques, and elevated service for those who expect more.",
     mobileDescription: "Where science meets beauty.\n\nAvya is Kenya's first luxury salon blending advanced haircare, expert techniques, and personalized care.",
     alt: "Avya Beauty Salon Interior",
