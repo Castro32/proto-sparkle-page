@@ -102,8 +102,10 @@
 import { Button } from "@/components/ui/button";
 import img1 from "@/assets/nail.png";
 import img2 from "@/assets/op5.png";
+import { useNavigate } from "react-router-dom";
 
 const TreatmentsHero = () => {
+  const navigate = useNavigate();
   return (
     <section className="bg-[#E2DBDF] py-16 md:py-24 text-[#262626]">
       <div className="max-w-[1231px] mx-auto px-6">
@@ -116,9 +118,15 @@ const TreatmentsHero = () => {
             <p className="text-base md:text-[20px] text-[#595959] leading-relaxed font-montserrat">
               As Kenya’s first science-meets-beauty luxury hair salon, Avya is redefining the salon experience for a discerning clientele. We blend advanced haircare science, precision techniques, and personalized service within an exclusive, elevated environment.
             </p>
-            <Button className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors">
-              EXPLORE SERVICES
-            </Button>
+            {/* <Button className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors">
+              EXPLORE PRICES
+            </Button> */}
+            <Button
+                  onClick={() => navigate("/pricing")}
+                  className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
+                >
+                  EXPLORE PRICES
+                </Button>
           </div>
           {/* Right Images */}
           {/* <div className="grid grid-cols-2 gap-4 w-full max-w-[657px] mx-auto lg:mx-0">

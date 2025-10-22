@@ -49,6 +49,8 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com/avya"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-white/70 transition-colors"
                 aria-label="Facebook"
               >
@@ -67,6 +69,8 @@ const Footer = () => {
               </a>
               <a
                 href="https://tiktok.com/@avya"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-white/70 transition-colors"
                 aria-label="TikTok"
               >
@@ -81,6 +85,8 @@ const Footer = () => {
               </a>
               <a
                 href="https://instagram.com/avya"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-white/70 transition-colors"
                 aria-label="Instagram"
               >
