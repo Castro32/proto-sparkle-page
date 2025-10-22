@@ -1561,7 +1561,7 @@ const Navigation = () => {
                 <Facebook className="h-6 w-6" />
               </a>
               <a
-                href="https://instagram.com/yourprofile"
+                href="https://www.instagram.com/avyabeautyke?igsh=ZDJocGkwbjM1MWZi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#595959] hover:text-primary transition-colors"
