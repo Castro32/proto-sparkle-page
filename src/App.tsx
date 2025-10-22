@@ -14,6 +14,10 @@ import TeamPage from "./pages/OurTeam";
 import Glam from "./pages/glam";
 import Trichology from "./pages/Trichology";
 import Treatments from "./pages/Treatments";
+import Nail from "./pages/nail";
+import PermanentMakeup from "./pages/permanent-makeup";
+import Pricing from "./pages/pricing";
+import Eyelash from "./pages/eyelash";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +40,11 @@ const App = () => (
             <Route path="/glam" element={<Glam />} />
             <Route path="/trichology" element={<Trichology />} />
             <Route path="/hair-treatments" element={<Treatments />} />
+            <Route path="/nails" element={<Nail />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/glam" element={<Glam />} />
+            <Route path="/eyelash-extensions" element={<Eyelash />} />
+            <Route path="/permanent-makeup" element={<PermanentMakeup/>}/>
             {/* Catch-all route */}
             <Route path="*" element={<NotFound />} />
           </Routes>

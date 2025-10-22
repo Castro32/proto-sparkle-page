@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Microscope, Activity, Droplet, Wind, Zap, Scan } from "lucide-react";
-import trichologyHero from "@/assets/hero-hair-treatments.jpg";
+import trichologyHero from "@/assets/op.png";
 import ServiceHero from "@/components/ui/ServiceHero";
 
 const Trichology = () => {

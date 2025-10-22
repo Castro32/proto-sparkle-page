@@ -448,6 +448,7 @@ const Navigation = () => {
                     className="block px-4 py-3 text-sm font-hatton font-light text-white hover:bg-transparent/10 hover:text-primary transition-colors"
                   >
                     Hair Treatments
+                    
                   </a>
                   <a
                     href="/glam"
@@ -472,6 +473,12 @@ const Navigation = () => {
                     className="block px-4 py-3 text-sm font-hatton font-light text-white hover:bg-transparent/10 hover:text-primary transition-colors last:rounded-b-lg"
                   >
                     Permanent Makeup
+                  </a>
+                  <a
+                    href="/pricing"
+                    className="block px-4 py-3 text-sm font-hatton font-light text-white hover:bg-transparent/10 hover:text-primary transition-colors last:rounded-b-lg"
+                  >
+                    Pricing
                   </a>
                 </div>
               </div>
@@ -592,6 +599,13 @@ const Navigation = () => {
                       onClick={() => setIsOpen(false)}
                     >
                       Permanent Makeup
+                    </a>
+                    <a
+                      href="/pricing"
+                       className="text-base font-hatton font-light text-white/70 hover:text-primary transition-colors py-3"
+                      onClick={() => setIsOpen(false)}
+                    >
+                    Pricing
                     </a>
                   </div>
                 )}

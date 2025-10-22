@@ -297,7 +297,7 @@
 import ServiceHero from "@/components/ui/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { Droplets, Shield, Leaf, Zap, Heart, Sparkles, ChevronDown } from "lucide-react";
-import treatmentsHero from "@/assets/fc.jpg";
+import treatmentsHero from "@/assets/op5.png";
 
 const Treatments = () => {
   const treatments = [

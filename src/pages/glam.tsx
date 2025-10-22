@@ -482,7 +482,7 @@ import ServiceHero from "@/components/ui/ServiceHero";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { Button } from "@/components/ui/button";
 import { Users, Heart, Clock, Zap, Leaf, Star } from "lucide-react";
-import sixHandsHero from "@/assets/ig.jpg";
+import sixHandsHero from "@/assets/op3.png";
 
 const Glam = () => {
   const sixHandsServices = [
