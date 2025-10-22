@@ -1,156 +1,195 @@
-import ServiceHero from "@/components/ui/ServiceHero";
-import { ServiceCard } from "@/components/ui/ServiceCard";
+import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Eye, Sparkles, Heart, Crown, Star, Shield } from "lucide-react";
+import ServiceHero from "@/components/ui/ServiceHero";
 import eyelashHero from "@/assets/ey.png";
+// Import service images (reuse or placeholder; add more as needed)
+import classicImage from "@/assets/op.png"; // Placeholder for classic
+import volumeImage from "@/assets/op1.png"; // Placeholder for volume
+import laminationImage from "@/assets/op2.png"; // Placeholder for lamination
+import tintingImage from "@/assets/op3.png"; // Placeholder for tinting
+import defaultImage from "@/assets/op3.png";
 
 const Eyelash = () => {
-  const eyelashServices = [
+  const [selectedDepartment, setSelectedDepartment] = React.useState("All");
+
+  const allServices = [
     {
-      title: "Classic Extensions",
+      name: "Classic",
+      location: "",
+      price: "KES 8,800",
+      department: "Eyelash Extensions",
       description: "Natural-looking single lash extensions applied to each natural lash for subtle volume and length.",
-      icon: Eye
+      image: classicImage,
     },
     {
-      title: "Volume Extensions",
-      description: "Multiple lightweight lashes per natural lash for dramatic fullness and stunning eye definition.",
-      icon: Sparkles
+      name: "2D",
+      location: "",
+      price: "KES 10,000",
+      department: "Eyelash Extensions",
+      description: "Light volume with two lashes per natural lash for added fullness and definition.",
+      image: volumeImage,
     },
     {
-      title: "Hybrid Extensions",
-      description: "Perfect blend of classic and volume techniques for natural fullness with added drama.",
-      icon: Heart
+      name: "3D",
+      location: "",
+      price: "KES 11,000",
+      department: "Eyelash Extensions",
+      description: "Medium volume fans for balanced drama and enhanced eye definition.",
+      image: volumeImage,
     },
     {
-      title: "Mega Volume",
-      description: "Ultra-dramatic look with 6-8 lashes per natural lash for maximum impact and glamour.",
-      icon: Crown
+      name: "4D",
+      location: "",
+      price: "KES 12,000",
+      department: "Eyelash Extensions",
+      description: "Full volume application for striking, glamorous lash effects.",
+      image: volumeImage,
     },
     {
-      title: "Lash Lift & Tint",
-      description: "Enhance your natural lashes with a perm-like lift and dark tint for a wide-eyed look.",
-      icon: Star
+      name: "5D",
+      location: "",
+      price: "KES 13,000",
+      department: "Eyelash Extensions",
+      description: "High-density volume for ultra-dramatic, bold eye looks.",
+      image: volumeImage,
     },
     {
-      title: "Lash Maintenance",
-      description: "Regular fills and touch-ups to maintain your lash extensions and keep them looking perfect.",
-      icon: Shield
-    }
+      name: "Eyebrow Lamination (Lifting)",
+      location: "",
+      price: "KES 8,800",
+      department: "Lamination",
+      description: "Reshape and lift eyebrows for a groomed, long-lasting natural arch.",
+      image: laminationImage,
+    },
+    {
+      name: "Eyelash Lamination (Lifting)",
+      location: "",
+      price: "KES 7,700",
+      department: "Lamination",
+      description: "Curl and lift natural lashes for a wide-eyed, mascara-free appearance.",
+      image: laminationImage,
+    },
+    {
+      name: "Eyebrow Tinting & Shaping",
+      location: "",
+      price: "KES 5,500",
+      department: "Other",
+      description: "Color and precise shaping to define and enhance your brows.",
+      image: tintingImage,
+    },
   ];
 
-  const lashStyles = [
-    {
-      title: "Natural & Subtle",
-      description: "Enhance your natural beauty with soft, fluttery lashes that look effortlessly beautiful",
-      features: ["Classic technique", "Natural curl", "Everyday wear"]
-    },
-    {
-      title: "Dramatic & Bold",
-      description: "Make a statement with full, voluminous lashes that command attention",
-      features: ["Volume technique", "Dramatic curl", "Special occasions"]
-    },
-    {
-      title: "Cat Eye Effect",
-      description: "Create a sultry, elongated look with longer lashes at the outer corners",
-      features: ["Custom mapping", "Elongated shape", "Feminine allure"]
-    }
+  const departments = [
+    { id: "All", label: "All Services" },
+    { id: "Eyelash Extensions", label: "Extensions" },
+    { id: "Lamination", label: "Lamination" },
+    { id: "Other", label: "Other" },
   ];
 
-  const aftercareTips = [
-    "Avoid water and steam for 24-48 hours after application",
-    "Use oil-free makeup remover and gentle cleansers",
-    "Sleep on your back or side to avoid crushing lashes",
-    "Brush lashes daily with a clean spoolie brush",
-    "Avoid rubbing or pulling at your lashes",
-    "Schedule regular fills every 2-3 weeks"
-  ];
+  const filteredServices =
+    selectedDepartment === "All"
+      ? allServices
+      : allServices.filter((service) => service.department === selectedDepartment);
 
   return (
     <div className="min-h-screen">
       <ServiceHero
         title="Eyelash Extensions"
-        titleGradient="& Lash Care"
-        description="Transform your eyes with professional eyelash extensions and lash treatments for stunning, long-lasting beauty."
+        titleGradient="& Lamination"
+        description="Transform your eyes with professional eyelash extensions and lamination for stunning, long-lasting beauty."
         image={eyelashHero}
-        imageAlt="Eyelash Extensions at Avya Beauty"
+        imageAlt="Eyelash extensions and lamination services"
       />
 
-      {/* Intro Section */}
-      <section className="py-24 px-6">
-        <div className="container mx-auto max-w-4xl text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground font-hatton">
-            Frame Your Eyes with Perfection
-          </h2>
-          <p className="text-xl leading-relaxed text-muted-foreground font-montserrat">
-            Our eyelash extension services are designed to enhance your natural beauty and give you the long, full lashes you've always dreamed of. Using premium materials and expert techniques, we create customized looks that complement your eye shape and personal style.
+      {/* Introduction */}
+      <section className="py-16 px-6 bg-white">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-lg md:text-xl text-[#262626] leading-relaxed">
+            At Avya, we bring comprehensive eyelash and brow services to Nairobi.
+            Whether you're seeking dramatic extensions, natural lifts, or defined shaping, our expert team
+            uses premium products and techniques to deliver exceptional results tailored to your unique features.
           </p>
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-24 px-6 gradient-secondary">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground font-hatton">
-              Our Lash Services
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-montserrat">
-              Professional eyelash extensions and treatments for every look
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {eyelashServices.map((service, index) => (
-              <div
-                key={service.title}
-                className="animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+      {/* Department Filter */}
+      <section className="py-8 px-6 bg-[#595959]">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-wrap justify-center gap-4">
+            {departments.map((dept) => (
+              <button
+                key={dept.id}
+                onClick={() => setSelectedDepartment(dept.id)}
+                className={`px-6 py-3 text-base font-medium tracking-wide transition-all ${
+                  selectedDepartment === dept.id
+                    ? "bg-white text-[#262626] border border-[#262626]"
+                    : "bg-transparent text-white border border-white hover:bg-white hover:text-[#262626]"
+                }`}
               >
-                <ServiceCard
-                  title={service.title}
-                  description={service.description}
-                  icon={service.icon}
-                  className="h-full"
-                />
-              </div>
+                {dept.label}
+              </button>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Lash Styles */}
-      <section className="py-24 px-6 bg-card">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-primary font-hatton">
-              Signature Lash Styles
-            </h2>
-            <p className="text-lg text-primary/80 max-w-2xl mx-auto font-montserrat">
-              Popular lash looks our clients love, customized to enhance your unique features
-            </p>
-          </div>
-
-          <div className="space-y-12">
-            {lashStyles.map((style, index) => (
+      {/* Services Grid */}
+      <section className="py-20 px-6 bg-[#E2DBDF]/20">
+        <div className="container mx-auto max-w-6xl">
+          <div className="space-y-24">
+            {filteredServices.map((service, index) => (
               <div
-                key={style.title}
-                className="flex gap-8 items-start animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                key={`${service.name}-${service.location}-${index}`}
+                className={`grid md:grid-cols-2 gap-12 items-center ${
+                  index % 2 === 0 ? "" : "md:flex-row-reverse"
+                }`}
               >
-                <div className="flex-shrink-0 w-2 bg-secondary rounded-full h-full min-h-[100px]" />
-                <div>
-                  <h3 className="text-2xl font-light mb-3 text-primary font-hatton">
-                    {style.title}
-                  </h3>
-                  <p className="text-primary/80 mb-4 leading-relaxed font-montserrat">
-                    {style.description}
-                  </p>
-                  <div className="flex flex-wrap gap-3">
-                    {style.features.map((feature) => (
-                      <span key={feature} className="text-sm text-primary/70 font-montserrat">
-                        {feature}
-                      </span>
-                    ))}
+                {/* Image Side */}
+                <div className={`${index % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
+                  <div className="aspect-[4/3] bg-[#595959]/20 rounded-sm overflow-hidden">
+                    <img
+                      src={service.image || defaultImage}
+                      alt={service.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Content Side */}
+                <div className={`${index % 2 === 0 ? "md:order-2" : "md:order-1"}`}>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-sm text-[#595959] uppercase tracking-widest mb-3">
+                        {service.department}
+                      </p>
+                      <h3 className="text-3xl md:text-4xl font-medium text-[#262626] mb-2">
+                        {service.name}
+                      </h3>
+                      {service.location && (
+                        <p className="text-base text-[#262626] font-medium">{service.location}</p>
+                      )}
+                    </div>
+                    <p className="text-lg text-[#262626] leading-relaxed">
+                      {service.description}
+                    </p>
+
+                    {/* Price Table */}
+                    <div className="pt-4 space-y-2">
+                      <div className="flex justify-between items-center py-3 border-b border-[#595959]/20">
+                        <span className="text-base font-medium text-[#262626]">Treatment</span>
+                        <span className="text-base font-medium text-[#262626]">{service.name}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-[#595959]/20">
+                        <span className="text-base font-medium text-[#262626]">Area</span>
+                        <span className="text-base font-medium text-[#262626]">
+                          {service.location || "Various"}
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-[#595959]/20">
+                        <span className="text-base font-medium text-[#262626]">Price</span>
+                        <span className="text-base font-medium text-[#262626]">{service.price}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -159,122 +198,55 @@ const Eyelash = () => {
         </div>
       </section>
 
-      {/* Aftercare Section */}
-      <section className="py-24 px-6 gradient-secondary">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground font-hatton">
-              Lash Aftercare Guide
-            </h2>
-            <p className="text-lg text-muted-foreground font-montserrat">
-              Essential tips to maintain your beautiful lash extensions
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-8 rounded-lg bg-card shadow-soft animate-fade-up">
-              <h3 className="text-2xl font-light mb-6 text-foreground font-hatton">
-                Do's
-              </h3>
-              <ul className="space-y-3">
-                {aftercareTips.slice(0, 3).map((tip) => (
-                  <li key={tip} className="flex items-start text-muted-foreground">
-                    <span className="mr-3 mt-1 text-secondary">✓</span>
-                    {tip}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="p-8 rounded-lg bg-card shadow-soft animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              <h3 className="text-2xl font-light mb-6 text-foreground font-hatton">
-                Don'ts
-              </h3>
-              <ul className="space-y-3">
-                {aftercareTips.slice(3).map((tip) => (
-                  <li key={tip} className="flex items-start text-muted-foreground">
-                    <span className="mr-3 mt-1 text-destructive">✗</span>
-                    {tip}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Process Section */}
-      <section className="py-24 px-6 bg-card">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground font-hatton">
-              The Lash Extension Process
-            </h2>
-            <p className="text-lg text-muted-foreground font-montserrat">
-              What to expect during your lash extension appointment
-            </p>
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-medium text-[#262626] mb-4">How It Works</h2>
+            <div className="w-24 h-[1px] bg-[#595959] mx-auto"></div>
           </div>
-
-          <div className="space-y-8">
+          <div className="grid md:grid-cols-4 gap-12">
             {[
               {
                 step: "01",
                 title: "Consultation",
-                description: "We discuss your desired look, assess your natural lashes, and recommend the best technique."
+                description: "Comprehensive assessment to understand your concerns and goals",
               },
               {
                 step: "02",
-                title: "Preparation",
-                description: "Your natural lashes are cleaned and prepped for optimal extension adhesion."
+                title: "Custom Plan",
+                description: "Personalized treatment protocol designed for your needs",
               },
               {
                 step: "03",
-                title: "Application",
-                description: "Each extension is carefully applied to individual natural lashes with precision."
+                title: "Treatment",
+                description: "Expert application of advanced therapies and technologies",
               },
               {
                 step: "04",
-                title: "Finishing",
-                description: "Final styling, trimming, and aftercare instructions for long-lasting results."
-              }
-            ].map((item, index) => (
-              <div
-                key={item.step}
-                className="flex gap-6 items-start p-8 hover:bg-accent/20 transition-colors animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="text-5xl font-light text-secondary flex-shrink-0">
-                  {item.step}
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-light mb-2 text-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
+                title: "Follow-Up",
+                description: "Ongoing support and adjustments for optimal results",
+              },
+            ].map((item) => (
+              <div key={item.step} className="text-center">
+                <div className="text-5xl font-medium text-[#C1B5C6] mb-4">{item.step}</div>
+                <h3 className="text-2xl font-medium text-[#262626] mb-3">{item.title}</h3>
+                <p className="text-base text-[#262626] leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-6 gradient-primary">
-        <div className="container mx-auto max-w-4xl text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-primary font-hatton">
-            Ready for Stunning Lashes?
-          </h2>
-          <p className="text-xl text-primary/80 mb-8 max-w-2xl mx-auto font-montserrat">
-            Book your eyelash extension appointment and wake up every day with beautiful, full lashes
+      {/* Footer Note */}
+      <section className="py-16 px-6 bg-[#E2DBDF]/30">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-base text-[#262626] leading-relaxed">
+            <span className="font-medium">Please Note:</span> All treatments are consultation-based.
+            Pricing and treatment plans will be customized during your initial consultation based on
+            your specific needs, desired outcomes, and our expert assessment. Contact us to book your
+            consultation and begin your transformation journey.
           </p>
-          <Button 
-            className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
-            onClick={() => window.open("#book", "_self")}
-          >
-            Book Lash Service
-          </Button>
         </div>
       </section>
     </div>
@@ -282,5 +254,3 @@ const Eyelash = () => {
 };
 
 export default Eyelash;
-
-

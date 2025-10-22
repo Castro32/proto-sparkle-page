@@ -1,147 +1,214 @@
-import ServiceHero from "@/components/ui/ServiceHero";
-import { ServiceCard } from "@/components/ui/ServiceCard";
+import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Sparkles, Heart, Crown, Star, Palette, Shield } from "lucide-react";
+import ServiceHero from "@/components/ui/ServiceHero";
 import nailHero from "@/assets/nail.png";
+// Import service images (reuse or placeholder; add more as needed)
+import overlayImage from "@/assets/op.png"; // Placeholder for overlays
+import shellacImage from "@/assets/op1.png"; // Placeholder for shellac
+import manicureImage from "@/assets/op2.png"; // Placeholder for manicure
+import pedicureImage from "@/assets/op3.png"; // Placeholder for pedicure
+import acrylicImage from "@/assets/op5.png"; // Placeholder for acrylic
+import nailArtImage from "@/assets/op.png"; // Placeholder for nail art
+import defaultImage from "@/assets/op3.png";
 
 const Nail = () => {
-  const nailServices = [
+  const [selectedDepartment, setSelectedDepartment] = React.useState("All");
+
+  const allServices = [
     {
-      title: "Gel Manicure",
-      description: "Long-lasting, chip-resistant manicure with high-gloss finish that stays perfect for weeks.",
-      icon: Sparkles
+      name: "Manicure",
+      location: "30m",
+      price: "KES 2,000",
+      department: "Manicure",
+      description: "Classic manicure with shaping, cuticle care, and polish for healthy, beautiful nails.",
+      image: manicureImage,
     },
     {
-      title: "Classic Pedicure",
-      description: "Traditional pedicure with nail shaping, cuticle care, and polish application for healthy feet.",
-      icon: Heart
+      name: "Shellac manicure",
+      location: "45m",
+      price: "KES 3,500",
+      department: "Shellac",
+      description: "Chip-resistant Shellac polish for a flawless manicure that lasts up to two weeks.",
+      image: shellacImage,
     },
     {
-      title: "Nail Art & Design",
-      description: "Custom nail art, French tips, ombre effects, and intricate designs to express your style.",
-      icon: Palette
+      name: "Shellac application",
+      location: "30m",
+      price: "KES 2,000",
+      department: "Shellac",
+      description: "Professional application of Shellac for vibrant color and superior shine.",
+      image: shellacImage,
     },
     {
-      title: "Luxury Spa Pedicure",
-      description: "Premium pedicure with exfoliation, massage, and hydrating treatments for ultimate relaxation.",
-      icon: Crown
+      name: "Shellac soakoff",
+      location: "15m",
+      price: "KES 1,000",
+      department: "Shellac",
+      description: "Quick and safe soak-off removal of Shellac to restore natural nails.",
+      image: shellacImage,
     },
     {
-      title: "Nail Extensions",
-      description: "Acrylic or gel extensions for length and strength, shaped to perfection for your desired look.",
-      icon: Star
+      name: "Nail art",
+      location: "30m",
+      price: "from KES 2,000",
+      department: "Manicure",
+      description: "Creative nail art designs tailored to your style, from simple accents to intricate patterns.",
+      image: nailArtImage,
     },
     {
-      title: "Nail Repair & Treatment",
-      description: "Specialized treatments for damaged nails, strengthening, and restoration for healthy growth.",
-      icon: Shield
-    }
+      name: "Pedicure",
+      location: "45m",
+      price: "KES 3,700",
+      department: "Pedicure",
+      description: "Relaxing pedicure with exfoliation, massage, and polish for soft, smooth feet.",
+      image: pedicureImage,
+    },
+    {
+      name: "Shellac pedicure",
+      location: "1h–1h15m",
+      price: "KES 4,000",
+      department: "Shellac",
+      description: "Long-wear Shellac pedicure for durable color and foot pampering.",
+      image: shellacImage,
+    },
+    {
+      name: "Overlays on natural nails",
+      location: "1h 30m",
+      price: "KES 4,500",
+      department: "Extensions",
+      description: "Enhance your natural nails with durable overlays for a polished, long-lasting finish.",
+      image: overlayImage,
+    },
+    {
+      name: "Overlays soakoff",
+      location: "20–45m",
+      price: "KES 1,000",
+      department: "Extensions",
+      description: "Gentle removal of overlays to prepare nails for new applications without damage.",
+      image: overlayImage,
+    },
+    {
+      name: "Acrylic extension",
+      location: "2h",
+      price: "KES 8,000",
+      department: "Extensions",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+      image: acrylicImage,
+    },
   ];
 
-  const nailArtStyles = [
-    {
-      title: "French Elegance",
-      description: "Timeless white tips with natural base for sophisticated, clean beauty",
-      features: ["Classic white tips", "Natural base", "Long-lasting finish"]
-    },
-    {
-      title: "Ombre Dreams",
-      description: "Gradient color transitions that create stunning visual depth and dimension",
-      features: ["Seamless blending", "Custom color choices", "Eye-catching effect"]
-    },
-    {
-      title: "Minimalist Chic",
-      description: "Subtle designs and negative space art for modern, understated elegance",
-      features: ["Clean lines", "Subtle details", "Versatile styling"]
-    }
+  const departments = [
+    { id: "All", label: "All Services" },
+    { id: "Manicure", label: "Manicure" },
+    { id: "Pedicure", label: "Pedicure" },
+    { id: "Shellac", label: "Shellac" },
+    { id: "Extensions", label: "Extensions" },
   ];
+
+  const filteredServices =
+    selectedDepartment === "All"
+      ? allServices
+      : allServices.filter((service) => service.department === selectedDepartment);
 
   return (
     <div className="min-h-screen">
       <ServiceHero
         title="Nail Services"
         titleGradient="& Artistry"
-        description="Professional nail care and stunning nail art designs that express your unique style and personality."
+        description="Professional nail care and stunning designs tailored to express your unique style."
         image={nailHero}
-        imageAlt="Nail Services at Avya Beauty"
+        imageAlt="Nail services at Avya Beauty"
       />
 
-      {/* Intro Section */}
-      <section className="py-24 px-6">
-        <div className="container mx-auto max-w-4xl text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground font-hatton">
-            Where Beauty Meets Precision
-          </h2>
-          <p className="text-xl leading-relaxed text-muted-foreground font-montserrat">
-            Our nail services combine professional techniques with artistic creativity to deliver flawless results. From classic manicures to intricate nail art, we transform your nails into works of art that reflect your personal style and enhance your natural beauty.
+      {/* Introduction */}
+      <section className="py-16 px-6 bg-white">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-lg md:text-xl text-[#262626] leading-relaxed">
+            At Avya, we offer comprehensive nail services in Nairobi.
+            From flawless manicures and pedicures to transformative designs, our skilled beauty therapists
+            use premium products and techniques to deliver personalized results that enhance your natural beauty.
           </p>
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-24 px-6 gradient-secondary">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground font-hatton">
-              Our Nail Services
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-montserrat">
-              Professional nail care and artistic designs for every occasion
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {nailServices.map((service, index) => (
-              <div
-                key={service.title}
-                className="animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+      {/* Department Filter */}
+      <section className="py-8 px-6 bg-[#595959]">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-wrap justify-center gap-4">
+            {departments.map((dept) => (
+              <button
+                key={dept.id}
+                onClick={() => setSelectedDepartment(dept.id)}
+                className={`px-6 py-3 text-base font-medium tracking-wide transition-all ${
+                  selectedDepartment === dept.id
+                    ? "bg-white text-[#262626] border border-[#262626]"
+                    : "bg-transparent text-white border border-white hover:bg-white hover:text-[#262626]"
+                }`}
               >
-                <ServiceCard
-                  title={service.title}
-                  description={service.description}
-                  icon={service.icon}
-                  className="h-full"
-                />
-              </div>
+                {dept.label}
+              </button>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Nail Art Styles */}
-      <section className="py-24 px-6 bg-card">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-primary font-hatton">
-              Signature Nail Art Styles
-            </h2>
-            <p className="text-lg text-primary/80 max-w-2xl mx-auto font-montserrat">
-              Popular designs our clients love, customized to match your personality
-            </p>
-          </div>
-
-          <div className="space-y-12">
-            {nailArtStyles.map((style, index) => (
+      {/* Services Grid */}
+      <section className="py-20 px-6 bg-[#E2DBDF]/20">
+        <div className="container mx-auto max-w-6xl">
+          <div className="space-y-24">
+            {filteredServices.map((service, index) => (
               <div
-                key={style.title}
-                className="flex gap-8 items-start animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                key={`${service.name}-${service.location}-${index}`}
+                className={`grid md:grid-cols-2 gap-12 items-center ${
+                  index % 2 === 0 ? "" : "md:flex-row-reverse"
+                }`}
               >
-                <div className="flex-shrink-0 w-2 bg-secondary rounded-full h-full min-h-[100px]" />
-                <div>
-                  <h3 className="text-2xl font-light mb-3 text-primary font-hatton">
-                    {style.title}
-                  </h3>
-                  <p className="text-primary/80 mb-4 leading-relaxed font-montserrat">
-                    {style.description}
-                  </p>
-                  <div className="flex flex-wrap gap-3">
-                    {style.features.map((feature) => (
-                      <span key={feature} className="text-sm text-primary/70 font-montserrat">
-                        {feature}
-                      </span>
-                    ))}
+                {/* Image Side */}
+                <div className={`${index % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
+                  <div className="aspect-[4/3] bg-[#595959]/20 rounded-sm overflow-hidden">
+                    <img
+                      src={service.image || defaultImage}
+                      alt={service.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Content Side */}
+                <div className={`${index % 2 === 0 ? "md:order-2" : "md:order-1"}`}>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-sm text-[#595959] uppercase tracking-widest mb-3">
+                        {service.department}
+                      </p>
+                      <h3 className="text-3xl md:text-4xl font-medium text-[#262626] mb-2">
+                        {service.name}
+                      </h3>
+                      {service.location && (
+                        <p className="text-base text-[#262626] font-medium">{service.location}</p>
+                      )}
+                    </div>
+                    <p className="text-lg text-[#262626] leading-relaxed">
+                      {service.description}
+                    </p>
+
+                    {/* Price Table */}
+                    <div className="pt-4 space-y-2">
+                      <div className="flex justify-between items-center py-3 border-b border-[#595959]/20">
+                        <span className="text-base font-medium text-[#262626]">Treatment</span>
+                        <span className="text-base font-medium text-[#262626]">{service.name}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-[#595959]/20">
+                        <span className="text-base font-medium text-[#262626]">Duration</span>
+                        <span className="text-base font-medium text-[#262626]">
+                          {service.location || "Various"}
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-[#595959]/20">
+                        <span className="text-base font-medium text-[#262626]">Price</span>
+                        <span className="text-base font-medium text-[#262626]">{service.price}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,71 +218,54 @@ const Nail = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 px-6 gradient-secondary">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground font-hatton">
-              The Avya Nail Experience
-            </h2>
-            <p className="text-lg text-muted-foreground font-montserrat">
-              What to expect during your nail service
-            </p>
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-medium text-[#262626] mb-4">How It Works</h2>
+            <div className="w-24 h-[1px] bg-[#595959] mx-auto"></div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+          <div className="grid md:grid-cols-4 gap-12">
             {[
               {
-                step: "Consultation & Design",
-                description: "We discuss your preferences, assess your nail condition, and plan your perfect look."
+                step: "01",
+                title: "Consultation",
+                description: "Comprehensive assessment to understand your concerns and goals",
               },
               {
-                step: "Nail Preparation",
-                description: "Professional shaping, cuticle care, and nail bed preparation for optimal results."
+                step: "02",
+                title: "Custom Plan",
+                description: "Personalized treatment protocol designed for your needs",
               },
               {
-                step: "Artistic Application",
-                description: "Precise application of polish, gel, or nail art with attention to every detail."
+                step: "03",
+                title: "Treatment",
+                description: "Expert application of advanced therapies and technologies",
               },
               {
-                step: "Finishing & Care",
-                description: "Final touches, top coat application, and aftercare tips for long-lasting beauty."
-              }
-            ].map((item, index) => (
-              <div
-                key={item.step}
-                className="flex gap-4 animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <Sparkles className="flex-shrink-0 h-6 w-6 text-secondary text-white mt-1" />
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground font-hatton">
-                    {item.step}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed font-montserrat">
-                    {item.description}
-                  </p>
-                </div>
+                step: "04",
+                title: "Follow-Up",
+                description: "Ongoing support and adjustments for optimal results",
+              },
+            ].map((item) => (
+              <div key={item.step} className="text-center">
+                <div className="text-5xl font-medium text-[#C1B5C6] mb-4">{item.step}</div>
+                <h3 className="text-2xl font-medium text-[#262626] mb-3">{item.title}</h3>
+                <p className="text-base text-[#262626] leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-6 bg-card">
-        <div className="container mx-auto max-w-4xl text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground font-hatton">
-            Ready to Perfect Your Nails?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto font-montserrat">
-            Book your nail service and let our artists create beautiful, long-lasting nail designs that complement your style
+      {/* Footer Note */}
+      <section className="py-16 px-6 bg-[#E2DBDF]/30">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-base text-[#262626] leading-relaxed">
+            <span className="font-medium">Please Note:</span> All treatments are consultation-based.
+            Pricing and treatment plans will be customized during your initial consultation based on
+            your specific needs, desired outcomes, and our expert assessment. Contact us to book your
+            consultation and begin your transformation journey.
           </p>
-          <Button 
-            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 h-14 text-base font-medium tracking-wide rounded-lg transition-all hover:shadow-elegant"
-            onClick={() => window.open("#book", "_self")}
-          >
-            Book Your Nail Service
-          </Button>
         </div>
       </section>
     </div>
@@ -223,5 +273,3 @@ const Nail = () => {
 };
 
 export default Nail;
-
-

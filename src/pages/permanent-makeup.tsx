@@ -1,179 +1,191 @@
-import ServiceHero from "@/components/ui/ServiceHero";
-import { ServiceCard } from "@/components/ui/ServiceCard";
+import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Eye, Sparkles, Heart, Crown, Star, Shield, Clock, Zap } from "lucide-react";
+import ServiceHero from "@/components/ui/ServiceHero";
 import permanentMakeupHero from "@/assets/li.png";
+// Import service images (reuse or placeholder; add more as needed)
+import eyebrowsImage from "@/assets/op.png"; // Placeholder for eyebrows
+import lipsImage from "@/assets/op1.png"; // Placeholder for lips
+import eyelinerImage from "@/assets/op2.png"; // Placeholder for eyeliner
+import touchupImage from "@/assets/op3.png"; // Placeholder for touch-up
+import bridalGlamImage from "@/assets/op4.png"; // Placeholder for bridal glam
+import fullGlamImage from "@/assets/op5.png"; // Placeholder for full glam
+import dayGlamImage from "@/assets/op.png"; // Placeholder for day glam
+import defaultImage from "@/assets/op3.png";
 
 const PermanentMakeup = () => {
-  const permanentMakeupServices = [
+  const [selectedDepartment, setSelectedDepartment] = React.useState("All");
+
+  const allServices = [
     {
-      title: "Microblading",
-      description: "Semi-permanent eyebrow tattooing using fine needles to create natural-looking hair strokes.",
-      icon: Eye
+      name: "Eyebrows",
+      location: "",
+      price: "KES 33,000",
+      department: "Permanent Make-up",
+      description: "Semi-permanent eyebrow enhancement using microblading or powder techniques for natural, defined brows that last years.",
+      image: eyebrowsImage,
     },
     {
-      title: "Powder Brows",
-      description: "Soft, powdered effect for fuller, defined eyebrows with a more filled-in appearance.",
-      icon: Sparkles
+      name: "Lips",
+      location: "",
+      price: "KES 38,000",
+      department: "Permanent Make-up",
+      description: "Lip blushing procedure to add color, definition, and fullness for naturally tinted, symmetrical lips.",
+      image: lipsImage,
     },
     {
-      title: "Lip Blushing",
-      description: "Semi-permanent lip color enhancement for naturally tinted, fuller-looking lips.",
-      icon: Heart
+      name: "Eyeliner",
+      location: "",
+      price: "KES 27,000",
+      department: "Permanent Make-up",
+      description: "Permanent eyeliner tattoo for smudge-proof definition, enhancing your eyes with subtle or bold lines.",
+      image: eyelinerImage,
     },
     {
-      title: "Eyeliner Tattoo",
-      description: "Permanent eyeliner application for defined eyes that never smudges or fades.",
-      icon: Crown
+      name: "Touch-up (within 1 month)",
+      location: "",
+      price: "KES 11,000",
+      department: "Permanent Make-up",
+      description: "Essential follow-up session to refine and perfect your permanent makeup results shortly after initial procedure.",
+      image: touchupImage,
     },
     {
-      title: "Lip Liner",
-      description: "Permanent lip liner definition for enhanced lip shape and fullness.",
-      icon: Star
+      name: "Bridal glam",
+      location: "1h",
+      price: "from KES 10,000",
+      department: "Bridal glam",
+      description: "Custom bridal makeup for your special day, ensuring timeless, radiant beauty that photographs flawlessly.",
+      image: bridalGlamImage,
     },
     {
-      title: "Areola Restoration",
-      description: "Sensitive procedure for breast cancer survivors to restore natural appearance.",
-      icon: Shield
-    }
+      name: "Full glam",
+      location: "45m",
+      price: "KES 5,000",
+      department: "Full glam",
+      description: "Bold, full-coverage makeup look for dramatic evenings or events with long-lasting wear.",
+      image: fullGlamImage,
+    },
+    {
+      name: "Day glam",
+      location: "30m",
+      price: "KES 4,000",
+      department: "Day glam",
+      description: "Light, natural daytime makeup to enhance your features for a fresh, effortless glow.",
+      image: dayGlamImage,
+    },
   ];
 
-  const treatmentTypes = [
-    {
-      title: "Eyebrow Enhancement",
-      description: "Transform sparse or over-plucked brows into perfectly shaped, natural-looking eyebrows",
-      features: ["Microblading", "Powder brows", "Combo technique", "Color matching"]
-    },
-    {
-      title: "Lip Enhancement",
-      description: "Add definition, color, and fullness to your lips with semi-permanent techniques",
-      features: ["Lip blushing", "Lip liner", "Color correction", "Shape definition"]
-    },
-    {
-      title: "Eye Definition",
-      description: "Create permanent eye definition that enhances your natural beauty",
-      features: ["Eyeliner tattoo", "Lash line enhancement", "Color options", "Precision application"]
-    }
+  const departments = [
+    { id: "All", label: "All Services" },
+    { id: "Permanent Make-up", label: "Permanent Make-up" },
+    { id: "Bridal glam", label: "Bridal glam" },
+    { id: "Full glam", label: "Full glam" },
+    { id: "Day glam", label: "Day glam" },
   ];
 
-  const processSteps = [
-    {
-      step: "01",
-      title: "Consultation & Design",
-      description: "We discuss your goals, assess your features, and design the perfect look for you."
-    },
-    {
-      step: "02",
-      title: "Numbing & Preparation",
-      description: "Topical numbing cream is applied for comfort, then the area is prepped and marked."
-    },
-    {
-      step: "03",
-      title: "Pigment Application",
-      description: "Using sterile techniques, pigment is carefully implanted into the skin layers."
-    },
-    {
-      step: "04",
-      title: "Healing & Touch-up",
-      description: "Follow-up appointment after 4-6 weeks to perfect and complete your look."
-    }
-  ];
-
-  const aftercareInstructions = [
-    "Keep the treated area clean and dry for 24-48 hours",
-    "Apply recommended healing ointment as directed",
-    "Avoid sun exposure and tanning beds during healing",
-    "Don't pick, scratch, or rub the treated area",
-    "Avoid swimming, saunas, and intense workouts for 7-10 days",
-    "Use gentle, fragrance-free products during healing"
-  ];
+  const filteredServices =
+    selectedDepartment === "All"
+      ? allServices
+      : allServices.filter((service) => service.department === selectedDepartment);
 
   return (
     <div className="min-h-screen">
       <ServiceHero
         title="Permanent Makeup"
-        titleGradient="& Microblading"
-        description="Semi-permanent cosmetic procedures that enhance your natural features and save you time on daily makeup routines."
+        titleGradient="& Services"
+        description="Enhance your natural beauty with semi-permanent procedures and professional makeup artistry for effortless, lasting results."
         image={permanentMakeupHero}
-        imageAlt="Permanent Makeup Services at Avya Beauty"
+        imageAlt="Permanent makeup and services"
       />
 
-      {/* Intro Section */}
-      <section className="py-24 px-6">
-        <div className="container mx-auto max-w-4xl text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-foreground font-hatton">
-            Wake Up Beautiful Every Day
-          </h2>
-          <p className="text-xl leading-relaxed text-muted-foreground font-montserrat">
-            Our permanent makeup services use advanced techniques and premium pigments to enhance your natural beauty. From perfectly shaped eyebrows to defined lips, we create semi-permanent results that look natural and last for years with proper care.
+      {/* Introduction */}
+      <section className="py-16 px-6 bg-white">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-lg md:text-xl text-[#262626] leading-relaxed">
+            At Avya, we offer comprehensive permanent makeup and makeup services in Nairobi.
+            From long-lasting enhancements to event-ready looks, our expert artists
+            use premium techniques and products to deliver personalized, transformative results.
           </p>
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-24 px-6 gradient-secondary">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground font-hatton">
-              Our Permanent Makeup Services
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-montserrat">
-              Professional semi-permanent cosmetic procedures for lasting beauty
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {permanentMakeupServices.map((service, index) => (
-              <div
-                key={service.title}
-                className="animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+      {/* Department Filter */}
+      <section className="py-8 px-6 bg-[#595959]">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-wrap justify-center gap-4">
+            {departments.map((dept) => (
+              <button
+                key={dept.id}
+                onClick={() => setSelectedDepartment(dept.id)}
+                className={`px-6 py-3 text-base font-medium tracking-wide transition-all ${
+                  selectedDepartment === dept.id
+                    ? "bg-white text-[#262626] border border-[#262626]"
+                    : "bg-transparent text-white border border-white hover:bg-white hover:text-[#262626]"
+                }`}
               >
-                <ServiceCard
-                  title={service.title}
-                  description={service.description}
-                  icon={service.icon}
-                  className="h-full"
-                />
-              </div>
+                {dept.label}
+              </button>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Treatment Types */}
-      <section className="py-24 px-6 bg-card">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-primary font-hatton">
-              Treatment Categories
-            </h2>
-            <p className="text-lg text-primary/80 max-w-2xl mx-auto font-montserrat">
-              Comprehensive permanent makeup solutions for every beauty need
-            </p>
-          </div>
-
-          <div className="space-y-12">
-            {treatmentTypes.map((treatment, index) => (
+      {/* Services Grid */}
+      <section className="py-20 px-6 bg-[#E2DBDF]/20">
+        <div className="container mx-auto max-w-6xl">
+          <div className="space-y-24">
+            {filteredServices.map((service, index) => (
               <div
-                key={treatment.title}
-                className="flex gap-8 items-start animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                key={`${service.name}-${service.location}-${index}`}
+                className={`grid md:grid-cols-2 gap-12 items-center ${
+                  index % 2 === 0 ? "" : "md:flex-row-reverse"
+                }`}
               >
-                <div className="flex-shrink-0 w-2 bg-secondary rounded-full h-full min-h-[100px]" />
-                <div>
-                  <h3 className="text-2xl font-light mb-3 text-primary font-hatton">
-                    {treatment.title}
-                  </h3>
-                  <p className="text-primary/80 mb-4 leading-relaxed font-montserrat">
-                    {treatment.description}
-                  </p>
-                  <div className="flex flex-wrap gap-3">
-                    {treatment.features.map((feature) => (
-                      <span key={feature} className="text-sm text-primary/70 font-montserrat">
-                        {feature}
-                      </span>
-                    ))}
+                {/* Image Side */}
+                <div className={`${index % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
+                  <div className="aspect-[4/3] bg-[#595959]/20 rounded-sm overflow-hidden">
+                    <img
+                      src={service.image || defaultImage}
+                      alt={service.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Content Side */}
+                <div className={`${index % 2 === 0 ? "md:order-2" : "md:order-1"}`}>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-sm text-[#595959] uppercase tracking-widest mb-3">
+                        {service.department}
+                      </p>
+                      <h3 className="text-3xl md:text-4xl font-medium text-[#262626] mb-2">
+                        {service.name}
+                      </h3>
+                      {service.location && (
+                        <p className="text-base text-[#262626] font-medium">{service.location}</p>
+                      )}
+                    </div>
+                    <p className="text-lg text-[#262626] leading-relaxed">
+                      {service.description}
+                    </p>
+
+                    {/* Price Table */}
+                    <div className="pt-4 space-y-2">
+                      <div className="flex justify-between items-center py-3 border-b border-[#595959]/20">
+                        <span className="text-base font-medium text-[#262626]">Treatment</span>
+                        <span className="text-base font-medium text-[#262626]">{service.name}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-[#595959]/20">
+                        <span className="text-base font-medium text-[#262626]">Duration/Area</span>
+                        <span className="text-base font-medium text-[#262626]">
+                          {service.location || "Various"}
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-[#595959]/20">
+                        <span className="text-base font-medium text-[#262626]">Price</span>
+                        <span className="text-base font-medium text-[#262626]">{service.price}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -183,169 +195,54 @@ const PermanentMakeup = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 px-6 gradient-secondary">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground font-hatton">
-              The Permanent Makeup Process
-            </h2>
-            <p className="text-lg text-muted-foreground font-montserrat">
-              What to expect during your permanent makeup procedure
-            </p>
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-medium text-[#262626] mb-4">How It Works</h2>
+            <div className="w-24 h-[1px] bg-[#595959] mx-auto"></div>
           </div>
-
-          <div className="space-y-8">
-            {processSteps.map((item, index) => (
-              <div
-                key={item.step}
-                className="flex gap-6 items-start p-8 hover:bg-accent/20 transition-colors animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="text-5xl font-light text-secondary flex-shrink-0">
-                  {item.step}
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-light mb-2 text-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Aftercare Section */}
-      <section className="py-24 px-6 bg-card">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground font-hatton">
-              Aftercare Instructions
-            </h2>
-            <p className="text-lg text-muted-foreground font-montserrat">
-              Essential care tips for optimal healing and long-lasting results
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-8 rounded-lg bg-accent/10 shadow-soft animate-fade-up">
-              <h3 className="text-2xl font-light mb-6 text-foreground font-hatton flex items-center gap-3">
-                <Clock className="h-6 w-6 text-secondary" />
-                Immediate Care (First 48 Hours)
-              </h3>
-              <ul className="space-y-3">
-                {aftercareInstructions.slice(0, 3).map((instruction) => (
-                  <li key={instruction} className="flex items-start text-muted-foreground">
-                    <span className="mr-3 mt-1 text-secondary">•</span>
-                    {instruction}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="p-8 rounded-lg bg-accent/10 shadow-soft animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              <h3 className="text-2xl font-light mb-6 text-foreground font-hatton flex items-center gap-3">
-                <Shield className="h-6 w-6 text-secondary" />
-                Long-term Care
-              </h3>
-              <ul className="space-y-3">
-                {aftercareInstructions.slice(3).map((instruction) => (
-                  <li key={instruction} className="flex items-start text-muted-foreground">
-                    <span className="mr-3 mt-1 text-secondary">•</span>
-                    {instruction}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-24 px-6 gradient-secondary">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-foreground font-hatton">
-              Why Choose Permanent Makeup?
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-montserrat">
-              The advantages of semi-permanent cosmetic procedures
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-12">
             {[
               {
-                title: "Time-Saving",
-                description: "Wake up with perfect brows and lips every day, saving precious morning time.",
-                icon: Clock
+                step: "01",
+                title: "Consultation",
+                description: "Comprehensive assessment to understand your concerns and goals",
               },
               {
-                title: "Waterproof Beauty",
-                description: "Your makeup stays perfect through swimming, sweating, and all activities.",
-                icon: Shield
+                step: "02",
+                title: "Custom Plan",
+                description: "Personalized treatment protocol designed for your needs",
               },
               {
-                title: "Natural Results",
-                description: "Enhance your natural features with subtle, realistic-looking results.",
-                icon: Heart
+                step: "03",
+                title: "Treatment",
+                description: "Expert application of advanced therapies and technologies",
               },
               {
-                title: "Long-Lasting",
-                description: "Enjoy beautiful results for 1-3 years with proper care and touch-ups.",
-                icon: Star
+                step: "04",
+                title: "Follow-Up",
+                description: "Ongoing support and adjustments for optimal results",
               },
-              {
-                title: "Confidence Boost",
-                description: "Feel beautiful and confident every day, even without makeup.",
-                icon: Crown
-              },
-              {
-                title: "Professional Quality",
-                description: "Expert techniques and premium pigments ensure superior results.",
-                icon: Zap
-              }
-            ].map((benefit, index) => (
-              <div
-                key={benefit.title}
-                className="flex gap-6 p-8 hover:bg-accent/20 transition-colors animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex-shrink-0 w-16 h-16 rounded-full gradient-primary flex items-center justify-center">
-                  <benefit.icon className="h-8 w-8 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium mb-2 text-foreground">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {benefit.description}
-                  </p>
-                </div>
+            ].map((item) => (
+              <div key={item.step} className="text-center">
+                <div className="text-5xl font-medium text-[#C1B5C6] mb-4">{item.step}</div>
+                <h3 className="text-2xl font-medium text-[#262626] mb-3">{item.title}</h3>
+                <p className="text-base text-[#262626] leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-6 gradient-primary">
-        <div className="container mx-auto max-w-4xl text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-primary font-hatton">
-            Ready for Permanent Beauty?
-          </h2>
-          <p className="text-xl text-primary/80 mb-8 max-w-2xl mx-auto font-montserrat">
-            Book your consultation and discover how permanent makeup can transform your daily routine
+      {/* Footer Note */}
+      <section className="py-16 px-6 bg-[#E2DBDF]/30">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-base text-[#262626] leading-relaxed">
+            <span className="font-medium">Please Note:</span> All treatments are consultation-based.
+            Pricing and treatment plans will be customized during your initial consultation based on
+            your specific needs, desired outcomes, and our expert assessment. Contact us to book your
+            consultation and begin your transformation journey.
           </p>
-          <Button 
-            className="bg-[#E2DBDF] hover:bg-[#595959] text-[#262626] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
-            onClick={() => window.open("#book", "_self")}
-          >
-            Book Consultation
-          </Button>
         </div>
       </section>
     </div>
@@ -353,5 +250,3 @@ const PermanentMakeup = () => {
 };
 
 export default PermanentMakeup;
-
-
