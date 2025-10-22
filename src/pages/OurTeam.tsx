@@ -431,6 +431,7 @@
 // }
 import React, { useState, useEffect } from "react";
 import { Award, Users, Heart } from "lucide-react";
+import img3 from "@/assets/op3.png";
 
 const teamMembers = [
   {
@@ -481,7 +482,7 @@ export default function Team() {
       <section
         className="relative h-screen flex items-end px-4 pb-20"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1920&q=80')",
+          backgroundImage: `url(${img3})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -489,16 +490,18 @@ export default function Team() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 max-w-7xl mx-auto w-full">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/30 backdrop-blur-md border border-white/40 mb-8">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/30 backdrop-blur-md border border-white/40 mb-8">
               <Users className="w-4 h-4 text-white" />
               <span className="text-sm tracking-wider text-white font-sans">MEET THE TEAM</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-white mb-6 leading-tight tracking-tight">
+            </div> */}
+            <h1 className="text-5xl md:text-7xl font-extralight text-white mb-6 leading-tight">
               Meet Our
               <br />
-              Expert Team
+              <span className="bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] bg-clip-text text-transparent font-light">
+                Expert Team
+              </span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-10">
+            <p className="text-lg md:text-xl text-white/90 max-w-xl leading-relaxed font-light mb-10">
               World-class professionals bringing years of expertise, innovation,
               <br />
               and dedication to your beauty journey.
@@ -509,8 +512,8 @@ export default function Team() {
 
       {/* Team Cards Section */}
       <div className="py-28 px-4">
-        <h2 className="text-center text-5xl font-medium mb-12 bg-gradient-to-r from-purple-600 to-green-600 bg-clip-text text-transparent">
-          Our Team Members
+        <h2 className="text-center text-4xl font-light mb-12 bg-[#E2DBDF]">
+          The Team Behind Avya
         </h2>
 
         <div className="flex flex-col items-center gap-16 mt-12">

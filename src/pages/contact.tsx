@@ -1144,6 +1144,7 @@
 // }
 import React, { useState, useEffect } from 'react';
 import { Send, MapPin, Clock, Mail, Phone, Instagram, Facebook, ChevronDown } from 'lucide-react';
+import IMG from "@/assets/cont.png";
 
 const TikTokIcon = ({ className = "w-6 h-6" }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -1247,7 +1248,7 @@ export default function Contact() {
       <section
         className="relative h-screen flex items-end px-4 md:px-12 lg:px-20 pb-20 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2074)',
+          backgroundImage: `url(${IMG})`
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/60" />
