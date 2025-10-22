@@ -301,9 +301,10 @@ const StayConnected = () => {
   }, []);
 
   const instagramPosts = [
-    "https://www.instagram.com/reel/DQEtz-hjIK3/",
+    
     "https://www.instagram.com/reel/DP6mQNfjI9u/",
     "https://www.instagram.com/reel/DP1Y_QbjATp/",
+    "https://www.instagram.com/reel/DQEtz-hjIK3/",
   ];
 
   return (
