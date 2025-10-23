@@ -2525,7 +2525,7 @@ const Index = () => {
           </p>
           <button className="relative inline-block group">
             <a
-              href="/contact#contact-form"
+              href="/loyalty"
               className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
             >
               Join Circle

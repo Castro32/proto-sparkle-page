@@ -1624,7 +1624,7 @@ const Navigation = () => {
                       href="/pricing"
                       className={`block px-4 py-3 text-sm font-hatton font-light ${isScrolled ? 'text-[#595959]' : 'text-white'} hover:text-primary transition-colors last:rounded-b-lg`}
                     >
-                      Pricing
+                      See All
                     </a>
                     <a
                       href="/hair-treatments"

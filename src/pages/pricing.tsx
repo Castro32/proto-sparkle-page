@@ -1457,16 +1457,11 @@ const Pricing = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
-                className="bg-[#B0C2B0] hover:bg-[#C1B5C6] text-gray-800 px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:shadow-xl hover:scale-105"
+                className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
               >
                 Book Appointment
               </a>
-              <a
-                href="tel:+254116444433"
-                className="bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:shadow-xl hover:scale-105"
-              >
-                Call Now
-              </a>
+              
             </div>
           </div>
         </div>

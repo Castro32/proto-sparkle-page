@@ -1267,13 +1267,13 @@ export default function Contact() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#contact-form"
-                className="bg-white hover:bg-[#595959] text-[#262626] hover:text-white px-8 py-4 text-sm font-medium tracking-wider rounded-lg transition-all duration-300"
+                className="bg-white hover:bg-[#595959] text-[#262626] hover:text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
               >
                 Book Now
               </a>
               <a
                 href="tel:+254116444433"
-                className="bg-white/20 backdrop-blur-md hover:bg-white text-white hover:text-[#262626] border border-white/40 px-8 py-4 text-sm font-medium tracking-wider rounded-lg transition-all duration-300"
+                className="bg-[#595959] hover:bg-white text-white hover:text-black w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
               >
                 Call 
               </a>
@@ -1323,7 +1323,7 @@ export default function Contact() {
                   />
                   <button
                     onClick={handleSubmit}
-                    className="w-full px-8 py-5 rounded-xl bg-gradient-to-r from-[#B0C2B0] to-[#C1B5C6] text-[#262626] font-medium text-base transition-all hover:shadow-2xl hover:scale-[1.02] flex items-center justify-center gap-3"
+                    className="w-full px-8 py-5 rounded-xl bg-[#595959] hover:bg-white text-[#262626] hover:text-[#595959] font-medium text-base transition-all hover:shadow-2xl hover:scale-[1.02] flex items-center justify-center gap-3"
                   >
                     <Send className="w-5 h-5" />
                     Send Message
