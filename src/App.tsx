@@ -18,19 +18,24 @@ import Nail from "./pages/nail";
 import PermanentMakeup from "./pages/permanent-makeup";
 import Pricing from "./pages/pricing";
 import Eyelash from "./pages/eyelash";
+import LoyaltyProgram from "./pages/loyalty";
+import NewsletterPopup from "./components/NewsletterPopup";
+import { useNewsletterPopup } from "./hooks/useNewsletterPopup";
+import NewsletterTestControls from "./components/NewsletterTestControls";
+import Logo from "@/assets/4.png"
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
+const AppContent = () => {
+  const { isOpen, closePopup } = useNewsletterPopup();
+
+  return (
+    <>
       <BrowserRouter>
         {/* ✅ Make Navigation global */}
         <Navigation />
 
-        {/* ✅ Add padding so content isn’t hidden behind fixed navbar */}
+        {/* ✅ Add padding so content isn't hidden behind fixed navbar */}
         <main >
           <Routes>
             <Route path="/" element={<Index />} />
@@ -45,6 +50,7 @@ const App = () => (
             <Route path="/glam" element={<Glam />} />
             <Route path="/eyelash-extensions" element={<Eyelash />} />
             <Route path="/permanent-makeup" element={<PermanentMakeup/>}/>
+            <Route path="/loyalty" element={<LoyaltyProgram />} />
             {/* Catch-all route */}
             <Route path="*" element={<NotFound />} />
           </Routes>
@@ -52,7 +58,23 @@ const App = () => (
         
         <Footer />
         <WhatsAppButton />
+        
+        {/* Newsletter Popup */}
+        <NewsletterPopup isOpen={isOpen} onClose={closePopup} />
+        
+        {/* Development Test Controls */}
+        {/* <NewsletterTestControls /> */}
       </BrowserRouter>
+    </>
+  );
+};
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <AppContent />
     </TooltipProvider>
   </QueryClientProvider>
 );
