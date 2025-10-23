@@ -1144,7 +1144,7 @@
 // }
 import React, { useState, useEffect } from 'react';
 import { Send, MapPin, Clock, Mail, Phone, Instagram, Facebook, ChevronDown } from 'lucide-react';
-import IMG from "@/assets/cont.png";
+import IMG from "@/assets/contact.jpg";
 
 const TikTokIcon = ({ className = "w-6 h-6" }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

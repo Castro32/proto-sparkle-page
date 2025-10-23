@@ -2094,7 +2094,8 @@
 // export default Index;
 import { useState, useEffect, useRef } from "react";
 import heroTrichology from "@/assets/h3.png";
-import heroHairTreatments from "@/assets/h1.png";
+import heroHairTreatments from "@/assets/ab.jpg";
+import tr from "@/assets/tricology.jpeg";
 import heroGlam from "@/assets/h2.png";
 import img2 from "@/assets/h6.png";
 import img from "@/assets/h5.png";
@@ -2115,7 +2116,7 @@ const Index = () => {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; delay: number }>>([]);
 
   const images = {
-    tricology: [heroTrichology, heroHairTreatments],
+    tricology: [heroHairTreatments,tr],
     glam: [heroGlam, img],
     longevity: [heroTrichology, img1],
     exclusive: [heroHairTreatments, img2],
