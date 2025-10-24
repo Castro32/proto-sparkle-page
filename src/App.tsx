@@ -19,7 +19,7 @@ import PermanentMakeup from "./pages/permanent-makeup";
 import Pricing from "./pages/pricing";
 import Eyelash from "./pages/eyelash";
 import LoyaltyProgram from "./pages/loyalty";
-import NewsletterPopup from "./components/NewsletterPopup";
+import NewsletterPopup from "./components/NewsletterPopup.tsx";
 import { useNewsletterPopup } from "./hooks/useNewsletterPopup";
 import NewsletterTestControls from "./components/NewsletterTestControls";
 import Logo from "@/assets/4.png"
