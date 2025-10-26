@@ -134,8 +134,8 @@ const NewsletterPopup = ({ isOpen, onClose }: NewsletterPopupProps) => {
           >
             ×
           </button>
-          <h2 className="text-lg sm:text-xl font-bold mb-2" style={{ color: '#262626' }}>
-            Subscribe to our Newsletter
+          <h2 className="text-center text-lg sm:text-xl font-bold mb-2" style={{ color: '#262626' }}>
+            Join the AVYA community
           </h2>
           <p className="mb-4 text-xs sm:text-sm" style={{ color: '#595959' }}>
             Get exclusive beauty tips and special offers delivered to your inbox

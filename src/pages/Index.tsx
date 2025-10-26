@@ -6,6 +6,7 @@ import StayConnected from "@/components/ui/stayconnected";
 import ScrollTeaser from "@/components/ui/scrollteasers";
 import SpaAboutSection from "@/components/ui/homeabout";
 import PartnersSection from "@/components/ui/parteners";
+import Team from "./OurTeam";
 
 const Index = () => {
   return (
@@ -15,7 +16,8 @@ const Index = () => {
       <TreatmentsHero/>
       {/* <ScrollTeaser /> */}
       <ServicesSection/>
-      <SpaAboutSection />
+      <Team />
+      {/* <SpaAboutSection /> */}
       <PartnersSection/>
       <StayConnected/>
     </div>

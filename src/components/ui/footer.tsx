@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Newsletter Section */}
           <div className="space-y-6 flex-1 max-w-md">
             <h2 className="text-5xl md:text-6xl font-light font-hatton text-white">
-              Join Our Newsletter.
+              Join the AVYA community.
             </h2>
             <p className="text-white/70 text-base leading-relaxed">
               We share occasional insights on personal growth, emotional well-being, and practical tools to navigate life with more clarity and balance.

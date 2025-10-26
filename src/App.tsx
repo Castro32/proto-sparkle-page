@@ -10,6 +10,7 @@ import Navigation from "./components/Navigation";
 import ContactPage from "./pages/contact";
 import Footer from "./components/ui/footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import BookNowButton from "./components/BookNowButton";
 import TeamPage from "./pages/OurTeam";
 import Glam from "./pages/glam";
 import Trichology from "./pages/Trichology";
@@ -58,6 +59,7 @@ const AppContent = () => {
         
         <Footer />
         <WhatsAppButton />
+        <BookNowButton />
         
         {/* Newsletter Popup */}
         <NewsletterPopup isOpen={isOpen} onClose={closePopup} />
