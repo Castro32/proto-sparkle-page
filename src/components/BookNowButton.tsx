@@ -43,8 +43,8 @@ const BookNowButton = () => {
         onClick={handleBookNowClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="bg-[#262626] hover:bg-white text-white hover:text-[#262626] w-[52px] h-[180px] flex items-center justify-center text-sm tracking-wider rounded-l transition-colors"
-        style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+        className="bg-[#262626] hover:bg-white text-white hover:text-[#262626] w-[52px] h-[210px] flex items-center justify-center text-xl tracking-wider rounded-l transition-colors"
+        style={{ writingMode: 'sideways-lr', textOrientation: 'mixed' }}
       >
         BOOK NOW
       </button>
