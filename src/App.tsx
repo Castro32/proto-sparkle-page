@@ -174,7 +174,7 @@ const AppContent = () => {
       <WhatsAppButton />
       <BookNowButton />
       
-      <NewsletterPopup isOpen={isOpen} onClose={closePopup} />
+      {/* <NewsletterPopup isOpen={isOpen} onClose={closePopup} /> */}
     </>
   );
 };
