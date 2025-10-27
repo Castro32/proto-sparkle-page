@@ -1265,15 +1265,15 @@ export default function Contact() {
               Book your appointment or reach out with any questions.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
+              {/* <a
                 href="#contact-form"
                 className="bg-white hover:bg-[#595959] text-[#262626] hover:text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
               >
                 Book Now
-              </a>
+              </a> */}
               <a
                 href="tel:+254116444433"
-                className="bg-[#595959] hover:bg-white text-white hover:text-black w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
+                className="bg-white hover:bg-[#595959] text-[#262626] hover:text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
               >
                 Call 
               </a>
@@ -1303,7 +1303,7 @@ export default function Contact() {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-[#262626] placeholder-[#595959]/60 focus:outline-none focus:border-[#B0C2B0] focus:ring-2 focus:ring-[#B0C2B0]/20 transition-all"
+                    className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-[#262626] placeholder-[#595959] focus:outline-none focus:border-[#B0C2B0] focus:ring-2 focus:ring-[#B0C2B0]/20 transition-all"
                   />
                   <input
                     type="email"
@@ -1311,7 +1311,7 @@ export default function Contact() {
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-[#262626] placeholder-[#595959]/60 focus:outline-none focus:border-[#B0C2B0] focus:ring-2 focus:ring-[#B0C2B0]/20 transition-all"
+                    className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-[#262626] placeholder-[#595959] focus:outline-none focus:border-[#B0C2B0] focus:ring-2 focus:ring-[#B0C2B0]/20 transition-all"
                   />
                   <textarea
                     name="message"
@@ -1319,7 +1319,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={6}
-                    className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-[#262626] placeholder-[#595959]/60 focus:outline-none focus:border-[#B0C2B0] focus:ring-2 focus:ring-[#B0C2B0]/20 resize-none transition-all"
+                    className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-[#262626] placeholder-[#595959] focus:border-[#B0C2B0]  focus:outline-none focus:ring-2 focus:ring-[#B0C2B0]/20 resize-none transition-all"
                   />
                   <button
                     onClick={handleSubmit}
@@ -1336,7 +1336,7 @@ export default function Contact() {
               <div className="p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-white/30 shadow-lg hover:shadow-xl transition-all">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-gradient-to-br from-[#C1B5C6]/20 to-[#B0C2B0]/20">
-                    <MapPin className="w-6 h-6 text-[#B0C2B0]" />
+                    <MapPin className="w-6 h-6 text-black" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-medium text-[#262626] mb-2">Visit Us</h3>
@@ -1349,7 +1349,7 @@ export default function Contact() {
               <div className="p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-white/30 shadow-lg hover:shadow-xl transition-all">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-gradient-to-br from-[#C1B5C6]/20 to-[#B0C2B0]/20">
-                    <Clock className="w-6 h-6 text-[#B0C2B0]" />
+                    <Clock className="w-6 h-6 text-black" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-medium text-[#262626] mb-2">Working Hours</h3>
@@ -1364,7 +1364,7 @@ export default function Contact() {
                   className="p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-white/30 shadow-lg hover:shadow-xl transition-all hover:scale-105"
                 >
                   <div className="p-3 rounded-xl bg-gradient-to-br from-[#C1B5C6]/20 to-[#B0C2B0]/20 mb-3 inline-block">
-                    <Mail className="w-6 h-6 text-[#B0C2B0]" />
+                    <Mail className="w-6 h-6 text-black" />
                   </div>
                   <h3 className="text-sm font-medium text-[#262626] mb-1">Email</h3>
                   <p className="text-xs text-[#595959] break-all">info@avyabeauty.com</p>
@@ -1375,10 +1375,10 @@ export default function Contact() {
                   className="p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-white/30 shadow-lg hover:shadow-xl transition-all hover:scale-105"
                 >
                   <div className="p-3 rounded-xl bg-gradient-to-br from-[#C1B5C6]/20 to-[#B0C2B0]/20 mb-3 inline-block">
-                    <Phone className="w-6 h-6 text-[#B0C2B0]" />
+                    <Phone className="w-6 h-6 text-black" />
                   </div>
                   <h3 className="text-sm font-medium text-[#262626] mb-1">Phone</h3>
-                  <p className="text-xs text-[#595959]">+254 116 444 433</p>
+                  <p className="text-xs text-black">+254 116 444 433</p>
                 </a>
               </div>
 
@@ -1391,7 +1391,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="p-3 rounded-xl bg-white/50 border border-white/40 hover:bg-[#B0C2B0]/20 hover:border-[#B0C2B0] transition-all hover:scale-110 group"
                   >
-                    <Instagram className="w-6 h-6 text-[#B0C2B0] group-hover:text-[#262626]" />
+                    <Instagram className="w-6 h-6 text-black group-hover:text-[#262626]" />
                   </a>
                   <a
                     href="https://www.facebook.com/people/Avya-Beauty-KE/61581716020463/?rdid=4k7KYyHS902QXDtT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1A9N3KMVZ3%2F"
@@ -1399,7 +1399,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="p-3 rounded-xl bg-white/50 border border-white/40 hover:bg-[#B0C2B0]/20 hover:border-[#B0C2B0] transition-all hover:scale-110 group"
                   >
-                    <Facebook className="w-6 h-6 text-[#B0C2B0] group-hover:text-[#262626]" />
+                    <Facebook className="w-6 h-6 text-black group-hover:text-[#262626]" />
                   </a>
                   <a
                     href="https://www.tiktok.com/@avya.beauty.ke"
@@ -1407,7 +1407,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="p-3 rounded-xl bg-white/50 border border-white/40 hover:bg-[#B0C2B0]/20 hover:border-[#B0C2B0] transition-all hover:scale-110 group"
                   >
-                    <TikTokIcon className="w-6 h-6 text-[#B0C2B0] group-hover:text-[#262626]" />
+                    <TikTokIcon className="w-6 h-6 text-black group-hover:text-[#262626]" />
                   </a>
                 </div>
               </div>
