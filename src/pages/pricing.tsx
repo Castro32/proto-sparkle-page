@@ -448,8 +448,8 @@
 //       description: 'Enhance any treatment with our luxurious add-ons. From advanced technology to relaxing therapies, customize your experience for optimal results.',
 //       services: [
 //         { name: 'Eye Treatment', price: 'Ksh 7,000' },
-//         { name: 'Radio Frequency Partial Face', price: 'Ksh 14,000', note: 'TBC' },
-//         { name: 'Radio Frequency Full Face', price: 'Ksh 24,000', note: 'TBC' },
+//         { name: 'Radio Frequency Partial Face', price: 'Ksh 14,000', note: 'N/A' },
+//         { name: 'Radio Frequency Full Face', price: 'Ksh 24,000', note: 'N/A' },
 //         { name: 'Photo Therapy Lights', price: 'Ksh 8,000' },
 //         { name: 'Ultrasound Treatment', price: 'Ksh 10,000' },
 //         { name: 'Deep Cleansing Facial', price: 'Ksh 9,000' },
@@ -465,10 +465,10 @@
 //       icon: Zap,
 //       description: 'Advanced medical-grade treatments for face and scalp. Our cosmetology services address hair loss, skin rejuvenation, and more using cutting-edge techniques.',
 //       services: [
-//         { name: 'Meso Therapy', area: 'Face or Scalp', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Platelet Rich Plasma', area: 'Face or Scalp', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Biogenix kit', area: 'Face or Scalp', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'PRP+MESO+DERMA PEN', area: 'Face or Scalp', price: 'TBC', note: 'Available from Jan 26' },
+//         { name: 'Meso Therapy', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Platelet Rich Plasma', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Biogenix kit', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'PRP+MESO+DERMA PEN', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
 //       ],
 //     },
 //     {
@@ -477,12 +477,12 @@
 //       icon: Activity,
 //       description: 'Non-surgical body contouring treatments to help you achieve your desired shape. Target specific areas with our advanced slimming technologies.',
 //       services: [
-//         { name: 'Meso Lipo (1ML)', area: 'Double Chin', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Meso Lipo (3ML)', area: 'Arms', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Meso Lipo (5-10ML)', area: 'Tummy', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Cavitation', area: 'Chin Area', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Cavitation', area: 'Arms Area', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Cavitation', area: 'Tummy Area', price: 'TBC', note: 'Available from Jan 26' },
+//         { name: 'Meso Lipo (1ML)', area: 'Double Chin', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Meso Lipo (3ML)', area: 'Arms', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Meso Lipo (5-10ML)', area: 'Tummy', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Cavitation', area: 'Chin Area', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Cavitation', area: 'Arms Area', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Cavitation', area: 'Tummy Area', price: 'N/A', note: 'Available from Jan 26' },
 //       ],
 //     },
 //     {
@@ -491,8 +491,8 @@
 //       icon: Droplets,
 //       description: 'Reveal fresh, glowing skin with our professional peeling treatments. Choose from light to chemical peels based on your skin needs.',
 //       services: [
-//         { name: 'Light Peeling', area: 'Face', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Chemical Peeling', area: 'Face', price: 'TBC', note: 'Available from Jan 26' },
+//         { name: 'Light Peeling', area: 'Face', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Chemical Peeling', area: 'Face', price: 'N/A', note: 'Available from Jan 26' },
 //       ],
 //     },
 //     {
@@ -501,8 +501,8 @@
 //       icon: AlertCircle,
 //       description: 'Specialized injection treatments for alopecia and keloids. Medical-grade solutions administered by trained professionals.',
 //       services: [
-//         { name: 'Alopecia Injection', area: 'Scalp, Beard, Mustache', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Keloids Injection', price: 'TBC', note: 'Available from Jan 26' },
+//         { name: 'Alopecia Injection', area: 'Scalp, Beard, Mustache', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Keloids Injection', price: 'N/A', note: 'Available from Jan 26' },
 //       ],
 //     },
 //     {
@@ -511,12 +511,12 @@
 //       icon: Zap,
 //       description: 'Safe and effective removal of warts and skin tags using electric cautery. Quick, minimally invasive treatments with excellent results.',
 //       services: [
-//         { name: 'Electric Cautery', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Warts and Skin tag (per piece)', area: 'Face, Neck, Under Arm', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Warts and Skin Tag', area: 'Full Face', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Warts and Skin Tag', area: 'Full Neck', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Warts and Skin Tag', area: 'Full Face and Neck', price: 'TBC', note: 'Available from Jan 26' },
-//         { name: 'Warts and Skin Tag', area: 'Chest and Back', price: 'TBC', note: 'Available from Jan 26' },
+//         { name: 'Electric Cautery', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Warts and Skin tag (per piece)', area: 'Face, Neck, Under Arm', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Warts and Skin Tag', area: 'Full Face', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Warts and Skin Tag', area: 'Full Neck', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Warts and Skin Tag', area: 'Full Face and Neck', price: 'N/A', note: 'Available from Jan 26' },
+//         { name: 'Warts and Skin Tag', area: 'Chest and Back', price: 'N/A', note: 'Available from Jan 26' },
 //       ],
 //     },
 //   ];
@@ -893,8 +893,8 @@ const Pricing = () => {
       description: 'Enhance any treatment with our luxurious add-ons. From advanced technology to relaxing therapies, customize your experience for optimal results.',
       services: [
         { name: 'Eye Treatment', price: 'Ksh 7,000' },
-        { name: 'Radio Frequency Partial Face', price: 'Ksh 14,000', note: 'TBC' },
-        { name: 'Radio Frequency Full Face', price: 'Ksh 24,000', note: 'TBC' },
+        { name: 'Radio Frequency Partial Face', price: 'Ksh 14,000', note: 'N/A' },
+        { name: 'Radio Frequency Full Face', price: 'Ksh 24,000', note: 'N/A' },
         { name: 'Photo Therapy Lights', price: 'Ksh 8,000' },
         { name: 'Ultrasound Treatment', price: 'Ksh 10,000' },
         { name: 'Deep Cleansing Facial', price: 'Ksh 9,000' },
@@ -910,10 +910,10 @@ const Pricing = () => {
       icon: Zap,
       description: 'Advanced medical-grade treatments for face and scalp. Our cosmetology services address hair loss, skin rejuvenation, and more using cutting-edge techniques.',
       services: [
-        { name: 'Meso Therapy', area: 'Face or Scalp', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Platelet Rich Plasma', area: 'Face or Scalp', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Biogenix kit', area: 'Face or Scalp', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'PRP+MESO+DERMA PEN', area: 'Face or Scalp', price: 'TBC', note: 'Available from Jan 26' },
+        { name: 'Meso Therapy', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Platelet Rich Plasma', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Biogenix kit', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'PRP+MESO+DERMA PEN', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
       ],
     },
     {
@@ -922,12 +922,12 @@ const Pricing = () => {
       icon: Activity,
       description: 'Non-surgical body contouring treatments to help you achieve your desired shape. Target specific areas with our advanced slimming technologies.',
       services: [
-        { name: 'Meso Lipo (1ML)', area: 'Double Chin', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Meso Lipo (3ML)', area: 'Arms', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Meso Lipo (5-10ML)', area: 'Tummy', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Cavitation', area: 'Chin Area', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Cavitation', area: 'Arms Area', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Cavitation', area: 'Tummy Area', price: 'TBC', note: 'Available from Jan 26' },
+        { name: 'Meso Lipo (1ML)', area: 'Double Chin', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Meso Lipo (3ML)', area: 'Arms', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Meso Lipo (5-10ML)', area: 'Tummy', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Cavitation', area: 'Chin Area', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Cavitation', area: 'Arms Area', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Cavitation', area: 'Tummy Area', price: 'N/A', note: 'Available from Jan 26' },
       ],
     },
     {
@@ -936,8 +936,8 @@ const Pricing = () => {
       icon: Droplets,
       description: 'Reveal fresh, glowing skin with our professional peeling treatments. Choose from light to chemical peels based on your skin needs.',
       services: [
-        { name: 'Light Peeling', area: 'Face', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Chemical Peeling', area: 'Face', price: 'TBC', note: 'Available from Jan 26' },
+        { name: 'Light Peeling', area: 'Face', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Chemical Peeling', area: 'Face', price: 'N/A', note: 'Available from Jan 26' },
       ],
     },
     {
@@ -946,8 +946,8 @@ const Pricing = () => {
       icon: AlertCircle,
       description: 'Specialized injection treatments for alopecia and keloids. Medical-grade solutions administered by trained professionals.',
       services: [
-        { name: 'Alopecia Injection', area: 'Scalp, Beard, Mustache', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Keloids Injection', price: 'TBC', note: 'Available from Jan 26' },
+        { name: 'Alopecia Injection', area: 'Scalp, Beard, Mustache', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Keloids Injection', price: 'N/A', note: 'Available from Jan 26' },
       ],
     },
     {
@@ -956,12 +956,12 @@ const Pricing = () => {
       icon: Zap,
       description: 'Safe and effective removal of warts and skin tags using electric cautery. Quick, minimally invasive treatments with excellent results.',
       services: [
-        { name: 'Electric Cautery', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin tag (per piece)', area: 'Face, Neck, Under Arm', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin Tag', area: 'Full Face', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin Tag', area: 'Full Neck', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin Tag', area: 'Full Face and Neck', price: 'TBC', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin Tag', area: 'Chest and Back', price: 'TBC', note: 'Available from Jan 26' },
+        { name: 'Electric Cautery', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Warts and Skin tag (per piece)', area: 'Face, Neck, Under Arm', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Warts and Skin Tag', area: 'Full Face', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Warts and Skin Tag', area: 'Full Neck', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Warts and Skin Tag', area: 'Full Face and Neck', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Warts and Skin Tag', area: 'Chest and Back', price: 'N/A', note: 'Available from Jan 26' },
       ],
     },
   ];
@@ -995,7 +995,7 @@ const Pricing = () => {
       </section>
 
       {/* Call-to-Action */}
-      <section className="py-24 px-6 bg-[#E2DBDF]">
+      {/* <section className="py-24 px-6 bg-[#E2DBDF]">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="bg-white rounded-sm shadow-sm p-12">
             <h2 className="text-4xl md:text-5xl font-light text-[#262626] mb-6">
@@ -1014,7 +1014,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
