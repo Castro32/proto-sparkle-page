@@ -251,13 +251,13 @@ const partners: Partner[] = [
     name: "Bandi Nails & Spa",
     logo: img1,
     url: "https://www.instagram.com/bandinailsme?igsh=bjJpN3MzbjNtamI1",
-    description: "Sustainable nail care haven, delivering vibrant gel manicures and serene spa experiences with an eco-friendly ethos.",
+    description: "An international nail-care brand that provides a wide range of products including gels, polishes, base coats, lamps and tools.",
   },
   {
-    name: "FutureWorks",
+    name: "Previa Natural Haircare",
     logo: img,
     url: "https://www.instagram.com/previa_haircare?igsh=MWdrZmJ0emtoazZk",
-    description: "Italian eco-luxe haircare brand, specializing in nourishing treatments and sustainable products for vibrant, healthy hair.",
+    description: "A professional Italian hair‐care brand offering natural and vegan formulas geared toward salons and stylists.",
   },
 ];
 
