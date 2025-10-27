@@ -152,6 +152,15 @@ const Footer = () => {
                   Contact
                 </a>
               </li>
+              <li>
+                <a
+                 target='blank'
+                  href="https://www.google.com/maps/dir//Avya+Beauty+Salon+1st+Floor+Mwanzi+Market+Nairobi/@-1.2548601,36.8000133,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x182f17e571c48ebd:0xbe922a8bab6cdc78"
+                  className="text-white hover:text-white/70 transition-colors font-sans text-base"
+                >
+                  Locate Us
+                </a>
+              </li>
             </ul>
           </div>
         </div>
