@@ -199,7 +199,7 @@ const TreatmentsHero = () => {
               About Avya
             </h3> */}
             <h2 className="text-3xl md:text-[40px] font-hatton font-light text-[#262626] leading-tight">
-              TAILORED TREATMENTS FOR THE BEST VERSION OF YOU.
+              KENYA'S FIRST SCIENCE-MEETS-BEAUTY LUXURY SALON.
             </h2>
             {/* <h3 className="text-xl md:text-2xl font-hatton font-light text-[#262626]">
               About Avya
@@ -211,7 +211,7 @@ const TreatmentsHero = () => {
               onClick={() => navigate("/about")}
               className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
             >
-              READ MORE
+              VIEW
             </Button>
           </div>
           {/* Right Images */}
