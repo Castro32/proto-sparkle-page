@@ -5221,9 +5221,9 @@ export default function About() {
               <div className="space-y-6">
                 <div className="aspect-[3/4] overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=600&q=80"
+                    src="https://images.pexels.com/photos/1926620/pexels-photo-1926620.jpeg"
                     alt="Philosophy"
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    className="w-full h-full object-cover transition-all duration-700"
                   />
                 </div>
                 <div className="bg-[#E2DBDF] p-6">
