@@ -5144,12 +5144,14 @@ export default function About() {
                 <h2 className="text-[#FFFFFF] text-3xl md:text-4xl font-bold leading-tight">
                   KENYA'S FIRST
                   <br />
-                  <span className="italic">SCIENCE-MEETS-BEAUTY</span>
+                  <span className="bold">SCIENCE-MEETS-BEAUTY</span>
                   <br />
-                  LUXURY SALON
+                  <span className="bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] bg-clip-text text-transparent font-light">
+                    LUXURY SALON
+                  </span>
                 </h2>
 
-                <p className="text-[#FFFFFF] text-base md:text-lg leading-relaxed font-light">
+                <p className="text-lg md:text-xl text-white/90 max-w-xl leading-relaxed font-light mb-10">
                   AVYA IS AN INDEPENDENT EXCLUSIVE LUXURY SALON WHICH PROMOTES ADVANCED TRICOLOGY, 
                   PRECISION TECHNIQUES, AND PERSONALIZED WELLNESS RITUALS WITH THE BEST INTERNATIONAL 
                   TRAINED SPECIALISTS.
@@ -5252,7 +5254,7 @@ export default function About() {
               <span className="block text-5xl md:text-7xl italic">AVYA APART</span>
             </h2>
             <p className="text-[#595959] text-sm tracking-[0.2em] mt-6">
-              SIX PILLARS OF EXCELLENCE
+              OUR SIX PILLARS OF EXCELLENCE
             </p>
           </motion.div>
 
@@ -5360,7 +5362,7 @@ export default function About() {
                 <h3 className="text-[#262626] group-hover:text-[#E2DBDF] text-2xl font-bold mt-6 mb-4 transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-[#595959] group-hover:text-[#B0C2B0] text-sm leading-relaxed font-light transition-colors">
+                <p className="text-[#595959] group-hover:text-[#B0C2B0] text-XL leading-relaxed font-light transition-colors">
                   {feature.description}
                 </p>
               </motion.div>
