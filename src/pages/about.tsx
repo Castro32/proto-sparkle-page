@@ -5601,9 +5601,11 @@ export default function About() {
                   />
                 </div>
                 <div className="bg-[#E2DBDF] p-6">
-                  <p className="text-[#262626] text-xs tracking-[0.2em] font-medium">
-                    ELEVATED. EXCLUSIVE. TRANSFORMATIVE.
-                  </p>
+                  <div className="flex justify-evenly text-[#262626] text-xs tracking-[0.2em] font-medium">
+                    <p>ELEVATED.</p>
+                    <p>EXCLUSIVE.</p>
+                    <p>TRANSFORMATIVE.</p>
+                  </div>
                 </div>
               </div>
             </motion.div>
