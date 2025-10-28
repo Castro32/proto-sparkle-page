@@ -76,9 +76,9 @@ const BookNowButton = () => {
         onClick={handleBookNowClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="bg-[#262626] hover:bg-white text-white hover:text-[#262626] w-[52px] h-[210px] flex items-center justify-center rounded-l-lg transition-colors shadow-lg"
+        className="bg-[#262626] hover:bg-white text-white hover:text-[#262626] w-[52px] h-[180px] flex items-center justify-center rounded-l-lg transition-colors shadow-lg"
       >
-        <span className="flex flex-col items-center text-xl tracking-widest font-medium">
+        <span className="flex flex-col items-center text-sm tracking-widest font-medium">
           {'BOOK NOW'.split('').map((char, index) => (
             <span key={index} className="leading-tight">
               {char === ' ' ? '\u00A0' : char}
