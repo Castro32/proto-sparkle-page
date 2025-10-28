@@ -5572,13 +5572,11 @@ export default function About() {
               </h2>
               <div className="space-y-8 max-w-2xl">
                 <p className="text-[#C1B5C6] text-lg md:text-xl leading-relaxed font-montserrat">
-                  WE BELIEVE TRUE BEAUTY EMERGES FROM A HARMONIOUS BLEND OF CUTTING-EDGE
-                  TECHNOLOGY, EVIDENCE-BASED RESEARCH, AND BESPOKE CARE.
+                  We believe true beauty emerges from a harmonious blend of cutting-edge technology, evidence-based research, and bespoke care.
                 </p>
 
                 <p className="text-[#B0C2B0] text-base md:text-[20px] leading-relaxed font-montserrat">
-                  FOUNDED IN 2025, AVYA WAS BORN FROM A VISION TO ELEVATE AFRICAN BEAUTY
-                  STANDARDS BY INTEGRATING GLOBAL EXPERTISE WITH LOCAL EMPOWERMENT.
+                  Founded in 2025, Avya was born from a vision to elevate african beauty standards by integrating global expertise with local empowerment.
                 </p>
                 <div className="border-l-2 border-[#C1B5C6] pl-6 mt-12">
                   <p className="text-[#E2DBDF] text-base font-opensans">
@@ -5628,7 +5626,7 @@ export default function About() {
               <span className="block text-5xl md:text-7xl">AVYA APART</span>
             </h2>
             <p className="text-[#262626] text-sm tracking-[0.2em] mt-6">
-              OUR SIX PILLARS OF EXCELLENCE
+              Our Six Pillars of Excellence.
             </p>
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -5767,9 +5765,7 @@ export default function About() {
                 </p>
 
                 <p className="text-[#595959] text-base leading-relaxed font-opensans">
-                  FROM RESTORATIVE THERAPIES TO VISIONARY STYLING, AVYA EMPOWERS YOU TO EMBRACE
-                  THE EXTRAORDINARY. DISCOVER YOUR MOST CONFIDENT SELF—WHERE SCIENCE MEETS BEAUTY,
-                  AND BEAUTY BECOMES ETERNAL.
+                  From restorative therapies to visionary styling, avya empowers you to embrace the extraordinary. discover your most confident self—where science meets beauty, and beauty becomes eternal.
                 </p>
               </div>
               <div className="space-y-4">
@@ -5802,7 +5798,7 @@ export default function About() {
                   </div>
                   <div className="aspect-square bg-[#C1B5C6] flex items-center justify-center p-6">
                     <p className="text-[#262626] text-xs tracking-[0.2em] text-center font-montserrat">
-                      ALL OUR TREATMENTS ARE CREATED EXCLUSIVELY FOR OUR COMMUNITY BY A TEAM OF EXPERTS AROUND THE WORLD
+                      ALL OUR TREATMENTS ARE CREATED EXCLUSIVELY FOR OUR COMMUNITY BY A TEAM OF EXPERTS AROUND THE WORLD.
                     </p>
                   </div>
                 </div>
