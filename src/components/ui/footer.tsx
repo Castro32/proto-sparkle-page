@@ -188,7 +188,8 @@ const Footer = () => {
     setError(null);
 
     try {
-      const mailchimpUrl = 'https://gmail.us3.list-manage.com/subscribe/post?u=54b361c731e48a9f02daf5f08&id=6d31763a68&f_id=0008c0e5f0';
+      //const mailchimpUrl = 'https://canvasmedialtd.us14.list-manage.com/subscribe/post?u=c832645c69f21fb70cbfedb31&amp;id=2e86d9bbe0&amp;f_id=000ab7e5f0';
+      const mailchimpUrl = 'https://canvasmedialtd.us14.list-manage.com/subscribe/post?u=c832645c69f21fb70cbfedb31&amp;id=2e86d9bbe0&amp;f_id=000ab7e5f0';
       const formData = new FormData();
       formData.append('EMAIL', email);
 
