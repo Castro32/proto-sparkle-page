@@ -245,19 +245,19 @@ const partners: Partner[] = [
     name: "Elan Lash & Brow Lounge",
     logo: img2,
     url: "https://www.instagram.com/elan_arabia?igsh=MXBtbnE0d3Z1dDRpdg==",
-    description: "A global leader in brow innovation, ÉLAN is the first Ukrainian brand to create professional tools for brow artists and lamimakers. Represented in over 40 countries and internationally certified for quality and safety, ÉLAN continues to set the standard for creativity and excellence in the beauty industry.",
+    description: "Pioneers in brow innovation, ÉLAN creates professional tools and products for artists worldwide. Internationally certified and trusted in over 40 countries, ÉLAN defines excellence in modern beauty.",
   },
   {
     name: "Bandi Nails & Spa",
     logo: img1,
     url: "https://www.instagram.com/bandinailsme?igsh=bjJpN3MzbjNtamI1",
-    description: "Bandi unites beauty and sustainability through eco-friendly nail products made with natural, organic ingredients. Free from harmful chemicals and gentle on the planet, Bandi reflects a modern, conscious approach to professional nail care.",
+    description: "Sustainable nail care made beautiful. Bandi blends natural, eco-friendly ingredients with professional performance — safe for you and the planet.",
   },
   {
     name: "Previa Natural Haircare",
     logo: img,
     url: "https://www.instagram.com/previa_haircare?igsh=MWdrZmJ0emtoazZk",
-    description: "Born in Italy, Previa embodies “Virtuous Beauty” - high-performance, vegan haircare crafted with up to 97.5% natural ingredients. Combining luxury with sustainability, Previa delivers professional results while caring for people and the planet.",
+    description: "Italian-crafted haircare rooted in “Virtuous Beauty.” Previa delivers vegan, high-performance formulas made with up to 97% natural ingredients for conscious, luxurious results.",
   },
 ];
 
