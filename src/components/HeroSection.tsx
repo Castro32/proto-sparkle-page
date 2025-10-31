@@ -101,7 +101,7 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-[#B0C2B0] font-montserrat leading-relaxed max-w-xl">
-            Discover the perfect blend of science and beauty for radiant, healthy skin and hair.
+            Welcome to AVYA, a destination where beauty is elevated through the perfect balance of science, innovation and luxury.
           </p>
         </div>
       </div>

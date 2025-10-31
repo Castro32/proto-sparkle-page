@@ -52,7 +52,7 @@ export default function Team() {
           </h2>
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-[#A192A6] to-transparent mb-6" />
           <p className="text-[18px] md:text-[20px] text-[#595959] max-w-md font-hatton">
-            Expert professionals bringing passion, expertise, and personalized care to your beauty journey
+            Expert professionals bringing passion, expertise, and personalized care to your beauty journey.
           </p>
         </div>
 

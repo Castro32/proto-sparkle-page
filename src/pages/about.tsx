@@ -5515,12 +5515,12 @@ export default function About() {
             }}
           />
         </div>
-        <div className="relative z-10 pt-42 md:pt-96 px-6 md:px-12 min-h-screen flex flex-col justify-center">
+        <div className="relative z-10 pt-64 md:pt-96 px-6 md:px-12 min-h-screen flex flex-col justify-start md:justify-center items-start md:items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="max-w-7xl mx-auto w-full"
+            className="max-w-7xl mx-auto w-full mt-48 md:mt-0"
           >
             <div className="mb-8">
               <p className="text-white text-sm md:text-base tracking-[0.3em] mb-4 font-light">
@@ -5545,7 +5545,7 @@ export default function About() {
                   </span>
                 </h2>
                 <p className="text-white/90 text-lg md:text-xl max-w-xl leading-relaxed font-light mb-10">
-                  Welcome to AVYA, Kenya's first science-meets-beauty, luxury salon. At AVYA, luxury and science come together to redefine beauty. Our expert hair stylists and beauty specialists deliver advanced treatments designed not only to enhance your look today but to support healthy, lasting beauty for tomorrow. In our serene, modern space, every detail is crafted to inspire confidence, well-being, and timeless elegance.
+                  At AVYA, luxury and science come together to redefine beauty. Our expert hair stylists and beauty specialists deliver advanced treatments designed not only to enhance your look today but to support healthy, lasting beauty for tomorrow. In our serene, modern space, every detail is crafted to inspire confidence, well-being, and timeless elegance.
                 </p>
               </motion.div>
             </div>

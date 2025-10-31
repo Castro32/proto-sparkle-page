@@ -646,9 +646,8 @@ const slides = [
 
 // Static content that stays visible
 const staticContent = {
-  //description: "Kenya’s first science meets beauty luxury salon.",
-  description: "",
-  mobileDescription: "Where science meets beauty.\n\nKenya’s first science meets beauty luxury salon.",
+  description: "Kenya's first science-meets-beauty, luxury salon. We believe that true beauty is more than just a moment, it's an investment in your confidence, your well-being, and your longevity.",
+  mobileDescription: "Kenya's first science-meets-beauty, luxury salon. We believe that true beauty is more than just a moment, it's an investment in your confidence, your well-being, and your longevity.",
 };
 
 const HeroSlider = () => {
@@ -724,7 +723,7 @@ const HeroSlider = () => {
                 </div>
               </div>
 
-              <div className="flex flex-nowrap gap-2 sm:gap-4">
+              <div className="hidden md:flex flex-nowrap gap-2 sm:gap-4">
                 <a
                   href="#book"
                   className="bg-white hover:bg-[#595959] text-[#262626] hover:text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
