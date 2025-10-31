@@ -5545,9 +5545,7 @@ export default function About() {
                   </span>
                 </h2>
                 <p className="text-white/90 text-lg md:text-xl max-w-xl leading-relaxed font-light mb-10">
-                  AVYA IS AN INDEPENDENT EXCLUSIVE LUXURY SALON WHICH PROMOTES ADVANCED TRICOLOGY,
-                  PRECISION TECHNIQUES, AND PERSONALIZED WELLNESS RITUALS WITH THE BEST INTERNATIONAL
-                  TRAINED SPECIALISTS.
+                  Welcome to AVYA, Kenya's first science-meets-beauty, luxury salon. At AVYA, luxury and science come together to redefine beauty. Our expert hair stylists and beauty specialists deliver advanced treatments designed not only to enhance your look today but to support healthy, lasting beauty for tomorrow. In our serene, modern space, every detail is crafted to inspire confidence, well-being, and timeless elegance.
                 </p>
               </motion.div>
             </div>
@@ -5572,11 +5570,11 @@ export default function About() {
               </h2>
               <div className="space-y-8 max-w-2xl">
                 <p className="text-[#C1B5C6] text-lg md:text-xl leading-relaxed font-montserrat">
-                  We believe true beauty emerges from a harmonious blend of cutting-edge technology, evidence-based research, and bespoke care.
+                  We believe true beauty emerges from a harmonious blend of cutting-edge technology, evidence-based research, and bespoke care. We believe that true beauty is more than just a moment, it's an investment in your confidence, your well-being, and your longevity.
                 </p>
 
                 <p className="text-[#B0C2B0] text-base md:text-[20px] leading-relaxed font-montserrat">
-                  Founded in 2025, Avya was born from a vision to elevate african beauty standards by integrating global expertise with local empowerment.
+                  Founded in 2025, Avya was born from a vision to elevate african beauty standards by integrating global expertise with local empowerment. Every treatment, from advanced haircare rituals to rejuvenating beauty services, is designed not only to transform how you look today but to nurture the health and vitality that ensures timeless elegance tomorrow.
                 </p>
                 <div className="border-l-2 border-[#C1B5C6] pl-6 mt-12">
                   <p className="text-[#E2DBDF] text-base font-opensans">

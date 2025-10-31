@@ -2759,22 +2759,29 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+    const checkScroll = () => {
+      const scrollTop = window.scrollY || window.pageYOffset;
+      // helpful debug line if something's off:
+      // console.log("scrollTop:", scrollTop);
+      setIsScrolled(scrollTop > 10);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    // run once on mount (in case user already scrolled)
+    checkScroll();
+
+    window.addEventListener("scroll", checkScroll, { passive: true });
+    return () => window.removeEventListener("scroll", checkScroll);
   }, []);
 
   return (
     <>
-      <div className="fixed left-0 right-0 z-[60] bg-[#E2DBDF] hidden md:block">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        className={`fixed left-0 right-0 z-[60] bg-[#E2DBDF] hidden md:block transform transition-all duration-300 ease-out
+          ${isScrolled ? "opacity-0 -translate-y-4 pointer-events-none" : "opacity-100 translate-y-0"}
+        `}
+        aria-hidden={isScrolled ? "true" : "false"}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between py-2">
             <div className="flex items-center gap-4 pointer-events-auto">
               <a

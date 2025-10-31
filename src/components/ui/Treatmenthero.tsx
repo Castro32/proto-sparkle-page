@@ -205,7 +205,7 @@ const TreatmentsHero = () => {
               About Avya
             </h3> */}
             <p className="text-base md:text-[20px] text-[#595959] leading-relaxed font-montserrat">
-              Avya redefines beauty in Nairobi with a science-led, globally inspired approach. We offer elite treatments, world-class specialists, and unforgettable experiences- designed for clients who expect excellence, precision, and visible results.
+              At AVYA, luxury and science come together to redefine beauty. Our expert hair stylists and beauty specialists deliver advanced treatments designed not only to enhance your look today but to support healthy, lasting beauty for tomorrow. In our serene, modern space, every detail is crafted to inspire confidence, well-being, and timeless elegance.
             </p>
             {/* <Button
               onClick={() => navigate("/about")}

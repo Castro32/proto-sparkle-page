@@ -983,7 +983,7 @@ const ServicesSection = () => {
                 Our Services
               </h2>
               <p className="text-[18px] md:text-[20px] text-[#595959] max-w-md font-hatton">
-                Discover our range of premium services tailored to your beauty and wellness needs.
+                Dedicated to delivering the best service experience in a luxury environment, surrounded by elegance and expert care.
               </p>
             </div>
             <a

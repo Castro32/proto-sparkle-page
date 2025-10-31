@@ -10,10 +10,10 @@ const WhatsAppButton = () => {
   return (
     <button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-8 left-8 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 group"
+      className="fixed bottom-8 right-8 z-50 bg-[#25D366]  text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 group"
       aria-label="Chat on WhatsApp"
     >
-      <div className="absolute bottom-full left-0 mb-2 px-4 py-2 bg-white text-[#262626] text-sm rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap">
+      <div className="absolute bottom-full right-0 mb-2 px-4 py-2 bg-white text-[#262626] text-sm rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap">
         Chat with us on WhatsApp
       </div>
       <svg
