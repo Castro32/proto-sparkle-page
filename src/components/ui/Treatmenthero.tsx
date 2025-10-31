@@ -207,12 +207,12 @@ const TreatmentsHero = () => {
             <p className="text-base md:text-[20px] text-[#595959] leading-relaxed font-montserrat">
               Avya redefines beauty in Nairobi with a science-led, globally inspired approach. We offer elite treatments, world-class specialists, and unforgettable experiences- designed for clients who expect excellence, precision, and visible results.
             </p>
-            <Button
+            {/* <Button
               onClick={() => navigate("/about")}
               className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
             >
               VIEW
-            </Button>
+            </Button> */}
           </div>
           {/* Right Images */}
           <div className="grid grid-cols-2 gap-4 w-full max-w-[657px] mx-auto lg:mx-0">

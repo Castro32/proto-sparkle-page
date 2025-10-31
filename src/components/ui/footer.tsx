@@ -653,7 +653,7 @@ const Footer = () => {
               Join the AVYA community.
             </h2>
             <p className="text-white/70 text-base leading-relaxed">
-              We share occasional insights on personal growth, emotional well-being, and practical tools to navigate life with more clarity and balance.
+              Be the first to know about our events and new services.
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
               <input

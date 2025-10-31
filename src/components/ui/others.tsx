@@ -901,12 +901,19 @@ const ServicesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const services = [
+    // {
+    //   href: "/trichology",
+    //   img: img1,
+    //   title: "Trichology & Scalp Health",
+    //   description: "Diagnostic-led care for hair loss, thinning, dandruff, and more.",
+    //   alt: "Trichology & Scalp Health"
+    // },
     {
       href: "/trichology",
       img: img1,
-      title: "Trichology & Scalp Health",
-      description: "Diagnostic-led care for hair loss, thinning, dandruff, and more.",
-      alt: "Trichology & Scalp Health"
+      title: "Hair Cut & Balayage",
+      description: "Expert hair cutting and balayage services to enhance your natural beauty.",
+      alt: "Hair Cut & Balayage"
     },
     {
       href: "/hair-treatments",
@@ -923,18 +930,18 @@ const ServicesSection = () => {
       alt: "Six Hands Services"
     },
     {
-      href: "/nails",
-      img: img3,
-      title: "Nails",
-      description: "Premium manicure and pedicure services with attention to detail and nail health.",
-      alt: "Nail Services"
-    },
-    {
       href: "/eyelash-extensions",
       img: img4,
       title: "Eyelash Extensions",
       description: "Professional lash extensions for natural-looking to dramatic volume and length.",
       alt: "Eyelash Extensions"
+    },
+    {
+      href: "/nails",
+      img: img3,
+      title: "Nails",
+      description: "Premium manicure and pedicure services with attention to detail and nail health.",
+      alt: "Nail Services"
     },
     {
       href: "/permanent-makeup",
@@ -973,7 +980,7 @@ const ServicesSection = () => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
             <div>
               <h2 className="text-[32px] md:text-[40px] font-hatton font-light text-[#262626] mb-2">
-                Our Specialties
+                Our Services
               </h2>
               <p className="text-[18px] md:text-[20px] text-[#595959] max-w-md font-hatton">
                 Discover our range of premium services tailored to your beauty and wellness needs.

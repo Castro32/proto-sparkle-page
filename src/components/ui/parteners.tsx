@@ -276,7 +276,7 @@ const PartnersSection = () => {
           className="text-start mb-10"
         >
           <div className="text-[32px] md:text-[40px] font-hatton font-light text-[#262626] mb-2">
-            Our Esteemed Collaborators
+            Our Partners
             <div className="w-24 h-[1px] bg-gradient-to-r from-[#595959] to-transparent mt-2 mb-3"></div>
             <p className="text-[20px] text-[#595959] max-w-md font-hatton">
               Honored to work with premier beauty and wellness innovators.

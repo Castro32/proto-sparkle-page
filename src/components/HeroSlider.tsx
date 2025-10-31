@@ -614,12 +614,19 @@ const slides = [
     titleGradient: "Avya",
     alt: "Avya Beauty Salon Interior",
   },
+  // {
+  //   id: 2,
+  //   image: heroTrichology,
+  //   title: "Expert Trichology &",
+  //   titleGradient: "Scalp Health",
+  //   alt: "Trichology and scalp health treatment showing healthy hair roots",
+  // },
   {
     id: 2,
     image: heroTrichology,
-    title: "Expert Trichology &",
-    titleGradient: "Scalp Health",
-    alt: "Trichology and scalp health treatment showing healthy hair roots",
+    title: "Hair Cut &",
+    titleGradient: "Balayage",
+    alt: "Expert hair cutting and balayage services to enhance your natural beauty.",
   },
   {
     id: 3,
@@ -639,8 +646,9 @@ const slides = [
 
 // Static content that stays visible
 const staticContent = {
-  description: "Kenya's first luxury salon where science meets beauty.",
-  mobileDescription: "Where science meets beauty.\n\nKenya's first luxury hair salon.",
+  //description: "Kenya’s first science meets beauty luxury salon.",
+  description: "",
+  mobileDescription: "Where science meets beauty.\n\nKenya’s first science meets beauty luxury salon.",
 };
 
 const HeroSlider = () => {

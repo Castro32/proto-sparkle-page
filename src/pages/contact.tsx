@@ -1440,7 +1440,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 px-4 md:px-12 lg:px-20 bg-[#E2DBDF]">
+      {/* <section className="py-20 md:py-24 px-4 md:px-12 lg:px-20 bg-[#E2DBDF]">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-[#262626] mb-4 leading-tight">
@@ -1493,7 +1493,7 @@ export default function Contact() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

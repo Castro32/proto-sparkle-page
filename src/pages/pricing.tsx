@@ -973,8 +973,8 @@ const Pricing = () => {
   return (
     <>
       <PricingHero
-        title="Service"
-        titleGradient="Pricing"
+        title="Our"
+        titleGradient="Service Rates"
         description="Transparent pricing for all our beauty services. Professional treatments at competitive rates."
         image="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80"
         imageAlt="Pricing at Avya Beauty"
