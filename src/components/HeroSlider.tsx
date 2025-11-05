@@ -609,7 +609,8 @@ import about from "@/assets/op5.png";
 const slides = [
   {
     id: 1,
-    image: about,
+    //image: about,
+    image: heroHairTreatments,
     title: "Welcome to",
     titleGradient: "Avya",
     alt: "Avya Beauty Salon Interior",
@@ -623,7 +624,8 @@ const slides = [
   // },
   {
     id: 2,
-    image: heroTrichology,
+    //image: heroTrichology,
+    image: heroHairTreatments,
     title: "Hair Cut &",
     titleGradient: "Balayage",
     alt: "Expert hair cutting and balayage services to enhance your natural beauty.",
@@ -637,7 +639,8 @@ const slides = [
   },
   {
     id: 4,
-    image: heroGlam,
+    //image: heroGlam,
+    image: heroHairTreatments,
     title: "Six Hands",
     titleGradient: "Rituals",
     alt: "Premium glamorous beauty styling and makeup services",

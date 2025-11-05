@@ -10,7 +10,7 @@ const teamMembers = [
   {
     name: "Anastasiia Erasova",
     title: "Permanent Makeup & Lash Artist",
-    image: "https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+    image: "",
     bio: "Anastasiia is a certified permanent makeup and eyelash extension artist renowned for her refined technique and artistic precision. She creates soft, natural enhancements tailored to each client. Her expertise in lash extensions and brow design ensures a flawless, polished finish every time.",
     expertise: "Powder Brows • Eyeliner • Lip Blush • Lash Extensions • Brow & Lash Lamination",
     accent: "#A192A6"
@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: "Cherry Perez",
     title: "Skincare & Facial Specialist",
-    image: "https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+    image: "",
     bio: "Cherry is a highly skilled facial and skincare specialist celebrated for her personalized, results-driven treatments. Blending advanced technologies such as Hydrafacial, Mesotherapy, and Radiofrequency with a holistic touch, she delivers radiant, youthful complexions while providing an indulgent, spa-like experience.",
     expertise: "Hydrafacial • Mesotherapy • Radiofrequency • Anti-Aging • Skin Diagnostics",
     accent: "#8FA48F"
@@ -26,7 +26,7 @@ const teamMembers = [
   {
     name: "Romel Abaca Sims",
     title: "Client Care & Medical Support Specialist",
-    image: "https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+    image: "",
     bio: "Romel brings a calm, professional presence to every client interaction, ensuring comfort, safety, and exceptional care. With a strong foundation in dermatology and aesthetic support, he upholds the salon’s commitment to excellence and a seamless luxury experience.",
     expertise: "Patient Care • Clinical Support • Basic Life Support • Emergency Response • Healthcare Administration",
     accent: "#A192A6"
@@ -34,7 +34,7 @@ const teamMembers = [
   {
     name: "Yaz Aysberg",
     title: "Training Director & Salon Manager",
-    image: "https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774",
+    image: "",
     bio: "Yaz leads the salon’s education and development programs with a focus on innovation, artistry, and client experience. With extensive global expertise in beauty and brand education, Yaz ensures the team maintains the highest standards of luxury service and professional excellence.",
     expertise: "Talent Development • Education Strategy • Brand Education • Cross-Cultural Training",
     accent: "#8FA48F"
