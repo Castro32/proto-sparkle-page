@@ -622,29 +622,29 @@ const slides = [
   //   titleGradient: "Scalp Health",
   //   alt: "Trichology and scalp health treatment showing healthy hair roots",
   // },
-  {
-    id: 2,
-    //image: heroTrichology,
-    image: heroHairTreatments,
-    title: "Hair Cut &",
-    titleGradient: "Balayage",
-    alt: "Expert hair cutting and balayage services to enhance your natural beauty.",
-  },
-  {
-    id: 3,
-    image: heroHairTreatments,
-    title: "Luxurious Hair",
-    titleGradient: "Treatments",
-    alt: "Luxurious hair treatment ritual in spa setting",
-  },
-  {
-    id: 4,
-    //image: heroGlam,
-    image: heroHairTreatments,
-    title: "Six Hands",
-    titleGradient: "Rituals",
-    alt: "Premium glamorous beauty styling and makeup services",
-  },
+  // {
+  //   id: 2,
+  //   image: heroTrichology,
+  //   image: heroHairTreatments,
+  //   title: "Hair Cut &",
+  //   titleGradient: "Balayage",
+  //   alt: "Expert hair cutting and balayage services to enhance your natural beauty.",
+  // },
+  // {
+  //   id: 3,
+  //   image: heroHairTreatments,
+  //   title: "Luxurious Hair",
+  //   titleGradient: "Treatments",
+  //   alt: "Luxurious hair treatment ritual in spa setting",
+  // },
+  // {
+  //   id: 4,
+  //   image: heroGlam,
+  //   image: heroHairTreatments,
+  //   title: "Six Hands",
+  //   titleGradient: "Rituals",
+  //   alt: "Premium glamorous beauty styling and makeup services",
+  // },
 ];
 
 // Static content that stays visible
