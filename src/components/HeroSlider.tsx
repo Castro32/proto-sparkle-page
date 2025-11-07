@@ -649,8 +649,8 @@ const slides = [
 
 // Static content that stays visible
 const staticContent = {
-  description: "Kenya's first science-meets-beauty, luxury salon. We believe that true beauty is more than just a moment, it's an investment in your confidence, your well-being, and your longevity.",
-  mobileDescription: "Kenya's first science-meets-beauty, luxury salon. We believe that true beauty is more than just a moment, it's an investment in your confidence, your well-being, and your longevity.",
+  description: "Kenya's first science-meets-beauty, luxury salon.",
+  mobileDescription: "Kenya's first science-meets-beauty, luxury salon.",
 };
 
 const HeroSlider = () => {
