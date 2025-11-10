@@ -1351,7 +1351,7 @@ const Treatments = () => {
       <section className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-lg md:text-xl text-[#262626] leading-relaxed">
-            At Avya, we bring comprehensive hair treatment services to Nairobi.
+            At Avya, we bring hair treatment services to Nairobi.
             Whether you're seeking a fresh cut, vibrant color, or restorative care, our expert team
             uses advanced techniques and premium products to deliver exceptional results tailored to your unique hair needs.
           </p>

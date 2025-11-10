@@ -376,7 +376,7 @@ const Nail = () => {
       <section className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-lg md:text-xl text-[#262626] leading-relaxed">
-            At Avya, we offer comprehensive nail services in Nairobi.
+            At Avya, we offer nail services in Nairobi.
             From flawless manicures and pedicures to transformative designs, our skilled beauty therapists
             use premium products and techniques to deliver personalized results that enhance your natural beauty.
           </p>

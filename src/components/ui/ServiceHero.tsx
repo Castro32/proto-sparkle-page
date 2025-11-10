@@ -7,6 +7,8 @@ interface ServiceHeroProps {
   image: string;
   imageAlt: string;
 }
+const phoneNumber = "254116444433";
+const encodedMessage = encodeURIComponent("Hello, I'd like to book an appointment");
 
 const ServiceHero: React.FC<ServiceHeroProps> = ({
   title,
@@ -46,7 +48,8 @@ const ServiceHero: React.FC<ServiceHeroProps> = ({
           </p>
           <div className="flex flex-nowrap gap-2 sm:gap-4">
             <a
-              href="#book"
+              href={`https://wa.me/${phoneNumber}?text=${encodedMessage}`}
+              target="_blank"
               className="bg-white hover:bg-[#595959] text-[#262626] hover:text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
             >
               BOOK APPOINTMENT

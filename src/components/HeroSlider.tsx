@@ -652,7 +652,8 @@ const staticContent = {
   description: "Kenya's first science-meets-beauty, luxury salon.",
   mobileDescription: "Kenya's first science-meets-beauty, luxury salon.",
 };
-
+const phoneNumber = "254116444433";
+const encodedMessage = encodeURIComponent("Hello, I'd like to book an appointment");
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -728,7 +729,9 @@ const HeroSlider = () => {
 
               <div className="hidden md:flex flex-nowrap gap-2 sm:gap-4">
                 <a
-                  href="#book"
+                  href={`https://wa.me/${phoneNumber}?text=${encodedMessage}`}
+                  target="_blank"
+                  
                   className="bg-white hover:bg-[#595959] text-[#262626] hover:text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
                 > 
                   BOOK APPOINTMENT

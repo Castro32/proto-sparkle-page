@@ -899,6 +899,8 @@ import img5 from "@/assets/op3.png";
 
 const ServicesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const phoneNumber = "254116444433";
+  const encodedMessage = encodeURIComponent("Hello, I'd like to book an appointment");
 
   const services = [
     // {
@@ -908,13 +910,13 @@ const ServicesSection = () => {
     //   description: "Diagnostic-led care for hair loss, thinning, dandruff, and more.",
     //   alt: "Trichology & Scalp Health"
     // },
-    {
-      href: "/trichology",
-      img: img1,
-      title: "Hair Cut & Balayage",
-      description: "Expert hair cutting and balayage services to enhance your natural beauty.",
-      alt: "Hair Cut & Balayage"
-    },
+    // {
+    //   href: "/trichology",
+    //   img: img1,
+    //   title: "Hair Cut & Balayage",
+    //   description: "Expert hair cutting and balayage services to enhance your natural beauty.",
+    //   alt: "Hair Cut & Balayage"
+    // },
     {
       href: "/hair-treatments",
       img: img2,
@@ -949,7 +951,14 @@ const ServicesSection = () => {
       title: "Permanent Makeup",
       description: "Semi-permanent cosmetic tattooing for brows, lips, and eyeliner that enhances your natural beauty.",
       alt: "Permanent Makeup"
-    }
+    },
+    {
+      href: "/trichology",
+      img: img1,
+      title: "Trichology & Scalp Health",
+      description: "Diagnostic-led care for hair loss, thinning, dandruff, and more.",
+      alt: "Trichology & Scalp Health"
+    },
   ];
 
   const nextSlide = () => {
@@ -987,7 +996,8 @@ const ServicesSection = () => {
               </p>
             </div>
             <a
-              href="/contact"
+              href={`https://wa.me/${phoneNumber}?text=${encodedMessage}`}
+              target="_blank"
               className="bg-[#262626] hover:bg-[#595959] text-[#E2DBDF] w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm font-open-sans tracking-wider mt-6 md:mt-0 rounded transition-colors"
             >
               Book Appointment

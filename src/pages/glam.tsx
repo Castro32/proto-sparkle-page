@@ -995,7 +995,7 @@ const Glam = () => {
       location: "",
       price: "KES 45,000",
       department: "Face Fitness",
-      description: "Advanced reformer-based exercises for comprehensive facial alignment and strengthening.",
+      description: "Advanced reformer-based exercises for facial alignment and strengthening.",
     },
     {
       name: "Eye Treatment",
@@ -1079,9 +1079,9 @@ const Glam = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <ServiceHero
-        title="Six Hands Rituals"
-        titleGradient="& Face Fitness"
-        description="Experience synchronized luxury with our Face Fitness rituals, combining targeted exercises and add-ons for sculpted, rejuvenated skin."
+        title="Six Hands"
+        titleGradient="Services"
+        description="Experience synchronized luxury with our Six Hands Services, combining targeted exercises and add-ons for sculpted, rejuvenated skin."
         image={sixHandsHero}
         imageAlt="Six Hands Rituals and Face Fitness services"
       />
@@ -1090,7 +1090,7 @@ const Glam = () => {
       <section className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-lg md:text-xl text-[#262626] leading-relaxed">
-            At Avya, we elevate face fitness with our Six Hands Rituals in Nairobi.
+
             Our expert therapists deliver dynamic facial workouts and therapeutic add-ons
             using advanced techniques to tone muscles, boost circulation, and achieve a naturally lifted glow.
           </p>

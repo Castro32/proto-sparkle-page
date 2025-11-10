@@ -332,7 +332,7 @@ const PermanentMakeup = () => {
       <section className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-lg md:text-xl text-[#262626] leading-relaxed">
-            At Avya, we offer comprehensive permanent makeup and makeup services in Nairobi.
+            At Avya, we offer permanent makeup and makeup services in Nairobi.
             From long-lasting enhancements to event-ready looks, our expert artists
             use premium techniques and products to deliver personalized, transformative results.
           </p>

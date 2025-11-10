@@ -3016,273 +3016,6 @@
 // // };
 
 // // export default Trichology;
-// import React from "react";
-// import ServiceHero from "@/components/ui/ServiceHero";
-// import trichologyHero from "@/assets/op.png";
-
-// const Trichology = () => {
-//   const [selectedDepartment, setSelectedDepartment] = React.useState("All");
-
-//   const allServices = [
-//     {
-//       name: "Meso Therapy",
-//       location: "Face or Scalp",
-//       price: "TBC",
-//       department: "Cosmetology/Trichology",
-//       description: "Targeted injections of vitamins and nutrients to rejuvenate skin and promote hair growth.",
-//     },
-//     {
-//       name: "Platelet Rich Plasma (PRP)",
-//       location: "Face or Scalp",
-//       price: "TBC",
-//       department: "Cosmetology/Trichology",
-//       description: "Uses your own blood plasma to stimulate collagen production and hair follicle regeneration.",
-//     },
-//     {
-//       name: "Biogenix Kit",
-//       location: "Face or Scalp",
-//       price: "TBC",
-//       department: "Cosmetology/Trichology",
-//       description: "Advanced biotech kit delivering bio-active compounds for skin repair and scalp revitalization.",
-//     },
-//     {
-//       name: "PRP + Meso + Derma Pen",
-//       location: "Face or Scalp",
-//       price: "TBC",
-//       department: "Cosmetology/Trichology",
-//       description: "Combined therapy using PRP, mesotherapy, and microneedling for enhanced skin and hair restoration.",
-//     },
-//     {
-//       name: "Meso Lipo",
-//       location: "1ML – Double Chin",
-//       price: "TBC",
-//       department: "Slimming Treatment",
-//       description: "Fat-dissolving injections to contour and reduce stubborn fat in targeted areas.",
-//     },
-//     {
-//       name: "Meso Lipo",
-//       location: "3ML – Arm",
-//       price: "TBC",
-//       department: "Slimming Treatment",
-//       description: "Fat-dissolving injections to contour and reduce stubborn fat in targeted areas.",
-//     },
-//     {
-//       name: "Meso Lipo",
-//       location: "5–10ML – Tummy",
-//       price: "TBC",
-//       department: "Slimming Treatment",
-//       description: "Fat-dissolving injections to contour and reduce stubborn fat in targeted areas.",
-//     },
-//     {
-//       name: "Cavitation",
-//       location: "Chin Area",
-//       price: "TBC",
-//       department: "Slimming Treatment",
-//       description: "Non-invasive ultrasound waves to break down fat cells for natural elimination.",
-//     },
-//     {
-//       name: "Cavitation",
-//       location: "Arms Area",
-//       price: "TBC",
-//       department: "Slimming Treatment",
-//       description: "Non-invasive ultrasound waves to break down fat cells for natural elimination.",
-//     },
-//     {
-//       name: "Cavitation",
-//       location: "Tummy Area",
-//       price: "TBC",
-//       department: "Slimming Treatment",
-//       description: "Non-invasive ultrasound waves to break down fat cells for natural elimination.",
-//     },
-//     {
-//       name: "Light Peeling",
-//       location: "Face",
-//       price: "TBC",
-//       department: "Peeling",
-//       description: "Gentle exfoliation to remove dead skin cells and reveal a brighter complexion.",
-//     },
-//     {
-//       name: "Chemical Peeling",
-//       location: "Face",
-//       price: "TBC",
-//       department: "Peeling",
-//       description: "Deeper chemical exfoliation to treat acne, pigmentation, and fine lines.",
-//     },
-//     {
-//       name: "Alopecia Injection",
-//       location: "Scalp, Beard, Mustache",
-//       price: "TBC",
-//       department: "Injection into Skin Lesion",
-//       description: "Steroid injections to reduce inflammation and promote hair regrowth in affected areas.",
-//     },
-//     {
-//       name: "Keloids Injection",
-//       location: "",
-//       price: "TBC",
-//       department: "Injection into Skin Lesion",
-//       description: "Corticosteroid injections to flatten and soften raised keloid scars.",
-//     },
-//     {
-//       name: "Electric Cautery",
-//       location: "",
-//       price: "TBC",
-//       department: "Warts & Skin Tag Removal",
-//       description: "Precise heat-based removal of warts and skin tags with minimal scarring.",
-//     },
-//     {
-//       name: "Warts & Skin Tag Removal",
-//       location: "Per Piece",
-//       price: "TBC",
-//       department: "Warts & Skin Tag Removal",
-//       description: "Safe and effective removal of warts and skin tags for smoother skin.",
-//     },
-//     {
-//       name: "Warts & Skin Tag Removal",
-//       location: "Full Face",
-//       price: "TBC",
-//       department: "Warts & Skin Tag Removal",
-//       description: "Safe and effective removal of warts and skin tags for smoother skin.",
-//     },
-//     {
-//       name: "Warts & Skin Tag Removal",
-//       location: "Full Neck",
-//       price: "TBC",
-//       department: "Warts & Skin Tag Removal",
-//       description: "Safe and effective removal of warts and skin tags for smoother skin.",
-//     },
-//     {
-//       name: "Warts & Skin Tag Removal",
-//       location: "Full Face & Neck",
-//       price: "TBC",
-//       department: "Warts & Skin Tag Removal",
-//       description: "Safe and effective removal of warts and skin tags for smoother skin.",
-//     },
-//     {
-//       name: "Warts & Skin Tag Removal",
-//       location: "Chest & Back",
-//       price: "TBC",
-//       department: "Warts & Skin Tag Removal",
-//       description: "Safe and effective removal of warts and skin tags for smoother skin.",
-//     },
-//   ];
-
-//   const departments = [
-//     { id: "All", label: "All Treatments" },
-//     { id: "Cosmetology/Trichology", label: "Cosmetology" },
-//     { id: "Slimming Treatment", label: "Slimming" },
-//     { id: "Peeling", label: "Peeling" },
-//     { id: "Injection into Skin Lesion", label: "Injections" },
-//     { id: "Warts & Skin Tag Removal", label: "Removal" },
-//   ];
-
-//   return (
-//     <div className="min-h-screen">
-//       {/* Hero Section */}
-//       <ServiceHero
-//         title="Hair Cut & "
-//         titleGradient="& Balayage"
-//         description="Experience expert haircuts and stunning balayage techniques that enhance your natural beauty. Our skilled stylists use precision and creativity to deliver personalized looks that turn heads."
-//         image={trichologyHero}
-//         imageAlt="Trichology and scalp health treatment"
-//       />
-
-//       {/* Introduction */}
-//       <section className="py-12 px-6 max-w-4xl mx-auto text-center">
-//         <p className="text-lg text-gray-600 leading-relaxed">
-//           At Avya, we bring comprehensive hair cut and balayage services to Nairobi.
-//           Whether you're looking for a fresh new style or a sun-kissed color transformation, our expert team
-//           uses advanced techniques and proven methods to deliver exceptional results tailored to your unique needs.
-//         </p>
-//       </section>
-
-//       {/* Department Filter */}
-//       <section className="py-8 px-6 bg-gray-100">
-//         <div className="container mx-auto max-w-6xl">
-//           <div className="flex flex-wrap justify-center gap-4">
-//             {departments.map((dept) => (
-//               <button
-//                 key={dept.id}
-//                 onClick={() => setSelectedDepartment(dept.id)}
-//                 className={`px-6 py-3 text-base font-medium rounded-lg transition-all ${
-//                   selectedDepartment === dept.id
-//                     ? "bg-white text-gray-800 shadow-md"
-//                     : "bg-transparent text-gray-600 border border-gray-300 hover:bg-white hover:text-gray-800"
-//                 }`}
-//               >
-//                 {dept.label}
-//               </button>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Services Tables by Department */}
-//       <section className="py-20 px-6 bg-[#E2DBDF]/20">
-//         <div className="container mx-auto max-w-7xl space-y-16">
-//           {departments
-//             .filter(dept => dept.id !== "All")
-//             .map(dept => {
-//               const deptServices = allServices.filter(s => s.department === dept.id);
-//               if (selectedDepartment !== "All" && selectedDepartment !== dept.id) return null;
-
-//               return (
-//                 <div key={dept.id} className="bg-white p-8 md:p-12 shadow-sm">
-//                   <h2 className="text-3xl md:text-4xl font-light text-[#262626] mb-8 text-center">
-//                     {dept.label}
-//                   </h2>
-
-//                   <div className="overflow-x-auto">
-//                     <table className="w-full border-collapse">
-//                       <thead>
-//                         <tr className="border-b-2 border-[#595959]">
-//                           <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
-//                             Treatment
-//                           </th>
-//                           <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
-//                             Area
-//                           </th>
-//                           <th className="text-right py-4 px-4 text-base font-medium text-[#262626]">
-//                             Price
-//                           </th>
-//                         </tr>
-//                       </thead>
-//                       <tbody>
-//                         {deptServices.map((service, idx) => (
-//                           <tr
-//                             key={`${service.name}-${service.location}-${idx}`}
-//                             className="border-b border-[#595959]/20 hover:bg-[#E2DBDF]/10 transition-colors"
-//                           >
-//                             <td className="py-4 px-4 text-base text-[#262626]">
-//                               {service.name}
-//                             </td>
-//                             <td className="py-4 px-4 text-base text-[#262626]">
-//                               {service.location || "Various"}
-//                             </td>
-//                             <td className="py-4 px-4 text-base text-[#262626] text-right">
-//                               {service.price}
-//                             </td>
-//                           </tr>
-//                         ))}
-//                       </tbody>
-//                     </table>
-//                   </div>
-
-//                   {/* Optional: Add department-specific notes */}
-//                   {dept.id === "Cosmetology/Trichology" && (
-//                     <p className="mt-6 text-sm text-[#595959] italic text-center">
-//                       Personalized consultations are recommended for all trichology services.
-//                     </p>
-//                   )}
-//                 </div>
-//               );
-//             })}
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default Trichology;
 import React from "react";
 import ServiceHero from "@/components/ui/ServiceHero";
 import trichologyHero from "@/assets/op.png";
@@ -3291,107 +3024,155 @@ const Trichology = () => {
   const [selectedDepartment, setSelectedDepartment] = React.useState("All");
 
   const allServices = [
-    // Cutting & Styling
     {
-      name: "Haircut",
-      price: "Ksh 6,000",
-      department: "Cutting & Styling",
+      name: "Meso Therapy",
+      location: "Face or Scalp",
+      price: "TBC",
+      department: "Cosmetology/Trichology",
+      description: "Targeted injections of vitamins and nutrients to rejuvenate skin and promote hair growth.",
     },
     {
-      name: "Men's Haircut",
-      price: "Ksh 4,500",
-      department: "Cutting & Styling",
+      name: "Platelet Rich Plasma (PRP)",
+      location: "Face or Scalp",
+      price: "TBC",
+      department: "Cosmetology/Trichology",
+      description: "Uses your own blood plasma to stimulate collagen production and hair follicle regeneration.",
     },
     {
-      name: "Fringe Cut",
-      price: "Ksh 2,000",
-      department: "Cutting & Styling",
+      name: "Biogenix Kit",
+      location: "Face or Scalp",
+      price: "TBC",
+      department: "Cosmetology/Trichology",
+      description: "Advanced biotech kit delivering bio-active compounds for skin repair and scalp revitalization.",
     },
     {
-      name: "Kid's Haircut (under 12)",
-      price: "Ksh 3,000",
-      department: "Cutting & Styling",
+      name: "PRP + Meso + Derma Pen",
+      location: "Face or Scalp",
+      price: "TBC",
+      department: "Cosmetology/Trichology",
+      description: "Combined therapy using PRP, mesotherapy, and microneedling for enhanced skin and hair restoration.",
     },
     {
-      name: "Wash & Blow-Dry",
-      price: "Ksh 4,000",
-      department: "Cutting & Styling",
+      name: "Meso Lipo",
+      location: "1ML – Double Chin",
+      price: "TBC",
+      department: "Slimming Treatment",
+      description: "Fat-dissolving injections to contour and reduce stubborn fat in targeted areas.",
     },
     {
-      name: "Hair Up (Event Styling)",
-      price: "from Ksh 8,000",
-      department: "Cutting & Styling",
-    },
-    // Colour Services
-    {
-      name: "Full Colour - Short",
-      price: "from Ksh 10,000",
-      department: "Colour Services",
+      name: "Meso Lipo",
+      location: "3ML – Arm",
+      price: "TBC",
+      department: "Slimming Treatment",
+      description: "Fat-dissolving injections to contour and reduce stubborn fat in targeted areas.",
     },
     {
-      name: "Full Colour - Medium",
-      price: "from Ksh 15,000",
-      department: "Colour Services",
+      name: "Meso Lipo",
+      location: "5–10ML – Tummy",
+      price: "TBC",
+      department: "Slimming Treatment",
+      description: "Fat-dissolving injections to contour and reduce stubborn fat in targeted areas.",
     },
     {
-      name: "Full Colour - Long",
-      price: "from Ksh 18,000",
-      department: "Colour Services",
+      name: "Cavitation",
+      location: "Chin Area",
+      price: "TBC",
+      department: "Slimming Treatment",
+      description: "Non-invasive ultrasound waves to break down fat cells for natural elimination.",
     },
     {
-      name: "Highlights T-Section",
-      price: "Ksh 10,000",
-      department: "Colour Services",
-      notes: "Toner not included",
+      name: "Cavitation",
+      location: "Arms Area",
+      price: "TBC",
+      department: "Slimming Treatment",
+      description: "Non-invasive ultrasound waves to break down fat cells for natural elimination.",
     },
     {
-      name: "Highlights Halfhead",
-      price: "Ksh 16,000",
-      department: "Colour Services",
-      notes: "Toner not included",
+      name: "Cavitation",
+      location: "Tummy Area",
+      price: "TBC",
+      department: "Slimming Treatment",
+      description: "Non-invasive ultrasound waves to break down fat cells for natural elimination.",
     },
     {
-      name: "Highlights Fullhead",
-      price: "Ksh 30,000",
-      department: "Colour Services",
-      notes: "Toner not included",
+      name: "Light Peeling",
+      location: "Face",
+      price: "TBC",
+      department: "Peeling",
+      description: "Gentle exfoliation to remove dead skin cells and reveal a brighter complexion.",
     },
     {
-      name: "Freehand Highlights",
-      price: "from Ksh 20,000",
-      department: "Colour Services",
+      name: "Chemical Peeling",
+      location: "Face",
+      price: "TBC",
+      department: "Peeling",
+      description: "Deeper chemical exfoliation to treat acne, pigmentation, and fine lines.",
     },
     {
-      name: "Creative Colour",
-      price: "from Ksh 20,000",
-      department: "Colour Services",
+      name: "Alopecia Injection",
+      location: "Scalp, Beard, Mustache",
+      price: "TBC",
+      department: "Injection into Skin Lesion",
+      description: "Steroid injections to reduce inflammation and promote hair regrowth in affected areas.",
     },
     {
-      name: "Bleaching",
-      price: "from Ksh 20,000",
-      department: "Colour Services",
+      name: "Keloids Injection",
+      location: "",
+      price: "TBC",
+      department: "Injection into Skin Lesion",
+      description: "Corticosteroid injections to flatten and soften raised keloid scars.",
     },
     {
-      name: "Toner - Short",
-      price: "Ksh 8,000",
-      department: "Colour Services",
+      name: "Electric Cautery",
+      location: "",
+      price: "TBC",
+      department: "Warts & Skin Tag Removal",
+      description: "Precise heat-based removal of warts and skin tags with minimal scarring.",
     },
     {
-      name: "Toner - Medium",
-      price: "Ksh 12,000",
-      department: "Colour Services",
+      name: "Warts & Skin Tag Removal",
+      location: "Per Piece",
+      price: "TBC",
+      department: "Warts & Skin Tag Removal",
+      description: "Safe and effective removal of warts and skin tags for smoother skin.",
     },
     {
-      name: "Toner - Long",
-      price: "Ksh 15,000",
-      department: "Colour Services",
+      name: "Warts & Skin Tag Removal",
+      location: "Full Face",
+      price: "TBC",
+      department: "Warts & Skin Tag Removal",
+      description: "Safe and effective removal of warts and skin tags for smoother skin.",
+    },
+    {
+      name: "Warts & Skin Tag Removal",
+      location: "Full Neck",
+      price: "TBC",
+      department: "Warts & Skin Tag Removal",
+      description: "Safe and effective removal of warts and skin tags for smoother skin.",
+    },
+    {
+      name: "Warts & Skin Tag Removal",
+      location: "Full Face & Neck",
+      price: "TBC",
+      department: "Warts & Skin Tag Removal",
+      description: "Safe and effective removal of warts and skin tags for smoother skin.",
+    },
+    {
+      name: "Warts & Skin Tag Removal",
+      location: "Chest & Back",
+      price: "TBC",
+      department: "Warts & Skin Tag Removal",
+      description: "Safe and effective removal of warts and skin tags for smoother skin.",
     },
   ];
 
   const departments = [
-    { id: "All", label: "All Services" },
-    { id: "Cutting & Styling", label: "Cutting & Styling" },
-    { id: "Colour Services", label: "Colour Services" },
+    { id: "All", label: "All Treatments" },
+    { id: "Cosmetology/Trichology", label: "Cosmetology" },
+    { id: "Slimming Treatment", label: "Slimming" },
+    { id: "Peeling", label: "Peeling" },
+    { id: "Injection into Skin Lesion", label: "Injections" },
+    { id: "Warts & Skin Tag Removal", label: "Removal" },
   ];
 
   return (
@@ -3404,6 +3185,7 @@ const Trichology = () => {
         image={trichologyHero}
         imageAlt="Trichology and scalp health treatment"
       />
+
       {/* Introduction */}
       <section className="py-12 px-6 max-w-4xl mx-auto text-center">
         <p className="text-lg text-gray-600 leading-relaxed">
@@ -3412,6 +3194,7 @@ const Trichology = () => {
           uses advanced techniques and proven methods to deliver exceptional results tailored to your unique needs.
         </p>
       </section>
+
       {/* Department Filter */}
       <section className="py-8 px-6 bg-gray-100">
         <div className="container mx-auto max-w-6xl">
@@ -3432,6 +3215,7 @@ const Trichology = () => {
           </div>
         </div>
       </section>
+
       {/* Services Tables by Department */}
       <section className="py-20 px-6 bg-[#E2DBDF]/20">
         <div className="container mx-auto max-w-7xl space-y-16">
@@ -3440,50 +3224,55 @@ const Trichology = () => {
             .map(dept => {
               const deptServices = allServices.filter(s => s.department === dept.id);
               if (selectedDepartment !== "All" && selectedDepartment !== dept.id) return null;
+
               return (
                 <div key={dept.id} className="bg-white p-8 md:p-12 shadow-sm">
                   <h2 className="text-3xl md:text-4xl font-light text-[#262626] mb-8 text-center">
                     {dept.label}
                   </h2>
+
                   <div className="overflow-x-auto">
                     <table className="w-full border-collapse">
                       <thead>
                         <tr className="border-b-2 border-[#595959]">
                           <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
-                            Service
+                            Treatment
+                          </th>
+                          <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
+                            Area
                           </th>
                           <th className="text-right py-4 px-4 text-base font-medium text-[#262626]">
                             Price
                           </th>
-                          {dept.id === "Colour Services" && (
-                            <th className="text-right py-4 px-4 text-base font-medium text-[#262626]">
-                              Notes
-                            </th>
-                          )}
                         </tr>
                       </thead>
                       <tbody>
                         {deptServices.map((service, idx) => (
                           <tr
-                            key={`${service.name}-${idx}`}
+                            key={`${service.name}-${service.location}-${idx}`}
                             className="border-b border-[#595959]/20 hover:bg-[#E2DBDF]/10 transition-colors"
                           >
                             <td className="py-4 px-4 text-base text-[#262626]">
                               {service.name}
                             </td>
+                            <td className="py-4 px-4 text-base text-[#262626]">
+                              {service.location || "Various"}
+                            </td>
                             <td className="py-4 px-4 text-base text-[#262626] text-right">
                               {service.price}
                             </td>
-                            {dept.id === "Colour Services" && (
-                              <td className="py-4 px-4 text-base text-[#262626] text-right">
-                                {service.notes || "-"}
-                              </td>
-                            )}
                           </tr>
                         ))}
                       </tbody>
                     </table>
                   </div>
+
+                  {/* Optional: Add department-specific notes */}
+                  {dept.id === "Cosmetology/Trichology" && (
+                    <p className="mt-6 text-sm text-[#595959] italic text-center">
+                      Personalized consultations are recommended for all trichology services.
+                    </p>
+                  )}
                 </div>
               );
             })}
@@ -3494,3 +3283,214 @@ const Trichology = () => {
 };
 
 export default Trichology;
+// import React from "react";
+// import ServiceHero from "@/components/ui/ServiceHero";
+// import trichologyHero from "@/assets/op.png";
+
+// const Trichology = () => {
+//   const [selectedDepartment, setSelectedDepartment] = React.useState("All");
+
+//   const allServices = [
+//     // Cutting & Styling
+//     {
+//       name: "Haircut",
+//       price: "Ksh 6,000",
+//       department: "Cutting & Styling",
+//     },
+//     {
+//       name: "Men's Haircut",
+//       price: "Ksh 4,500",
+//       department: "Cutting & Styling",
+//     },
+//     {
+//       name: "Fringe Cut",
+//       price: "Ksh 2,000",
+//       department: "Cutting & Styling",
+//     },
+//     {
+//       name: "Kid's Haircut (under 12)",
+//       price: "Ksh 3,000",
+//       department: "Cutting & Styling",
+//     },
+//     {
+//       name: "Wash & Blow-Dry",
+//       price: "Ksh 4,000",
+//       department: "Cutting & Styling",
+//     },
+//     {
+//       name: "Hair Up (Event Styling)",
+//       price: "from Ksh 8,000",
+//       department: "Cutting & Styling",
+//     },
+//     // Colour Services
+//     {
+//       name: "Full Colour - Short",
+//       price: "from Ksh 10,000",
+//       department: "Colour Services",
+//     },
+//     {
+//       name: "Full Colour - Medium",
+//       price: "from Ksh 15,000",
+//       department: "Colour Services",
+//     },
+//     {
+//       name: "Full Colour - Long",
+//       price: "from Ksh 18,000",
+//       department: "Colour Services",
+//     },
+//     {
+//       name: "Highlights T-Section",
+//       price: "Ksh 10,000",
+//       department: "Colour Services",
+//       notes: "Toner not included",
+//     },
+//     {
+//       name: "Highlights Halfhead",
+//       price: "Ksh 16,000",
+//       department: "Colour Services",
+//       notes: "Toner not included",
+//     },
+//     {
+//       name: "Highlights Fullhead",
+//       price: "Ksh 30,000",
+//       department: "Colour Services",
+//       notes: "Toner not included",
+//     },
+//     {
+//       name: "Freehand Highlights",
+//       price: "from Ksh 20,000",
+//       department: "Colour Services",
+//     },
+//     {
+//       name: "Creative Colour",
+//       price: "from Ksh 20,000",
+//       department: "Colour Services",
+//     },
+//     {
+//       name: "Bleaching",
+//       price: "from Ksh 20,000",
+//       department: "Colour Services",
+//     },
+//     {
+//       name: "Toner - Short",
+//       price: "Ksh 8,000",
+//       department: "Colour Services",
+//     },
+//     {
+//       name: "Toner - Medium",
+//       price: "Ksh 12,000",
+//       department: "Colour Services",
+//     },
+//     {
+//       name: "Toner - Long",
+//       price: "Ksh 15,000",
+//       department: "Colour Services",
+//     },
+//   ];
+
+//   const departments = [
+//     { id: "All", label: "All Services" },
+//     { id: "Cutting & Styling", label: "Cutting & Styling" },
+//     { id: "Colour Services", label: "Colour Services" },
+//   ];
+
+//   return (
+//     <div className="min-h-screen">
+//       {/* Hero Section */}
+//       <ServiceHero
+//         title="Hair Cut & "
+//         titleGradient="& Balayage"
+//         description="Experience expert haircuts and stunning balayage techniques that enhance your natural beauty. Our skilled stylists use precision and creativity to deliver personalized looks that turn heads."
+//         image={trichologyHero}
+//         imageAlt="Trichology and scalp health treatment"
+//       />
+//       {/* Introduction */}
+//       <section className="py-12 px-6 max-w-4xl mx-auto text-center">
+//         <p className="text-lg text-gray-600 leading-relaxed">
+//           At Avya, we bring hair cut and balayage services to Nairobi.
+//           Whether you're looking for a fresh new style or a sun-kissed color transformation, our expert team
+//           uses advanced techniques and proven methods to deliver exceptional results tailored to your unique needs.
+//         </p>
+//       </section>
+//       {/* Department Filter */}
+//       <section className="py-8 px-6 bg-gray-100">
+//         <div className="container mx-auto max-w-6xl">
+//           <div className="flex flex-wrap justify-center gap-4">
+//             {departments.map((dept) => (
+//               <button
+//                 key={dept.id}
+//                 onClick={() => setSelectedDepartment(dept.id)}
+//                 className={`px-6 py-3 text-base font-medium rounded-lg transition-all ${
+//                   selectedDepartment === dept.id
+//                     ? "bg-white text-gray-800 shadow-md"
+//                     : "bg-transparent text-gray-600 border border-gray-300 hover:bg-white hover:text-gray-800"
+//                 }`}
+//               >
+//                 {dept.label}
+//               </button>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//       {/* Services Tables by Department */}
+//       <section className="py-20 px-6 bg-[#E2DBDF]/20">
+//         <div className="container mx-auto max-w-7xl space-y-16">
+//           {departments
+//             .filter(dept => dept.id !== "All")
+//             .map(dept => {
+//               const deptServices = allServices.filter(s => s.department === dept.id);
+//               if (selectedDepartment !== "All" && selectedDepartment !== dept.id) return null;
+//               return (
+//                 <div key={dept.id} className="bg-white p-8 md:p-12 shadow-sm">
+//                   <h2 className="text-3xl md:text-4xl font-light text-[#262626] mb-8 text-center">
+//                     {dept.label}
+//                   </h2>
+//                   <div className="overflow-x-auto">
+//                     <table className="w-full border-collapse">
+//                       <thead>
+//                         <tr className="border-b-2 border-[#595959]">
+//                           <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
+//                             Service
+//                           </th>
+//                           <th className="text-right py-4 px-4 text-base font-medium text-[#262626]">
+//                             Price
+//                           </th>
+//                           {dept.id === "Colour Services" && (
+//                             <th className="text-right py-4 px-4 text-base font-medium text-[#262626]">
+//                               Notes
+//                             </th>
+//                           )}
+//                         </tr>
+//                       </thead>
+//                       <tbody>
+//                         {deptServices.map((service, idx) => (
+//                           <tr
+//                             key={`${service.name}-${idx}`}
+//                             className="border-b border-[#595959]/20 hover:bg-[#E2DBDF]/10 transition-colors"
+//                           >
+//                             <td className="py-4 px-4 text-base text-[#262626]">
+//                               {service.name}
+//                             </td>
+//                             <td className="py-4 px-4 text-base text-[#262626] text-right">
+//                               {service.price}
+//                             </td>
+//                             {dept.id === "Colour Services" && (
+//                               <td className="py-4 px-4 text-base text-[#262626] text-right">
+//                                 {service.notes || "-"}
+//                               </td>
+//                             )}
+//                           </tr>
+//                         ))}
+//                       </tbody>
+//                     </table>
+//                   </div>
+//                 </div>
+//               );
+//             })}
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default Trichology;

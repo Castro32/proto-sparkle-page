@@ -561,7 +561,7 @@ const Eyelash = () => {
       <section className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-lg md:text-xl text-[#262626] leading-relaxed">
-            At Avya, we bring comprehensive eyelash and brow services to Nairobi.
+            At Avya, we bring eyelash and brow services to Nairobi.
             Whether you're seeking dramatic extensions, natural lifts, or defined shaping, our expert team
             uses premium products and techniques to deliver exceptional results tailored to your unique features.
           </p>
