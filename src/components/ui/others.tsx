@@ -921,7 +921,7 @@ const ServicesSection = () => {
       href: "/hair-treatments",
       img: img2,
       title: "Hair Treatments & Restorative Rituals",
-      description: "Nanoplastia, Hair Botox, Cold Recovery, Olaplex and other rare international therapies.",
+      description: "Haircuts, hair colours, styling, and restorative care tailored to every hair type.",
       alt: "Hair Treatments"
     },
     {

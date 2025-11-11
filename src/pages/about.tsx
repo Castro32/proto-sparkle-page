@@ -5554,7 +5554,7 @@ export default function About() {
       </div>
 
       {/* PHILOSOPHY SECTION */}
-      <section className="bg-[#262626] py-24 px-6 md:px-12">
+      <section className="bg-[#3a3a3a] py-24 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-5 gap-12 items-center">
             <motion.div
@@ -5769,9 +5769,9 @@ export default function About() {
                 </p>
               </div>
               <div className="space-y-4">
-                <button className="w-full md:w-auto bg-[#262626] text-[#E2DBDF] px-12 py-4 text-sm tracking-[0.2em] font-medium hover:bg-[#595959] transition-colors duration-300">
+                <a href='/contact'className="w-full md:w-auto bg-[#262626] text-[#E2DBDF] px-12 py-4 text-sm tracking-[0.2em] font-medium hover:bg-[#595959] transition-colors duration-300">
                   SCHEDULE CONSULTATION
-                </button>
+                </a>
               </div>
             </motion.div>
             <motion.div
