@@ -5,12 +5,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Ana from "@/assets/anastacia.jpeg";
 
 const teamMembers = [
   {
     name: "Anastasiia Erasova",
     title: "Permanent Makeup & Lash Artist",
-    image: "",
+    image: Ana,
     bio: "Anastasiia is a certified permanent makeup and eyelash extension artist renowned for her refined technique and artistic precision. She creates soft, natural enhancements tailored to each client. Her expertise in lash extensions and brow design ensures a flawless, polished finish every time.",
     expertise: "Powder Brows • Eyeliner • Lip Blush • Lash Extensions • Brow & Lash Lamination",
     accent: "#A192A6"
@@ -79,7 +80,7 @@ export default function Team() {
                 onMouseLeave={() => setHoveredCard(null)}
               >
                 {/* Image Section */}
-                <div className="relative h-64 md:h-72 overflow-hidden">
+                <div className="relative h-64 md:h-auto overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
