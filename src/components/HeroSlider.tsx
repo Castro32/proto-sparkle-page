@@ -729,7 +729,7 @@ const HeroSlider = () => {
 
               <div className="hidden md:flex flex-nowrap gap-2 sm:gap-4">
                 <a
-                  href={`https://wa.me/${phoneNumber}?text=${encodedMessage}`}
+                  href='https://avyasalon.zenoti.com/webstore'
                   target="_blank"
                   
                   className="bg-white hover:bg-[#595959] text-[#262626] hover:text-white w-[180px] md:w-[198px] h-[52px] md:h-[56px] flex items-center justify-center text-sm tracking-wider mt-6 md:mt-0 rounded transition-colors"
