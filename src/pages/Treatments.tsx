@@ -1217,31 +1217,31 @@ const Treatments = () => {
     {
       name: "Haircut",
       area: "Full",
-      price: "KES 6,000",
+      price: "from KES 6,000",
       department: "Cutting & Styling",
     },
     {
       name: "Men's Haircut",
       area: "Full",
-      price: "KES 4,500",
+      price: "from KES 4,500",
       department: "Cutting & Styling",
     },
     {
       name: "Fringe Cut",
       area: "Fringe Only",
-      price: "KES 2,000",
+      price: "from KES 2,000",
       department: "Cutting & Styling",
     },
     {
       name: "Kid's Haircut (under 12)",
       area: "Full",
-      price: "KES 3,000",
+      price: "from KES 3,000",
       department: "Cutting & Styling",
     },
     {
       name: "Wash & Blow-Dry",
       area: "Full",
-      price: "KES 4,000",
+      price: "from KES 4,000",
       department: "Cutting & Styling",
     },
     {
