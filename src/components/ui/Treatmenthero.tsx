@@ -182,8 +182,8 @@
 
 // export default TreatmentsHero;
 import { Button } from "@/components/ui/button";
-import img1 from "@/assets/nail.png";
-import img2 from "@/assets/op5.png";
+import img1 from "@/assets/DSC04515.jpg";
+import img2 from "@/assets/DSC04725.jpg";
 import { useNavigate } from "react-router-dom";
 
 const TreatmentsHero = () => {

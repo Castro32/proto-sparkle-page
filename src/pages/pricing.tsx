@@ -661,6 +661,7 @@ import React, { useState } from 'react';
 import {
   Scissors, Palette, Heart, Eye, Sparkles, Crown, Star, Shield, Zap, Droplets, Activity, AlertCircle, ChevronDown, ChevronUp
 } from 'lucide-react';
+import PRICE from "@/assets/DSC056187.jpg";;
 
 // Hero Section Component
 const PricingHero = ({ title, titleGradient, description, image, imageAlt }) => {
@@ -979,7 +980,7 @@ const Pricing = () => {
         title=""
         titleGradient=""
         description=""
-        image="https://images.pexels.com/photos/853427/pexels-photo-853427.jpeg"
+        image={PRICE}
         imageAlt="Pricing at Avya Beauty"
       />
 

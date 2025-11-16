@@ -890,10 +890,10 @@
 // export default ServicesSection;
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import img2 from "@/assets/rr.png";
+import img2 from "@/assets/DSC04728.jpg";
 import img from "@/assets/ig.jpg";
 import img1 from "@/assets/spl.png";
-import img3 from "@/assets/nail.png";
+import img3 from "@/assets/DSC04765.jpg";
 import img4 from "@/assets/lash.png";
 import img5 from "@/assets/op3.png";
 
