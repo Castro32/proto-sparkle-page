@@ -484,7 +484,7 @@ const Eyelash = () => {
     {
       name: "Classic",
       location: "",
-      price: "KES 8,800",
+      price: "KES 9,000",
       department: "Eyelash Extensions",
       description: "Natural-looking single lash extensions applied to each natural lash for subtle volume and length.",
     },
@@ -519,23 +519,23 @@ const Eyelash = () => {
     {
       name: "Eyebrow Lamination (Lifting)",
       location: "",
-      price: "KES 8,800",
+      price: "KES 9,000",
       department: "Lamination",
-      description: "Reshape and lift eyebrows for a groomed, long-lasting natural arch.",
+      description: "Perfectly sculpted brows that frame your face with precision and style.",
     },
     {
       name: "Eyelash Lamination (Lifting)",
       location: "",
-      price: "KES 7,700",
+      price: "KES 8,000",
       department: "Lamination",
-      description: "Curl and lift natural lashes for a wide-eyed, mascara-free appearance.",
+      description: "Fuller, flutter-ready lashes for a natural yet striking look.",
     },
     {
-      name: "Eyebrow Tinting & Shaping",
+      name: "Eyebrow Shaping",
       location: "",
-      price: "KES 5,500",
+      price: "KES 9,000",
       department: "Other",
-      description: "Color and precise shaping to define and enhance your brows.",
+      description: "Perfectly sculpted brows that frame your face with precision and style.",
     },
   ];
 

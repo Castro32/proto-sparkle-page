@@ -291,7 +291,7 @@ const Nail = () => {
     {
       name: "Shellac manicure",
       location: "45m",
-      price: "KES 3,500",
+      price: "KES 4,000",
       department: "Shellac",
       description: "Chip-resistant Shellac polish for a flawless manicure that lasts up to two weeks.",
     },
@@ -319,21 +319,21 @@ const Nail = () => {
     {
       name: "Pedicure",
       location: "45m",
-      price: "KES 3,700",
+      price: "KES 4,000",
       department: "Pedicure",
       description: "Relaxing pedicure with exfoliation, massage, and polish for soft, smooth feet.",
     },
     {
       name: "Shellac pedicure",
       location: "1h–1h15m",
-      price: "KES 4,000",
+      price: "KES 7,000",
       department: "Shellac",
       description: "Long-wear Shellac pedicure for durable color and foot pampering.",
     },
     {
       name: "Overlays on natural nails",
       location: "1h 30m",
-      price: "KES 4,500",
+      price: "KES 8,000",
       department: "Extensions",
       description: "Enhance your natural nails with durable overlays for a polished, long-lasting finish.",
     },

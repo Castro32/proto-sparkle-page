@@ -1325,7 +1325,7 @@ const Treatments = () => {
     {
       name: "Customized Hair Treatments",
       area: "Various",
-      price: "TBC",
+      price: "from KES 2,500",
       department: "Add-on Hair Treatments",
     },
   ];
