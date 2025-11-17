@@ -275,7 +275,7 @@
 // export default Nail;
 import React from "react";
 import ServiceHero from "@/components/ui/ServiceHero";
-import nailHero from "@/assets/nail.png";
+import nailHero from "@/assets/nail hero.png";
 
 const Nail = () => {
   const [selectedDepartment, setSelectedDepartment] = React.useState("All");

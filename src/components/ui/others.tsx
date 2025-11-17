@@ -893,9 +893,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import img2 from "@/assets/DSC04728.jpg";
 import img from "@/assets/ig.jpg";
 import img1 from "@/assets/spl.png";
-import img3 from "@/assets/DSC04765.jpg";
+import img3 from "@/assets/nailss.jpeg";
 import img4 from "@/assets/lash.png";
-import img5 from "@/assets/op3.png";
+import img5 from "@/assets/pm.jpeg";
 
 const ServicesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

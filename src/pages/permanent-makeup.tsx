@@ -252,7 +252,7 @@
 // export default PermanentMakeup;
 import React from "react";
 import ServiceHero from "@/components/ui/ServiceHero";
-import permanentMakeupHero from "@/assets/li.png";
+import permanentMakeupHero from "@/assets/phome.jpeg";
 
 const PermanentMakeup = () => {
   const [selectedDepartment, setSelectedDepartment] = React.useState("All");
