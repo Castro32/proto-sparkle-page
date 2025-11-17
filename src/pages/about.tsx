@@ -5817,7 +5817,7 @@
 // }
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import IMG from "@/assets/3997198-uhd_4096_2160_25fps (2).mp4";
+import IMG from "@/assets/DSC04387.jpg";
 import IMG1 from "@/assets/DSC04387.jpg";
 import IMG2 from "@/assets/DSC04802.jpg";
 import IMG3 from "@/assets/DSC04409.jpg";
@@ -5872,7 +5872,7 @@ export default function About() {
       {/* HERO SECTION WITH BACKGROUND VIDEO */}
       <div className="relative min-h-screen overflow-hidden">
         <div className="absolute inset-0" style={{ zIndex: 0 }}>
-          <video
+          {/* <Image
             src={IMG}
             autoPlay
             loop
@@ -5884,6 +5884,12 @@ export default function About() {
               height: '100vh',
               border: 'none',
             }}
+          /> */}
+          <img
+            src={IMG4}
+            alt="Philosophy"
+            className="w-full h-full object-cover transition-all duration-700"
+            // REMOVED: grayscale or any filter
           />
         </div>
         <div className="relative z-10 pt-64 md:pt-96 px-6 md:px-12 min-h-screen flex flex-col justify-start md:justify-center items-start md:items-center">

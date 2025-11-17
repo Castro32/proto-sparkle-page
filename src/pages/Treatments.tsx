@@ -1208,7 +1208,7 @@
 // export default Treatments;
 import React from 'react';
 import ServiceHero from "@/components/ui/ServiceHero";
-import treatmentsHero from "@/assets/op5.png";
+import treatmentsHero from "@/assets/DSC04728.jpg";
 
 const Treatments = () => {
   const [selectedDepartment, setSelectedDepartment] = React.useState("All");
