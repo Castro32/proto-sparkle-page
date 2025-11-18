@@ -794,7 +794,7 @@ const Pricing = () => {
         { name: "Men's Haircut", price: 'from Ksh 4,500' },
         { name: 'Fringe Cut', price: 'from Ksh 2,000' },
         { name: "Kid's Haircut (under 12)", price: 'from Ksh 3,000' },
-        { name: 'Wash & Blow-Dry', price: 'from Ksh 4,000' },
+        { name: 'Wash & Blow-Dry', price: 'from Ksh 3,000' },
         { name: 'Hair Up (Event Styling)', price: 'from Ksh 8,000' },
       ],
     },
