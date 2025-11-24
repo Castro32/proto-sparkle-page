@@ -5818,12 +5818,12 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import IMG from "@/assets/DSC04387.jpg";
-import IMG1 from "@/assets/DSC04387.jpg";
+import IMG1 from "@/assets/DSC00116.jpg";
 import IMG2 from "@/assets/DSC04802.jpg";
-import IMG3 from "@/assets/DSC04409.jpg";
-import IMG4 from "@/assets/DSC04477.jpg";
+import IMG3 from "@/assets/DSC00056-Edit (1).jpg";
+import IMG4 from "@/assets/DSC00059.jpg";
 import IMG5 from "@/assets/DSC04381.jpg";
-import IMG6 from "@/assets/DSC04474.jpg";
+import IMG6 from "@/assets/DSC00026-Edit.jpg";
 
 const features = [
   {
@@ -6157,7 +6157,7 @@ export default function About() {
               viewport={{ once: true }}
             >
               <div className="space-y-6">
-                <div className="aspect-[4/5] overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={IMG4}
                     alt="Avya Treatment"

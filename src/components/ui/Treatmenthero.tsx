@@ -182,8 +182,8 @@
 
 // export default TreatmentsHero;
 import { Button } from "@/components/ui/button";
-import img1 from "@/assets/DSC04515.jpg";
-import img2 from "@/assets/DSC04725.jpg";
+import img1 from "@/assets/DSC00026-Edit.jpg";
+import img2 from "@/assets/DSC00125.jpg";
 import { useNavigate } from "react-router-dom";
 
 const TreatmentsHero = () => {
@@ -215,32 +215,24 @@ const TreatmentsHero = () => {
             </Button> */}
           </div>
           {/* Right Images */}
-          <div className="grid grid-cols-2 gap-4 w-full max-w-[657px] mx-auto lg:mx-0">
-            {/* First Image */}
-            <a
-              //href="/about"
-              className="relative overflow-hidden aspect-[318/534] group block"
-            >
-              <img
-                src={img1}
-                alt="Face treatment diagram"
-                className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500" />
-            </a>
-            {/* Second Image */}
-            <a
-              //href="/contact"
-              className="relative overflow-hidden aspect-[318/534] group block"
-            >
-              <img
-                src={img2}
-                alt="Diverse beauty"
-                className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500" />
-            </a>
-          </div>
+          <div className="grid grid-cols-2 gap-6 w-full">
+              <a className="relative overflow-hidden shadow-lg group block aspect-[3/4]">
+                <img
+                  src={img1}
+                  alt="Advanced beauty treatment at AVYA Salon"
+                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-700" />
+              </a>
+              <a className="relative overflow-hidden shadow-lg group block aspect-[3/4]">
+                <img
+                  src={img2}
+                  alt="Luxury salon experience in Kenya"
+                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-700" />
+              </a>
+            </div>
         </div>
       </div>
     </section>
