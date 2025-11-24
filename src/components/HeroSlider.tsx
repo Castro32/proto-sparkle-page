@@ -602,7 +602,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroTrichology from "@/assets/op.png";
-import heroHairTreatments from "@/assets/op1.png";
+import heroHairTreatments from "@/assets/DSC00050-Edit.jpg";
 import heroGlam from "@/assets/op3.png";
 import about from "@/assets/op5.png";
 
