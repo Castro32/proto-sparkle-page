@@ -977,7 +977,7 @@ const Glam = () => {
       description: "Energizing facial workout using specialized tools to boost circulation and sculpt facial contours.",
     },
     {
-      name: "Face HIIT",
+      name: "Face HIT",
       location: "",
       price: "KES 20,000",
       department: "Face Fitness",
@@ -986,7 +986,7 @@ const Glam = () => {
     {
       name: "Reset Recover",
       location: "",
-      price: "KES 33,000",
+      price: "KES 35,000",
       department: "Face Fitness",
       description: "Restorative session to recover and rejuvenate facial muscles post-workout or stress.",
     },
@@ -1007,14 +1007,14 @@ const Glam = () => {
     {
       name: "Radio Frequency (Partial Face)",
       location: "",
-      price: "KES 14,000 (TBC)",
+      price: "KES 14,000",
       department: "Face Fitness Add-ons",
       description: "Non-invasive RF energy to tighten skin in specific facial zones for a lifted appearance.",
     },
     {
       name: "Radio Frequency (Full Face)",
       location: "",
-      price: "KES 24,000 (TBC)",
+      price: "KES 24,000",
       department: "Face Fitness Add-ons",
       description: "Full-face RF treatment to stimulate collagen and improve overall skin elasticity.",
     },
@@ -1035,7 +1035,7 @@ const Glam = () => {
     {
       name: "Deep Cleansing Facial",
       location: "",
-      price: "KES 9,000",
+      price: "KES 10,000",
       department: "Face Fitness Add-ons",
       description: "Thorough cleansing to remove impurities and prepare skin for optimal fitness results.",
     },
@@ -1140,9 +1140,9 @@ const Glam = () => {
                           <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
                             Treatment
                           </th>
-                          <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
+                          {/* <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
                             Area
-                          </th>
+                          </th> */}
                           <th className="text-right py-4 px-4 text-base font-medium text-[#262626]">
                             Price
                           </th>
@@ -1157,9 +1157,9 @@ const Glam = () => {
                             <td className="py-4 px-4 text-base text-[#262626]">
                               {service.name}
                             </td>
-                            <td className="py-4 px-4 text-base text-[#262626]">
+                            {/* <td className="py-4 px-4 text-base text-[#262626]">
                               {service.location || "N/A"}
-                            </td>
+                            </td> */}
                             <td className="py-4 px-4 text-base text-[#262626] text-right">
                               {service.price}
                             </td>
