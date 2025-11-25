@@ -5818,7 +5818,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import IMG from "@/assets/DSC04387.jpg";
-import IMG1 from "@/assets/DSC00116.jpg";
+import IMG1 from "@/assets/DSC00069 (1).jpg";
 import IMG2 from "@/assets/DSC04802.jpg";
 import IMG3 from "@/assets/DSC00056-Edit (1).jpg";
 import IMG4 from "@/assets/DSC00059.jpg";
