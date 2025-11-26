@@ -700,6 +700,7 @@ const PricingHero = ({ title, titleGradient, description, image, imageAlt }) => 
 
 // Service Table Component
 const ServiceTable = ({ services }) => {
+  
   return (
     <div className="border border-[#595959] overflow-x-auto mt-4">
       <table className="w-full">
@@ -713,8 +714,8 @@ const ServiceTable = ({ services }) => {
               <th className="text-center p-4 md:p-6 font-normal text-[#262626] text-sm md:text-base whitespace-nowrap">Duration</th>
             )}
             <th className="text-center p-4 md:p-6 font-normal text-[#262626] text-sm md:text-base whitespace-nowrap">Price</th>
-            {services.some(s => s.note) && (
-              <th className="text-center p-4 md:p-6 font-normal text-[#262626] text-sm md:text-base whitespace-nowrap">Notes</th>
+            {services.some(s => s.description) && (
+              <th className="text-center p-4 md:p-6 font-normal text-[#262626] text-sm md:text-base whitespace-nowrap">Description</th>
             )}
           </tr>
         </thead>
@@ -729,9 +730,9 @@ const ServiceTable = ({ services }) => {
                 <td className="p-4 md:p-6 text-center text-[#595959] text-sm md:text-base">{service.duration || '-'}</td>
               )}
               <td className="p-4 md:p-6 text-center text-[#262626] text-sm md:text-base font-medium">{service.price}</td>
-              {services.some(s => s.note) && (
-                <td className="p-4 md:p-6 text-center text-[#595959] text-xs md:text-sm italic">{service.note || '-'}</td>
-              )}
+              <td className="p-4 md:p-6 text-center text-[#595959] text-xs md:text-sm italic">
+              {service.description || '-'}
+            </td>
             </tr>
           ))}
         </tbody>
@@ -808,9 +809,9 @@ const Pricing = () => {
         { name: 'Full Colour - Short', price: 'from Ksh 10,000' },
         { name: 'Full Colour - Medium', price: 'from Ksh 15,000' },
         { name: 'Full Colour - Long', price: 'from Ksh 18,000' },
-        { name: 'Highlights T-Section', price: 'Ksh 10,000', note: 'Toner not included' },
-        { name: 'Highlights Halfhead', price: 'Ksh 16,000', note: 'Toner not included' },
-        { name: 'Highlights Fullhead', price: 'Ksh 30,000', note: 'Toner not included' },
+        { name: 'Highlights T-Section', price: 'Ksh 10,000', description: 'Toner not included' },
+        { name: 'Highlights Halfhead', price: 'Ksh 16,000', description: 'Toner not included' },
+        { name: 'Highlights Fullhead', price: 'Ksh 30,000', description: 'Toner not included' },
         { name: 'Freehand Highlights', price: 'from Ksh 20,000' },
         { name: 'Creative Colour', price: 'from Ksh 20,000' },
         { name: 'Bleaching', price: 'from Ksh 20,000' },
@@ -852,7 +853,7 @@ const Pricing = () => {
         { name: 'Eyebrows', price: 'Ksh 35,000' },
         { name: 'Lips', price: 'Ksh 40,000' },
         { name: 'Eyeliner', price: 'Ksh 30,000' },
-        { name: 'Touch up (in 1 month)', price: 'Ksh 11,000', note: 'For Permanent Makeup' },
+        { name: 'Touch up (in 1 month)', price: 'Ksh 11,000', description: 'For Permanent Makeup' },
       ],
     },
     {
@@ -883,12 +884,12 @@ const Pricing = () => {
       id: 'face-fitness',
       title: 'Face Fitness',
       icon: Star,
-      description: 'Tone and sculpt your facial muscles with our innovative face fitness treatments. Natural, non-invasive techniques for a lifted, youthful appearance.',
+      description: 'A tailored workout for your facial muscles to tone, lift, and enhance natural definition.',
       services: [
-        { name: 'Face Cardio', price: 'Ksh 20,000' },
-        { name: 'Face HIIT', price: 'Ksh 20,000' },
-        { name: 'Reset Recover', price: 'Ksh 33,000' },
-        { name: 'Face Reformer', price: 'Ksh 45,000' },
+        { name: 'Face Cardio', price: 'Ksh 20,000', description: 'A dynamic treatment combining massage and stimulation to boost circulation and promote a radiant, energised glow.' },
+        { name: 'Face Hit', price: 'Ksh 20,000', description: 'High-intensity facial training for an instant lift and sculpted appearance, targeting firmness and elasticity.' },
+        { name: 'Reset Recover', price: 'Ksh 33,000', description: 'A soothing restorative treatment that relieves tension, rebalances the skin, and promotes deep relaxation.' },
+        { name: 'Face Reformer', price: 'Ksh 45,000', description: 'Advanced techniques to re-educate facial muscles, improve contour, and restore youthful vitality.' },
       ],
     },
     {
@@ -897,16 +898,16 @@ const Pricing = () => {
       icon: Shield,
       description: 'Enhance any treatment with our luxurious add-ons. From advanced technology to relaxing therapies, customize your experience for optimal results.',
       services: [
-        { name: 'Eye Treatment', price: 'Ksh 7,000' },
-        { name: 'Radio Frequency Partial Face', price: 'Ksh 14,000', note: 'N/A' },
-        { name: 'Radio Frequency Full Face', price: 'Ksh 24,000', note: 'N/A' },
-        { name: 'Photo Therapy Lights', price: 'Ksh 8,000' },
-        { name: 'Ultrasound Treatment', price: 'Ksh 10,000' },
-        { name: 'Deep Cleansing Facial', price: 'Ksh 9,000' },
-        { name: 'Buccal', price: 'Ksh 8,000' },
-        { name: 'Head Massage', price: 'Ksh 3,000' },
-        { name: 'Neck & Shoulder', price: 'Ksh 3,000' },
-        { name: 'Oxygen Therapy', price: 'Ksh 12,000' },
+        { name: 'Eye Treatment', price: 'Ksh 7,000', description: 'Targets puffiness, dark circles, and fine lines for brighter, refreshed eyes.' },
+        { name: 'Radio Frequency Partial Face', price: 'Ksh 14,000', description: 'Tightens and firms the skin using gentle heat to stimulate collagen production.' },
+        { name: 'Radio Frequency Full Face', price: 'Ksh 24,000', description: 'Tightens and firms the skin using gentle heat to stimulate collagen production.' },
+        { name: 'Photo Therapy Lights', price: 'Ksh 8,000', description:"LED light therapy to calm, rejuvenate, or energise the skin depending on your needs." },
+        { name: 'Ultrasound Treatment', price: 'Ksh 10,000', description:"Enhances product absorption and boosts cell renewal for smoother, glowing skin." },
+        { name: 'Deep Cleansing Facial', price: 'Ksh 9,000', description:"Purifies pores and refines texture for a clear, healthy complexion." },
+        { name: 'Buccal', price: 'Ksh 8,000', description:"Purifies pores and refines texture for a clear, healthy complexion." },
+        { name: 'Head Massage', price: 'Ksh 3,000', description:"Relieves stress, improves circulation, and promotes a sense of calm and wellbeing." },
+        { name: 'Neck & Shoulder', price: 'Ksh 3,000', description:"Focused massage to ease stiffness and tension in the upper body." },
+        { name: 'Oxygen Therapy', price: 'Ksh 12,000', description:"Infuses the skin with pure oxygen to hydrate, brighten, and revitalise." },
       ],
     },
     {
@@ -915,58 +916,64 @@ const Pricing = () => {
       icon: Zap,
       description: 'Advanced medical-grade treatments for face and scalp. Our cosmetology services address hair loss, skin rejuvenation, and more using cutting-edge techniques.',
       services: [
-        { name: 'Meso Therapy', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Platelet Rich Plasma', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Biogenix kit', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'PRP+MESO+DERMA PEN', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Meso Glow(Reverse Aging Cocktail', area: 'Face', price: 'Ksh 20,000', description: 'A revitalising facial treatment designed to deeply nourish, hydrate, and rejuvenate the skin while enhancing tone and elasticity. This luxurious therapy helps boost collagen production; diminish hyperpigmentation, fine lines, wrinkles, and scars; balance excess oil; and restore a luminous, healthy glow to the complexion. Available from Dec 8' },
+        { name: 'DQ Hair(Hair Growth System)', area: 'Scalp', price: 'Ksh 20,000', description: 'A non-surgical scalp treatment designed to strengthen the hair, reduce hair fall, and stimulate natural growth factors for fuller, healthier-looking hair.' },
+        // { name: 'Biogenix kit', area: 'Face or Scalp', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'EGF Genesis(Epidermal Growth Factor', area: 'Back Hand', price: 'Ksh 20,000', description: 'A rejuvenating meso-cocktail treatment with intensive anti-ageing and skin-lifting effects. Its exclusive formula features a high-performance complex of growth factors (low-molecular-weight polypeptides) combined with poly-revitalising ingredients, including sodium DNA, ferulic acid, ubiquinone (Coenzyme Q10), ceramides, and amino-acid–hydrolysed wheat protein, to restore firmness, radiance, and youthful vitality to the skin.' },
+        { name: 'SUPREALL PPC+DEOXYCOLATE', area: 'Double Chin (1 ML)', price: 'Ksh 10,000', description: 'A non-invasive alternative to liposuction, this advanced treatment provides submental contouring without the need for anaesthesia, scarring, or downtime. It works to permanently reduce or eliminate localised fat deposits within 12 weeks by targeting fat cells through a natural lipolytic process. Acting exclusively on fat tissue while leaving nerves and muscles unaffected, it initiates a complex enzymatic cascade that begins after the first session and continues for 8 to 12 weeks. Suitable for both men and women seeking a more defined and sculpted appearance.' },
+        { name: 'SUPREALL PPC+DEOXYCOLATE', area: 'Arm (3 ML)', price: 'Ksh 15,000', description: 'A non-invasive alternative to liposuction, this advanced treatment provides submental contouring without the need for anaesthesia, scarring, or downtime. It works to permanently reduce or eliminate localised fat deposits within 12 weeks by targeting fat cells through a natural lipolytic process. Acting exclusively on fat tissue while leaving nerves and muscles unaffected, it initiates a complex enzymatic cascade that begins after the first session and continues for 8 to 12 weeks. Suitable for both men and women seeking a more defined and sculpted appearance.' },
+        { name: 'SUPREALL PPC+DEOXYCOLATE', area: 'Tummy (5-10 ML)', price: 'Ksh 20,000', description: 'A non-invasive alternative to liposuction, this advanced treatment provides submental contouring without the need for anaesthesia, scarring, or downtime. It works to permanently reduce or eliminate localised fat deposits within 12 weeks by targeting fat cells through a natural lipolytic process. Acting exclusively on fat tissue while leaving nerves and muscles unaffected, it initiates a complex enzymatic cascade that begins after the first session and continues for 8 to 12 weeks. Suitable for both men and women seeking a more defined and sculpted appearance.' },
+        { name: 'Cavitation', area: 'Chin Area', price: 'Ksh 20,000', description: 'An FDA-approved body contouring procedure that uses advanced ultrasound technology to target and eliminate fat cells in specific areas of the body. Common treatment zones include the arms, abdomen, love handles, thighs, and chin, helping to sculpt and refine the silhouette without surgery or downtime.' },
+        { name: 'Cavitation', area: 'Arms Area', price: 'Ksh 25,000', description: 'An FDA-approved body contouring procedure that uses advanced ultrasound technology to target and eliminate fat cells in specific areas of the body. Common treatment zones include the arms, abdomen, love handles, thighs, and chin, helping to sculpt and refine the silhouette without surgery or downtime.' },
+        { name: 'Cavitation', area: 'Tummy Area', price: 'Ksh 30,000', description: 'An FDA-approved body contouring procedure that uses advanced ultrasound technology to target and eliminate fat cells in specific areas of the body. Common treatment zones include the arms, abdomen, love handles, thighs, and chin, helping to sculpt and refine the silhouette without surgery or downtime.' },
       ],
     },
-    {
-      id: 'slimming',
-      title: 'Slimming Treatment',
-      icon: Activity,
-      description: 'Non-surgical body contouring treatments to help you achieve your desired shape. Target specific areas with our advanced slimming technologies.',
-      services: [
-        { name: 'Meso Lipo (1ML)', area: 'Double Chin', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Meso Lipo (3ML)', area: 'Arms', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Meso Lipo (5-10ML)', area: 'Tummy', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Cavitation', area: 'Chin Area', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Cavitation', area: 'Arms Area', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Cavitation', area: 'Tummy Area', price: 'N/A', note: 'Available from Jan 26' },
-      ],
-    },
-    {
-      id: 'peeling',
-      title: 'Peeling Treatments',
-      icon: Droplets,
-      description: 'Reveal fresh, glowing skin with our professional peeling treatments. Choose from light to chemical peels based on your skin needs.',
-      services: [
-        { name: 'Light Peeling', area: 'Face', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Chemical Peeling', area: 'Face', price: 'N/A', note: 'Available from Jan 26' },
-      ],
-    },
+    // {
+    //   id: 'slimming',
+    //   title: 'Slimming Treatment',
+    //   icon: Activity,
+    //   description: 'Non-surgical body contouring treatments to help you achieve your desired shape. Target specific areas with our advanced slimming technologies.',
+    //   services: [
+    //     { name: 'Meso Lipo (1ML)', area: 'Double Chin', price: 'N/A', note: 'Available from Jan 26' },
+    //     { name: 'Meso Lipo (3ML)', area: 'Arms', price: 'N/A', note: 'Available from Jan 26' },
+    //     { name: 'Meso Lipo (5-10ML)', area: 'Tummy', price: 'N/A', note: 'Available from Jan 26' },
+    //     { name: 'Cavitation', area: 'Chin Area', price: 'N/A', note: 'Available from Jan 26' },
+    //     { name: 'Cavitation', area: 'Arms Area', price: 'N/A', note: 'Available from Jan 26' },
+    //     { name: 'Cavitation', area: 'Tummy Area', price: 'N/A', note: 'Available from Jan 26' },
+    //   ],
+    // },
+    // {
+    //   id: 'peeling',
+    //   title: 'Peeling Treatments',
+    //   icon: Droplets,
+    //   description: 'Reveal fresh, glowing skin with our professional peeling treatments. Choose from light to chemical peels based on your skin needs.',
+    //   services: [
+    //     { name: 'Light Peeling', area: 'Face', price: 'N/A', note: 'Available from Jan 26' },
+    //     { name: 'Chemical Peeling', area: 'Face', price: 'N/A', note: 'Available from Jan 26' },
+    //   ],
+    // },
     {
       id: 'injections',
       title: 'Injection into Skin Lesion',
       icon: AlertCircle,
       description: 'Specialized injection treatments for alopecia and keloids. Medical-grade solutions administered by trained professionals.',
       services: [
-        { name: 'Alopecia Injection', area: 'Scalp, Beard, Mustache', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Keloids Injection', price: 'N/A', note: 'Available from Jan 26' },
+        { name: 'Alopecia Injection', area: 'Scalp, Beard, Mustache', price: 'Ksh 15,000', description: 'A restorative scalp therapy designed to revitalise and awaken dormant hair follicles. This gentle, targeted treatment helps strengthen thinning areas, improve scalp health, and encourage natural hair regrowth. Ideal for those experiencing hair loss or reduced hair density, it promotes fuller, healthier-looking hair with renewed vitality.' },
+        // { name: 'Keloids Injection', price: 'N/A', note: 'Available from Jan 26' },
       ],
     },
     {
       id: 'removal',
       title: 'Warts & Skin Tags Removal',
       icon: Zap,
-      description: 'Safe and effective removal of warts and skin tags using electric cautery. Quick, minimally invasive treatments with excellent results.',
+      description: 'A low-voltage electric current is used to cauterise and remove warts and skin tags, which are benign skin growths.',
       services: [
-        { name: 'Electric Cautery', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin tag (per piece)', area: 'Face, Neck, Under Arm', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin Tag', area: 'Full Face', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin Tag', area: 'Full Neck', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin Tag', area: 'Full Face and Neck', price: 'N/A', note: 'Available from Jan 26' },
-        { name: 'Warts and Skin Tag', area: 'Chest and Back', price: 'N/A', note: 'Available from Jan 26' },
+        // { name: 'Electric Cautery', price: 'N/A', note: 'Available from Dec 8' },
+        { name: 'Warts and Skin tag ', area: 'Face, Neck, Under Arm', price: 'Ksh 3,000 Per Piece', description: 'Available from Dec 8' },
+        { name: 'Warts and Skin Tag', area: 'Full Face', price: 'Ksh 12,000', description: 'Available from Dec 8' },
+        { name: 'Warts and Skin Tag', area: 'Full Neck', price: 'Ksh 12,000', description: 'Available from Dec 8' },
+        { name: 'Warts and Skin Tag', area: 'Full Face and Neck', price: 'Ksh 22,000', description: 'Available from Dec 8' },
+        { name: 'Warts and Skin Tag', area: 'Chest and Back', price: 'Ksh 22,000', description: 'Available from Dec 8' },
       ],
     },
   ];
