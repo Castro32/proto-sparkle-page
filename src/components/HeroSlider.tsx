@@ -748,7 +748,7 @@
 
 // export default HeroSlider;
 import { Button } from "@/components/ui/button";
-import heroHairTreatments from "@/assets/DSC00050-Edit.jpg";
+import heroHairTreatments from "@/assets/DSC00026-Edit.jpg";
 import mobilescreen from "@/assets/DSC00039-Edit.jpg";
 
 const staticContent = {
