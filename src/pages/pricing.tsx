@@ -862,7 +862,7 @@ const Pricing = () => {
       icon: Sparkles,
       description: 'Enhance your natural lashes with our premium extensions. Choose from classic to dramatic volume looks that suit your style and last for weeks.',
       services: [
-        { name: 'Classic', price: 'Ksh 9,800' },
+        { name: 'Classic', price: 'Ksh 9,000' },
         { name: '2D', price: 'Ksh 10,000' },
         { name: '3D', price: 'Ksh 11,000' },
         { name: '4D', price: 'Ksh 12,000' },
