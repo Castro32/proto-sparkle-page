@@ -5823,7 +5823,7 @@ import IMG2 from "@/assets/DSC04802.jpg";
 import IMG3 from "@/assets/DSC00056-Edit (1).jpg";
 import IMG4 from "@/assets/DSC00059.jpg";
 import IMG5 from "@/assets/DSC04381.jpg";
-import IMG6 from "@/assets/DSC00050-Edit.jpg";
+import IMG6 from "@/assets/DSC00039-Edit - Edited.jpg";
 
 const features = [
   {
@@ -5901,7 +5901,7 @@ export default function About() {
             className="max-w-7xl mx-auto w-full mt-48 md:mt-0"
           >
             <div className="mb-8">
-              <p className="text-white text-bold md:text-base tracking-[0.3em] mb-4 font-light">
+              <p className="text-white text-sm md:text-base tracking-[0.3em] mb-4 font-light">
                 NAIROBI, KENYA — EST. 2025
               </p>
             </div>
@@ -5918,11 +5918,11 @@ export default function About() {
                   <br />
                   <span className="font-bold">SCIENCE-MEETS-BEAUTY</span>
                   <br />
-                  <span className=" text-white font-light">
+                  <span className="bg-gradient-to-r from-[#C1B5C6] to-[#B0C2B0] bg-clip-text text-transparent font-light">
                     LUXURY SALON
                   </span>
                 </h2>
-                <p className="text-white text-lg md:text-xl max-w-xl leading-relaxed font-bold mb-10">
+                <p className="text-white/90 text-lg md:text-xl max-w-xl leading-relaxed font-light mb-10">
                   At AVYA, luxury and science come together to redefine beauty. Our expert hair stylists and beauty specialists deliver advanced treatments designed not only to enhance your look today but to support healthy, lasting beauty for tomorrow. In our serene, modern space, every detail is crafted to inspire confidence, well-being, and timeless elegance.
                 </p>
               </motion.div>
