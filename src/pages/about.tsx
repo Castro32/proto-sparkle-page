@@ -5823,7 +5823,7 @@ import IMG2 from "@/assets/DSC04802.jpg";
 import IMG3 from "@/assets/DSC00056-Edit (1).jpg";
 import IMG4 from "@/assets/DSC00059.jpg";
 import IMG5 from "@/assets/DSC04381.jpg";
-import IMG6 from "@/assets/DSC00039-Edit - Edited.jpg";
+import IMG6 from "@/assets/DSC00026-Edit.jpg";
 
 const features = [
   {
