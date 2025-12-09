@@ -382,9 +382,9 @@ const PermanentMakeup = () => {
                           <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
                             Treatment
                           </th>
-                          <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
+                          {/* <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
                             Duration/Area
-                          </th>
+                          </th> */}
                           <th className="text-right py-4 px-4 text-base font-medium text-[#262626]">
                             Price
                           </th>
@@ -399,9 +399,9 @@ const PermanentMakeup = () => {
                             <td className="py-4 px-4 text-base text-[#262626]">
                               {service.name}
                             </td>
-                            <td className="py-4 px-4 text-base text-[#262626]">
+                            {/* <td className="py-4 px-4 text-base text-[#262626]">
                               {service.location || "N/A"}
-                            </td>
+                            </td> */}
                             <td className="py-4 px-4 text-base text-[#262626] text-right">
                               {service.price}
                             </td>

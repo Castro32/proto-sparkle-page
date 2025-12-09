@@ -531,9 +531,9 @@ const Eyelash = () => {
       description: "Fuller, flutter-ready lashes for a natural yet striking look.",
     },
     {
-      name: "Eyebrow Shaping",
+      name: "Eyebrow Shaping & Tinting",
       location: "",
-      price: "KES 9,000",
+      price: "KES 6,000",
       department: "Other",
       description: "Perfectly sculpted brows that frame your face with precision and style.",
     },

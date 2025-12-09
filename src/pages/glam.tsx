@@ -986,7 +986,7 @@ const Glam = () => {
     {
       name: "Reset Recover",
       location: "",
-      price: "KES 35,000",
+      price: "KES 33,000",
       department: "Face Fitness",
       description: "Restorative session to recover and rejuvenate facial muscles post-workout or stress.",
     },
@@ -1035,7 +1035,7 @@ const Glam = () => {
     {
       name: "Deep Cleansing Facial",
       location: "",
-      price: "KES 10,000",
+      price: "KES 9,000",
       department: "Face Fitness Add-ons",
       description: "Thorough cleansing to remove impurities and prepare skin for optimal fitness results.",
     },

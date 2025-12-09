@@ -282,17 +282,59 @@ const Nail = () => {
 
   const allServices = [
     {
-      name: "Manicure",
-      location: "30m",
-      price: "KES 2,000",
+      name: "Classic Manicure",
+      location: "",
+      price: "KES 7,000",
       department: "Manicure",
       description: "Classic manicure with shaping, cuticle care, and polish for healthy, beautiful nails.",
     },
     {
-      name: "Shellac manicure",
+      name: "Couture Manicure",
       location: "45m",
-      price: "KES 4,000",
-      department: "Shellac",
+      price: "KES 7,500",
+      department: "Manicure",
+      description: "Chip-resistant Shellac polish for a flawless manicure that lasts up to two weeks.",
+    },
+    {
+      name: "French Gel Manicure",
+      location: "45m",
+      price: "KES 11,000",
+      department: "Manicure",
+      description: "Chip-resistant Shellac polish for a flawless manicure that lasts up to two weeks.",
+    },
+    {
+      name: "French Manicure",
+      location: "45m",
+      price: "KES 7,500",
+      department: "Manicure",
+      description: "Chip-resistant Shellac polish for a flawless manicure that lasts up to two weeks.",
+    },
+    {
+      name: "Gel Manicure",
+      location: "45m",
+      price: "KES 8,500",
+      department: "Manicure",
+      description: "Chip-resistant Shellac polish for a flawless manicure that lasts up to two weeks.",
+    },
+    {
+      name: "Polish Change Manicure",
+      location: "45m",
+      price: "KES 3,000",
+      department: "Manicure",
+      description: "Chip-resistant Shellac polish for a flawless manicure that lasts up to two weeks.",
+    },
+    {
+      name: "Polish Gel Change Manicure",
+      location: "45m",
+      price: "KES 3,500",
+      department: "Manicure",
+      description: "Chip-resistant Shellac polish for a flawless manicure that lasts up to two weeks.",
+    },
+    {
+      name: "Polish Gel French Change Manicure",
+      location: "45m",
+      price: "KES 3,500",
+      department: "Manicure",
       description: "Chip-resistant Shellac polish for a flawless manicure that lasts up to two weeks.",
     },
     {
@@ -309,46 +351,158 @@ const Nail = () => {
       department: "Shellac",
       description: "Quick and safe soak-off removal of Shellac to restore natural nails.",
     },
+    // {
+    //   name: "Nail art",
+    //   location: "30m",
+    //   price: "from KES 2,000",
+    //   department: "Manicure",
+    //   description: "Creative nail art designs tailored to your style, from simple accents to intricate patterns.",
+    // },
     {
-      name: "Nail art",
-      location: "30m",
-      price: "from KES 2,000",
-      department: "Manicure",
-      description: "Creative nail art designs tailored to your style, from simple accents to intricate patterns.",
-    },
-    {
-      name: "Pedicure",
+      name: "Classic Pedicure",
       location: "45m",
-      price: "KES 4,000",
+      price: "KES 8,000",
       department: "Pedicure",
       description: "Relaxing pedicure with exfoliation, massage, and polish for soft, smooth feet.",
     },
     {
-      name: "Shellac pedicure",
+      name: "Couture Pedicure",
       location: "1h–1h15m",
-      price: "KES 7,000",
-      department: "Shellac",
+      price: "KES 8,500",
+      department: "Pedicure",
       description: "Long-wear Shellac pedicure for durable color and foot pampering.",
     },
     {
-      name: "Overlays on natural nails",
+      name: "French Gel Pedicure",
+      location: "1h–1h15m",
+      price: "KES 12,000",
+      department: "Pedicure",
+      description: "Long-wear Shellac pedicure for durable color and foot pampering.",
+    },
+    {
+      name: "French Pedicure",
+      location: "1h–1h15m",
+      price: "KES 8,500",
+      department: "Pedicure",
+      description: "Long-wear Shellac pedicure for durable color and foot pampering.",
+    },
+    {
+      name: "Gel Pedicure",
+      location: "1h–1h15m",
+      price: "KES 8,500",
+      department: "Pedicure",
+      description: "Long-wear Shellac pedicure for durable color and foot pampering.",
+    },
+    {
+      name: "Polish Change Pedicure",
+      location: "1h–1h15m",
+      price: "KES 3,000",
+      department: "Pedicure",
+      description: "Long-wear Shellac pedicure for durable color and foot pampering.",
+    },
+    {
+      name: "Polish Gel Change Pedicure",
+      location: "1h–1h15m",
+      price: "KES 3,500",
+      department: "Pedicure",
+      description: "Long-wear Shellac pedicure for durable color and foot pampering.",
+    },
+    {
+      name: "Polish Gel French Change Pedicure",
+      location: "1h–1h15m",
+      price: "KES 4,500",
+      department: "Pedicure",
+      description: "Long-wear Shellac pedicure for durable color and foot pampering.",
+    },
+    {
+      name: "Acrylic French Nail Extension Full Set",
       location: "1h 30m",
-      price: "KES 8,000",
-      department: "Extensions",
+      price: "KES 15,000",
+      department: "Nail Enhancement",
       description: "Enhance your natural nails with durable overlays for a polished, long-lasting finish.",
     },
     {
-      name: "Overlays soakoff",
+      name: "Acrylic Nail Extension Full Set",
       location: "20–45m",
-      price: "KES 1,000",
-      department: "Extensions",
+      price: "KES 13,000",
+      department:"Nail Enhancement",
       description: "Gentle removal of overlays to prepare nails for new applications without damage.",
     },
     {
-      name: "Acrylic extension",
+      name: "Acrylic Refill/Overlay",
       location: "2h",
-      price: "KES 8,000",
-      department: "Extensions",
+      price: "KES 9,000",
+      department: "Nail Enhancement",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+    {
+      name: "Acrylic Removal W/Cleaning",
+      location: "2h",
+      price: "KES 6,000",
+      department: "Nail Enhancement",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+    {
+      name: "Acrylic Gel Removal W/Cleaning",
+      location: "2h",
+      price: "KES 6,000",
+      department: "Nail Enhancement",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+    {
+      name: "Hard Gel French Nail Extension Full Set",
+      location: "2h",
+      price: "KES 16,000",
+      department: "Nail Enhancement",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+     {
+      name: "Hard Gel Nail Extension Full Set",
+      location: "2h",
+      price: "KES 14,000",
+      department: "Nail Enhancement",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+    {
+      name: "Hard Gel Refill/Overlay",
+      location: "2h",
+      price: "KES 9,000",
+      department: "Nail Enhancement",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+    {
+      name: "Soft Gel",
+      location: "2h",
+      price: "KES 9,000",
+      department: "Nail Enhancement",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+    {
+      name: "Buff & Shine Re-Shape",
+      location: "2h",
+      price: "KES 3,500",
+      department: "Nail Enhancement",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+    {
+      name: "Extension Removal",
+      location: "2h",
+      price: "KES 3,500",
+      department: "Nail Enhancement",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+    {
+      name: "Nail Art/PC",
+      location: "2h",
+      price: "KES 3,500",
+      department: "Nail Add-ons",
+      description: "Custom acrylic extensions for added length and strength with natural-looking results.",
+    },
+    {
+      name: "Gel Nail Art/PC",
+      location: "2h",
+      price: "KES 3,500",
+      department: "Nail Add-ons",
       description: "Custom acrylic extensions for added length and strength with natural-looking results.",
     },
   ];
@@ -357,8 +511,8 @@ const Nail = () => {
     { id: "All", label: "All Services" },
     { id: "Manicure", label: "Manicure" },
     { id: "Pedicure", label: "Pedicure" },
-    { id: "Shellac", label: "Shellac" },
-    { id: "Extensions", label: "Extensions" },
+    { id: "Nail Enhancement", label: "Nail Enhancement" },
+    { id: "Nail Add-ons", label: "Nail Add-ons" },
   ];
 
   return (
@@ -426,9 +580,9 @@ const Nail = () => {
                           <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
                             Treatment
                           </th>
-                          <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
+                          {/* <th className="text-left py-4 px-4 text-base font-medium text-[#262626]">
                             Duration
-                          </th>
+                          </th> */}
                           <th className="text-right py-4 px-4 text-base font-medium text-[#262626]">
                             Price
                           </th>
@@ -443,9 +597,9 @@ const Nail = () => {
                             <td className="py-4 px-4 text-base text-[#262626]">
                               {service.name}
                             </td>
-                            <td className="py-4 px-4 text-base text-[#262626]">
+                            {/* <td className="py-4 px-4 text-base text-[#262626]">
                               {service.location || "N/A"}
-                            </td>
+                            </td> */}
                             <td className="py-4 px-4 text-base text-[#262626] text-right">
                               {service.price}
                             </td>
