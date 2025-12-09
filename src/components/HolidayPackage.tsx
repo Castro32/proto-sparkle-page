@@ -574,14 +574,7 @@ import wash from "@/assets/DSC04725.jpg";
 export default function HolidayPackages() {
   
   const characters = [
-    {
-      name: "The Essential Glow",
-      title: "RELAX & REFRESH",
-      desc: "Wash & Blow Dry, Gel Manicure, and Express Face Workout",
-      price: "Ksh 17,500",
-      image: wash,
-      color: "text-yellow-400"
-    },
+    
     {
       name: "The Signature Beauty",
       title: "HAIR & NAILS",
@@ -589,6 +582,14 @@ export default function HolidayPackages() {
       price: "Ksh 16,000",
       image: "https://images.pexels.com/photos/3997374/pexels-photo-3997374.jpeg",
       color: "text-cyan-400"
+    },
+    {
+      name: "The Essential Glow",
+      title: "RELAX & REFRESH",
+      desc: "Wash & Blow Dry, Gel Manicure,  and Express Face Workout",
+      price: "Ksh 17,500",
+      image: wash,
+      color: "text-yellow-400"
     },
     {
       name: "Luxe Rejuvenation (Women)",
