@@ -809,8 +809,9 @@ const encodedMessage = encodeURIComponent(message);
 const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
 const buttonLinks = [
-  "/holiday", 
   whatsappLink, 
+  "/holiday", 
+  
 ];
 
 
