@@ -654,7 +654,7 @@ export default function HolidayPackages() {
                   <h4 className="text-[#595959] text-l font-bold uppercase tracking-widest">
                     {char.title}
                   </h4>
-                  <p className="text-whitE texe-l leading-relaxed max-w-[240px] mx-auto mb-6">
+                  <p className="text-white text-bold leading-relaxed max-w-[240px] mx-auto mb-6">
                     {char.desc}
                   </p>
                   <a
