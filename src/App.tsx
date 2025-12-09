@@ -102,6 +102,7 @@ import LoyaltyProgram from "./pages/loyalty";
 import NewsletterPopup from "./components/NewsletterPopup.tsx";
 import { useNewsletterPopup } from "./hooks/useNewsletterPopup";
 import Logo from "@/assets/3.png"
+import HolidayPackagesSection from "./components/HolidayPackage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -167,6 +168,7 @@ const AppContent = () => {
           <Route path="/permanent-makeup" element={<PermanentMakeup/>}/>
           <Route path="/loyalty" element={<LoyaltyProgram />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/holiday" element={<HolidayPackagesSection />} />
         </Routes>
       </main>
       

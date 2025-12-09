@@ -36,6 +36,7 @@ import SpaAboutSection from "@/components/ui/homeabout";
 import PartnersSection from "@/components/ui/parteners";
 import Team from "./OurTeam";
 import NewsletterPopup from "@/components/NewsletterPopup"; // Import the popup
+import HolidayPackages from '@/components/HolidayPackage';
 
 const Index = () => {
   // State for popup visibility
@@ -57,6 +58,7 @@ const Index = () => {
       <TreatmentsHero/>
       {/* <ScrollTeaser /> */}
       <ServicesSection/>
+      <HolidayPackages />
       <Team />
       {/* <SpaAboutSection /> */}
       <PartnersSection/>

@@ -1224,7 +1224,7 @@ const Treatments = () => {
     {
       name: "Men's Haircut",
       area: "Full",
-      price: "from KES 4,500",
+      price: "from KES 6,000",
       department: "Cutting & Styling",
     },
     {
@@ -1242,7 +1242,7 @@ const Treatments = () => {
     {
       name: "Wash & Blow-Dry",
       area: "Full",
-      price: "from KES 4,000",
+      price: "from KES 3,000",
       department: "Cutting & Styling",
     },
     {
