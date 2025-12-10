@@ -659,7 +659,7 @@ export default function HolidayPackages() {
                     {char.desc}
                   </p>
                   <a
-                    href="https://avyasalon.zenoti.com/webstore"
+                    href="https://avyasalon.zenoti.com/webstoreNew/services/6d6c66ef-8041-4964-bf75-93b1ba5ada31"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center 
