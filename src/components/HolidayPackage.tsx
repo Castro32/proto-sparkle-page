@@ -564,12 +564,14 @@
 //   );
 // }
 import React from 'react';
+import menscut from "@/assets/menscut.png";
 
 import { 
   Sparkles, Star, Zap, Leaf, Flame, 
   ArrowRight
 } from 'lucide-react';
 import wash from "@/assets/DSC04725.jpg";
+import face from "@/assets/Still 2.png";
 
 export default function HolidayPackages() {
   
@@ -596,7 +598,7 @@ export default function HolidayPackages() {
       title: "ULTIMATE INDULGENCE",
       desc: "Facial, Cut & Style, Neck & Shoulder Massage",
       price: "Ksh 18,000",
-      image: "https://images.pexels.com/photos/3865496/pexels-photo-3865496.jpeg",
+      image: face,
       color: "text-green-400"
     },
     {
@@ -604,7 +606,7 @@ export default function HolidayPackages() {
       title: "GENTLEMAN'S RETREAT",
       desc: "Cut & Style, Neck & Shoulder Massage",
       price: "Ksh 20,000",
-      image: "https://images.pexels.com/photos/5584459/pexels-photo-5584459.jpeg",
+      image: menscut,
       color: "text-orange-400"
     }
   ];
